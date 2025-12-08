@@ -37,7 +37,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section>
+    <section id="hero">
       <div
         id="parallax-container-mobile"
         className="sm:hidden flex parallax-container relative overflow-x-hidden"
