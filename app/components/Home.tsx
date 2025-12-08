@@ -65,7 +65,6 @@ export default function Home() {
         <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-15">
           <h2 className="home-title pt-[110vh] text-white text-4xl">Welcome</h2>
         </div>
-        <div className="parallax-layer h-[200vh] mt-[100vh]  fixed bg-transparent z-12"></div>
         <div className="parallax-layer fixed z-15 w-full left-0 top-0">
           <div className="w-full h-screen bg-[url('/LayeredL4.png')] bg-cover bg-center"></div>
           <div className="w-full h-[50vh] bg-black"></div>

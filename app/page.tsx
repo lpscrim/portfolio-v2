@@ -3,7 +3,7 @@ import Home from "./components/Home";
 export default function Page() {
   return (
     <main>
-      <div className="relative min-h-[200vh] w-full">
+      <div className="relative min-h-[110vh] w-full">
         <Home />
       </div>
       <section className="w-full bg-white h-400 z-50 relative">
