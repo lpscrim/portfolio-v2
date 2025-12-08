@@ -44,13 +44,13 @@ export default function Hero() {
       >
         <div className="parallax-layer fixed h-[150vh] bg-[url('/Layered1.svg')]"></div>
         <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-2">
-          <h2 className="home-title pt-60 text-white text-4xl fade-in">Welcome</h2>
+          <h2 className="home-title mt-60 text-white/80 text-4xl fade-in border-2 rounded-sm pb-0.5 pt-1 px-1.5">WELCOME</h2>
         </div>
         <div className="parallax-layer h-full fixed bg-[url('/Layered2.svg')] z-5"></div>
         <div className="parallax-layer h-full fixed bg-[url('/Layered3.svg')] flex items-center justify-center z-10"></div>
-        <div className="parallax-layer fixed z-15 w-full left-0 top-0">
+        <div className="parallax-layer fixed z-15 w-full left-0 top-0 ">
           <div className="w-full h-screen bg-[url('/Layered4.svg')] bg-cover bg-center"></div>
-          <div className="w-full h-screen bg-black"></div>
+          <div className="w-full h-screen bg-black "></div>
         </div>
       </div>
       <div
@@ -61,14 +61,14 @@ export default function Hero() {
 
         <div className="parallax-layer h-full fixed bg-[url('/LayeredL8.png')] mt-0.5 z-5"></div>
         <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-7">
-          <h2 className="home-title -mt-23 xl:-mt-28  text-white text-6xl fade-in">WELCOME</h2>
+          <h2 className="home-title -mt-23 xl:-mt-28  text-white text-6xl fade-in border-3 rounded-sm pb-1 pt-2 px-2">WELCOME</h2>
         </div>
 
         <div className="parallax-layer h-full fixed bg-[url('/LayeredL3.png')] flex items-center justify-center z-10"></div>
         <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-15">
           <h2 className="home-title pt-[110vh] text-white text-4xl"></h2>
         </div>
-        <div className="parallax-layer fixed z-15 w-full left-0 top-0">
+        <div className="parallax-layer fixed z-15 w-full left-0 top-0 -mt-0.5">
           <div className="w-full h-screen bg-[url('/LayeredL4.png')] bg-cover bg-center"></div>
           <div className="w-full h-[50vh] bg-black"></div>
         </div>
