@@ -37,16 +37,16 @@ export default function Header() {
   return (
     <header
       className={`${
-        isFixed ? "fixed top-0 " : "absolute -bottom-[79px] "
+        isFixed ? "fixed top-0 " : "absolute -bottom-[78px] "
       } left-0 z-200 w-lvw text-background transition-all duration-300`}
     >
       <nav
         aria-label="Global"
         className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 max"
       >
-        {/* Left: Desktop links */}
-        <div className="flex-1 flex items-center">
-          <div className="hidden md:flex font-josefin-sans text-base/6 lg:text-lg/6 gap-x-7 items-center">
+        {/* Left: Desktop links (only on md and up) */}
+        <div className="hidden md:flex flex-1 items-center">
+          <div className="font-josefin-sans text-base/6 lg:text-lg/6 gap-x-7 items-center flex">
             <Link
               href="/"
               className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
@@ -67,13 +67,13 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        {/* Center: Logo */}
-        <div className="flex-1 flex justify-center items-center">
-          <h2 className="font-josefin-sans text-lg lg:text-xl text-accent font-bold">
+        {/* Logo */}
+        <div className="flex-1 flex justify-start md:justify-center items-center">
+          <h2 className="font-josefin-sans text-lg lg:text-xl text-accent font-bold pl-3 md:pl-0">
             Lewis Scrimgeour
           </h2>
         </div>
-        {/* Right: Mobile menu button */}
+        {/* Mobile menu button */}
         <div className="flex-1 flex justify-end items-center">
           <div className="md:hidden flex items-center gap-x-4 xl:pr-10 mt-0.5">
             <button
