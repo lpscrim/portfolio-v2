@@ -83,7 +83,7 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 2s linear forwards;
+  animation: fadeIn 5s linear forwards;
 }
 
 

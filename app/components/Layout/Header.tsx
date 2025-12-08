@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <header
       className={`${
-        isFixed ? "fixed top-0 " : "absolute -bottom-[91px] "
+        isFixed ? "fixed top-0 " : "absolute -bottom-[90px] "
       } left-0 z-200 w-lvw  text-background transition-all duration-300`}
     >
       <nav
