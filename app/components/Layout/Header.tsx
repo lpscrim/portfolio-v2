@@ -92,7 +92,7 @@ export default function Header() {
           className="sm:hidden"
         >
           <DialogPanel
-            className="absolute right-0 top-full mt-[79] w-48 z-500 rounded-xs bg-foreground/95 shadow-lg"
+            className="absolute menu-slide-down opacity-25 right-0 top-full mt-[79] w-42 z-500 rounded-b-xs bg-foreground/90 shadow-lg transition-all duration-500"
           >
             <button
               type="button"
@@ -101,23 +101,17 @@ export default function Header() {
             >
               <span className="sr-only">Close menu</span>
             </button>
-            <div className="py-2">
+            <div className="py-4 flex flex-col justify-left gap-y-2">
                 
-              <Button onClick={() => setMobileMenuOpen(false)}>
-                <Link href="/" className="block px-4 py-2">
+                <Link href="/" style={{ animationDelay: "25ms" }} className="drop-in opacity-0 text-background text-left pl-5 hover:-translate-y-0.5 active:translate-y-1 transition-all" >
                   ONE
                 </Link>
-              </Button>
-              <Button onClick={() => setMobileMenuOpen(false)}>
-                <Link href="/" className="block px-4 py-2">
+                <Link href="/" style={{ animationDelay: "75ms" }} className="drop-in opacity-0 text-background text-left pl-5 hover:-translate-y-0.5 active:translate-y-1 transition-all" >
                   TWO
                 </Link>
-              </Button>
-              <Button onClick={() => setMobileMenuOpen(false)}>
-                <Link href="/" className="block px-4 py-2">
+                <Link href="/" style={{ animationDelay: "150ms" }} className="drop-in opacity-0 text-background text-left pl-5 hover:-translate-y-0.5 active:translate-y-1 transition-all" >
                   THREE
                 </Link>
-              </Button>
             </div>
           </DialogPanel>
         </Dialog>
