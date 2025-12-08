@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-export default function Home() {
+export default function Hero() {
   useEffect(() => {
     const mobileSpeeds = [0.2, 0.3, 0.5, 0.6, 0.7];
     const desktopSpeeds = [0.1, 0.2, 0.3, 1.4, 0.4, 0.5];
