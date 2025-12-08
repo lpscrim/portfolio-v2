@@ -3,7 +3,7 @@ import Hero from "./components/Sections/Hero";
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <div className="relative min-h-[103vh] w-full">
         <Hero />
       </div>
