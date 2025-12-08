@@ -27,7 +27,7 @@ body {
 
 .parallax-container div {
  background-size: cover !important;
- top:0;background-position: center !important;
+ top:0px; background-position: center !important;
  transform: translateY(0px);
  width: 100%;
 }
