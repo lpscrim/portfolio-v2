@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import Button from "../UI/Button";
 import { usePathname } from "next/navigation";
 import NavIcon from "../UI/NavIcon";
 
@@ -40,82 +38,87 @@ export default function Header() {
     <header
       className={`${
         isFixed ? "fixed top-0 " : "absolute -bottom-[79px] "
-      } left-0 z-200 w-lvw  text-background transition-all duration-300`}
+      } left-0 z-200 w-lvw text-background transition-all duration-300`}
     >
       <nav
         aria-label="Global"
-        className="relative bg-foreground/90 mx-auto flex w-full items-center overflow-hidden justify-end px-2 h-13 sm:px-8 max"
+        className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 max"
       >
-        <div
-          className={`flex text-accent w-full items-center justify-center relative`}
-        >
-          <div className="hidden sm:flex font-josefin-sans text-base/6 lg:text-lg/6 gap-x-7 items-center ">
+        {/* Left: Desktop links */}
+        <div className="flex-1 flex items-center">
+          <div className="hidden md:flex font-josefin-sans text-base/6 lg:text-lg/6 gap-x-7 items-center">
             <Link
               href="/"
-              className="hover:brightness-150 rounded-xs  px-2 transistion-all duration-500"
+              className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
             >
               ONE
             </Link>
             <Link
               href="/rooms"
-              className="hover:brightness-150 rounded-xs  px-2 transistion-all duration-500"
+              className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
             >
               TWO
             </Link>
             <Link
               href="/book"
-              className="hover:brightness-150 rounded-xs  px-2 transistion-all duration-500"
+              className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
             >
               THREE
             </Link>
           </div>
-          <div className="sm:hidden flex items-center absolute right-3 sm:right-0 gap-x-4 xl:pr-10 mt-0.5">
+        </div>
+        {/* Center: Logo */}
+        <div className="flex-1 flex justify-center items-center">
+          <h2 className="font-josefin-sans text-lg lg:text-xl text-accent font-bold">
+            Lewis Scrimgeour
+          </h2>
+        </div>
+        {/* Right: Mobile menu button */}
+        <div className="flex-1 flex justify-end items-center">
+          <div className="md:hidden flex items-center gap-x-4 xl:pr-10 mt-0.5">
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-999 cursor-pointer "
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-999 cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
-              <NavIcon
-                open={mobileMenuOpen}
-                color="accent"
-                hoverColor="secondary"
-              />
+              <NavIcon open={mobileMenuOpen} color="accent" hoverColor="secondary" />
             </button>
           </div>
         </div>
-
-        {/* Mobile Header pop out*/}
-        <Dialog
-          open={mobileMenuOpen}
-          onClose={setMobileMenuOpen}
-          className="sm:hidden"
-        >
-          <DialogPanel
-            className="absolute menu-slide-down opacity-25 right-0 top-full mt-[79] w-42 z-500 rounded-b-xs bg-foreground/90 shadow-lg transition-all duration-500"
-          >
-            <button
-              type="button"
-              onClick={toggleMobileMenu}
-              className="absolute right-5 -top-10 w-12 rounded-md p-4 z-999 cursor-pointer"
-            >
-              <span className="sr-only">Close menu</span>
-            </button>
-            <div className="py-4 flex flex-col justify-left gap-y-2">
-                
-                <Link href="/" style={{ animationDelay: "25ms" }} className="drop-in opacity-0 text-background text-left pl-5 hover:-translate-y-0.5 active:translate-y-1 transition-all" >
-                  ONE
-                </Link>
-                <Link href="/" style={{ animationDelay: "75ms" }} className="drop-in opacity-0 text-background text-left pl-5 hover:-translate-y-0.5 active:translate-y-1 transition-all" >
-                  TWO
-                </Link>
-                <Link href="/" style={{ animationDelay: "150ms" }} className="drop-in opacity-0 text-background text-left pl-5 hover:-translate-y-0.5 active:translate-y-1 transition-all" >
-                  THREE
-                </Link>
-            </div>
-          </DialogPanel>
-        </Dialog>
       </nav>
+      {/* Mobile dropdown menu */}
+      <div
+        className={`md:hidden bg-foreground w-full overflow-hidden transition-all duration-500 ${
+          mobileMenuOpen ? "max-h-60 py-4" : "max-h-0 py-0"
+        }`}
+      >
+        {mobileMenuOpen && (
+          <div className="flex flex-col gap-y-2 pl-5">
+            <Link
+              href="/"
+              className="text-background pop-up text-left hover:-translate-y-0.5 active:translate-y-1 transition-all"
+              style={{ animationDelay: "0ms" }}
+            >
+              ONE
+            </Link>
+            <Link
+              href="/rooms"
+              className="text-background pop-up text-left hover:-translate-y-0.5 active:translate-y-1 transition-all"
+              style={{ animationDelay: "75ms" }}
+            >
+              TWO
+            </Link>
+            <Link
+              href="/book"
+              className="text-background pop-up text-left hover:-translate-y-0.5 active:translate-y-1 transition-all"
+              style={{ animationDelay: "150ms" }}
+            >
+              THREE
+            </Link>
+          </div>
+        )}
+      </div>
     </header>
   );
 }
