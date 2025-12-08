@@ -9,7 +9,7 @@ export default function Home() {
       </div>
       <Header />
       <section id="about" className="flex flex-col w-full bg-white h-400 z-50 relative">
-        <div className="w-full py-20 md: py-40 px-10 h-screen bg-black/50">
+        <div className="w-full py-35 md:py-45 px-10 h-screen bg-black/50">
           <div className="max-w-3xl mx-auto text-black text-2xl">
             <p>
               A web design studio focused on delivering beautiful,
