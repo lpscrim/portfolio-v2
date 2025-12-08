@@ -59,7 +59,7 @@ export default function Hero() {
       >
         <div className="parallax-layer fixed h-[150vh] bg-[url('/LayeredL1.png')]"></div>
 
-        <div className="parallax-layer h-full fixed bg-[url('/LayeredL8.png')] z-5"></div>
+        <div className="parallax-layer h-full fixed bg-[url('/LayeredL8.png')] mt-0.5 z-5"></div>
 
         <div className="parallax-layer h-full fixed bg-[url('/LayeredL3.png')] flex items-center justify-center z-10"></div>
         <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-15">
