@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <header
       className={`${
-        isFixed ? "fixed top-0 " : "absolute -bottom-[78px] "
+        isFixed ? "fixed top-0 " : "absolute -bottom-[52px] "
       } left-0 z-200 w-lvw text-background transition-all duration-300`}
     >
       <nav
@@ -97,21 +97,21 @@ export default function Header() {
           <div className="flex flex-col gap-y-2 pl-5">
             <Link
               href="/"
-              className="text-background pop-up text-left hover:-translate-y-0.5 active:translate-y-1 transition-all"
+              className="text-background/75 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250"
               style={{ animationDelay: "0ms" }}
             >
               ONE
             </Link>
             <Link
               href="/rooms"
-              className="text-background pop-up text-left hover:-translate-y-0.5 active:translate-y-1 transition-all"
+              className="text-background/75 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250"
               style={{ animationDelay: "75ms" }}
             >
               TWO
             </Link>
             <Link
               href="/book"
-              className="text-background pop-up text-left hover:-translate-y-0.5 active:translate-y-1 transition-all"
+              className="text-background/75 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250"
               style={{ animationDelay: "150ms" }}
             >
               THREE

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LenisScroll from "./components/Functions/LenisScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <div className="">{children}</div>
+        <footer className="w-full py-5 bg-foreground z-9999">
+          TESTING
+        </footer>
       </body>
-      
+      <LenisScroll />
     </html>
   );
 }

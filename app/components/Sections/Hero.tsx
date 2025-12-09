@@ -6,6 +6,10 @@ export default function Hero() {
     const mobileSpeeds = [0.2, 0.3, 0.5, 0.6, 0.7];
     const desktopSpeeds = [0.1, 0.2, 0.4, 0.3, 1.4,  0.5];
 
+    const handleResize = () => {
+      window.location.reload();
+    };
+
     const handleScroll = () => {
       const mobile = document.getElementById("parallax-container-mobile");
       const desktop = document.getElementById("parallax-container-desktop");
@@ -31,8 +35,10 @@ export default function Hero() {
     };
 
     window.addEventListener("scroll", handleScroll, false);
+    window.addEventListener("resize", handleResize, false);
     return () => {
       window.removeEventListener("scroll", handleScroll, false);
+      window.removeEventListener("resize", handleResize, false);
     };
   }, []);
 
@@ -42,13 +48,13 @@ export default function Hero() {
         id="parallax-container-mobile"
         className="sm:hidden flex parallax-container relative overflow-x-hidden"
       >
-        <div className="parallax-layer fixed h-[150vh] bg-[url('/Layered1.svg')]"></div>
-        <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-2">
-          <h2 className="home-title mt-60 text-white/80 text-4xl fade-in border-2 rounded-sm pb-0.5 pt-1 px-1.5">WELCOME</h2>
+        <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered1.svg')]"></div>
+        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-2">
+          <h2 className="home-title -mt-60 text-white/80 text-3xl fade-in border-2 border-transparent hover:border-white/80 rounded-sm pb-0.5 pt-1 px-1.5 transition-all duration-1500">lewis scrimgeour</h2>
         </div>
-        <div className="parallax-layer h-full fixed bg-[url('/Layered2.svg')] z-5"></div>
-        <div className="parallax-layer h-full fixed bg-[url('/Layered3.svg')] flex items-center justify-center z-10"></div>
-        <div className="parallax-layer fixed z-15 w-full left-0 top-0 ">
+        <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered2.svg')] z-5"></div>
+        <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered3.svg')] flex items-center justify-center z-10"></div>
+        <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 ">
           <div className="w-full h-screen bg-[url('/Layered4.svg')] bg-cover bg-center"></div>
           <div className="w-full h-screen bg-black "></div>
         </div>
@@ -57,18 +63,18 @@ export default function Hero() {
         id="parallax-container-desktop"
         className="hidden sm:flex parallax-container relative overflow-x-hidden"
       >
-        <div className="parallax-layer fixed h-[150vh] bg-[url('/LayeredL1.png')]"></div>
+        <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/LayeredL1.png')]"></div>
 
-        <div className="parallax-layer h-full fixed bg-[url('/LayeredL8.png')] mt-0.5 z-5"></div>
-        <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-7">
-          <h2 className="home-title -mt-23 xl:-mt-28  text-white text-6xl fade-in border-3 rounded-sm pb-1 pt-2 px-2">WELCOME</h2>
+        <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/LayeredL8.png')] mt-0.5 z-5"></div>
+        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-7">
+          <h2 className="home-title -mt-23 xl:-mt-28  text-white text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-white/80 transition-all duration-1500 rounded-md fade-in pb-1 pt-2 px-2">lewis scrimgeour</h2>
         </div>
 
-        <div className="parallax-layer h-full fixed bg-[url('/LayeredL3.png')] flex items-center justify-center z-10"></div>
-        <div className="parallax-layer fixed top-0 left-0 w-full h-full flex items-center justify-center z-15">
-          <h2 className="home-title pt-[110vh] text-white text-4xl"></h2>
+        <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/LayeredL3.png')] flex items-center justify-center z-10"></div>
+        <div className="parallax-layer pointer-events-none fixed top-0 left-0 w-full h-full flex items-center justify-center z-15">
+          <h2 className="home-title pt-[110vh] text-white/80 text-2xl"></h2>
         </div>
-        <div className="parallax-layer fixed z-15 w-full left-0 top-0 -mt-0.5">
+        <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 -mt-0.5">
           <div className="w-full h-screen bg-[url('/LayeredL4.png')] bg-cover bg-center"></div>
           <div className="w-full h-[50vh] bg-black"></div>
         </div>
