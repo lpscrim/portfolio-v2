@@ -10,13 +10,13 @@ export default function Card({ content , bottom }: { content: { title: string; d
             />
             <div className="absolute inset-0 w-full h-full bg-white/30 backdrop-blur-2xl rounded-xs" />
             {/* Content */}
-            <div className="px-4 py-5 xl:p-14 relative items-center justify-center flex z-10">
+            <div className="px-4 py-5 md:px-8 md:py-7 xl:p-14 relative items-center justify-center flex z-10">
                 <Image 
                     src={content.img} 
                     alt={content.title} 
                     width={800} 
                     height={400} 
-                    className="w-full h-auto object-cover rounded-xs aspect-video max-w-5xl"
+                    className="w-full h-auto object-cover rounded-xs aspect-video max-w-4xl"
                 />
             </div>
             <div className={bottom ? `px-2 py-2` : `px-4 py-2 sm:px-6`} style={{ position: "relative", zIndex: 10 }}>
