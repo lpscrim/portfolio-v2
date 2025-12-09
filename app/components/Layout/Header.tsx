@@ -44,7 +44,7 @@ export default function Header() {
         aria-label="Global"
         className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 max"
       >
-        {/* Left: Desktop links (only on md and up) */}
+        {/* Desktop links */}
         <div className="hidden md:flex flex-1 items-center">
           <div className="font-josefin-sans text-base/6 lg:text-lg/6 gap-x-7 items-center flex">
             <Link
@@ -69,8 +69,8 @@ export default function Header() {
         </div>
         {/* Logo */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
-          <h2 className="font-josefin-sans text-lg lg:text-xl text-accent font-bold pl-3 md:pl-0">
-            Lewis Scrimgeour
+          <h2 className="home-title text-xl mt-1.5 lg:text-xl text-sceondary pl-3 md:pl-0">
+            lewis scrimgeour
           </h2>
         </div>
         {/* Mobile menu button */}
