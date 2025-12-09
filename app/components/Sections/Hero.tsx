@@ -67,7 +67,7 @@ export default function Hero() {
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/LayeredL8.png')] mt-0.5 z-5"></div>
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-7">
-          <h2 className="home-title -mt-23 xl:-mt-28  text-white text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-white/80 transition-all duration-1500 rounded-md fade-in pb-1 pt-2 px-2">lewis scrimgeour</h2>
+          <h2 className="home-title -mt-23 xl:-mt-28  text-white/80 text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-white/80 transition-all duration-1500 rounded-md fade-in pb-1 pt-2 px-2">lewis scrimgeour</h2>
         </div>
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/LayeredL3.png')] flex items-center justify-center z-10"></div>
