@@ -32,18 +32,6 @@ const content = [
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
     img:"/LayeredL1.png"
   },
-  {
-    title: "Project 4",
-    description:
-      "The brief of this website is to provide top-notch web design services that combine aesthetics with functionality.",
-      img:"/LayeredL1.png"
-  },
-  {
-    title: "Project 5",
-    description:
-      "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
-      img:"/LayeredL1.png"
-  }
 ]
 
 export default function About() {
@@ -59,12 +47,12 @@ export default function About() {
             paddingLeft: "0px",
             paddingRight: "0px",
             opacity: 1,
-            y: 0.5,
+            y: 0,
             duration: 1,
-            ease: "power2.inOut",
+            ease: "power1.out",
             scrollTrigger: {
               trigger: card,
-              start: "top 80%",
+              start: "top 90%",
               toggleActions: "play none none none",
             },
           }
@@ -92,11 +80,11 @@ export default function About() {
             <div
               key={index}
               ref={el => { cardsRef.current[index] = el; }}
-              className={`transition-all duration-500`}
+              className={`transition-all duration-600`}
               style={{
                 paddingLeft: index % 2 === 0 ? "60px" : "0px",
                 paddingRight: index % 2 !== 0 ? "60px" : "0px",
-                opacity: 0,
+                opacity: 0.75,
                 transform: "translateY(40px)",
               }}
             >
