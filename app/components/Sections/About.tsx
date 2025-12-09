@@ -36,8 +36,28 @@ const content = [
 
 export default function About() {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+
 
   useEffect(() => {
+    if (sectionRef.current) {
+      gsap.fromTo(
+        sectionRef.current,
+        { opacity: 0, y: 60 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 100%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }
+
     cardsRef.current.forEach((card, i) => {
       if (card) {
         gsap.fromTo(
@@ -57,7 +77,7 @@ export default function About() {
             ease: "power1.out",
             scrollTrigger: {
               trigger: card,
-              start: "top 90%",
+              start: "top 100%",
               toggleActions: "play none none none",
             },
           }
@@ -68,12 +88,13 @@ export default function About() {
 
   return (
     <section
+      
       id="about"
       className="flex flex-col w-full bg-white bg-fixed min-h-svh z-50 relative"
     >
       <div className="w-full py-35 px-10 bg-black/5">
         <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-center">
-          <p>
+          <p ref={sectionRef}>
             A web design studio focused on delivering beautiful, user-friendly
             websites that help businesses grow online. Whether you`re looking to
             build a new site from scratch or revamp an existing one, we have the
