@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavIcon from "../UI/NavIcon";
+import Clock from "../Animation/Clock";
 
 export default function Header() {
   const [isFixed, setIsFixed] = useState(false);
@@ -75,6 +76,9 @@ export default function Header() {
         </div>
         {/* Mobile menu button */}
         <div className="flex-1 flex justify-end items-center">
+          <div className="hidden md:flex">
+            <Clock />
+          </div>
           <div className="md:hidden flex items-center gap-x-4 xl:pr-10 mt-0.5">
             <button
               type="button"
