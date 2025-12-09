@@ -1,7 +1,7 @@
 "use client";
+import Image from "next/image";
 import { useRef, useEffect } from "react";
-// @ts-ignore
-import { createAnimatable, utils } from "animejs";
+import { createAnimatable } from "animejs";
 
 export default function Clock() {
   const clockRef = useRef<HTMLDivElement>(null);
@@ -49,6 +49,7 @@ export default function Clock() {
       className="clock z-9999 text-white/50 cursor-pointer flex flex-col items-center"
       style={{ willChange: "transform" }}
     >
+        {/*
       <svg
         width="24"
         height="24"
@@ -59,7 +60,7 @@ export default function Clock() {
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        {/* Arrow shaft: from (12,16) to (12,8) (center is at 12,12) */}
+          
         <line
           x1="12"
           y1="16"
@@ -68,9 +69,15 @@ export default function Clock() {
           stroke="currentColor"
           strokeWidth="2"
         />
-        {/* Arrowhead at the top */}
         <polygon points="12,5 10,9 14,9" fill="currentColor" />
-      </svg>
+      </svg> */}
+        <Image 
+            src="/logo1.svg"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="w-8 h-8 scale-75 object-contain"
+        />
     </div>
   );
 }
