@@ -36,28 +36,48 @@ const content = [
 
 export default function About() {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-
+  const headingRef = useRef<HTMLHeadingElement | null>(null);
+  const paraRef = useRef<HTMLParagraphElement | null>(null);
 
   useEffect(() => {
-    if (sectionRef.current) {
+    // Animate heading
+    if (headingRef.current) {
       gsap.fromTo(
-        sectionRef.current,
-        { opacity: 0, y: 60 },
+        headingRef.current,
+        { opacity: 0, y: 40 },
         {
           opacity: 1,
           y: 0,
           duration: 1,
           ease: "power1.out",
           scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 100%",
+            trigger: headingRef.current,
+            start: "top 90%",
             toggleActions: "play none none none",
           },
         }
       );
     }
-
+    // Animate paragraph
+    if (paraRef.current) {
+      gsap.fromTo(
+        paraRef.current,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: 0.2,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: paraRef.current,
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }
+    // Animate cards (as before)
     cardsRef.current.forEach((card, i) => {
       if (card) {
         gsap.fromTo(
@@ -73,7 +93,7 @@ export default function About() {
             paddingRight: "0px",
             opacity: 1,
             y: 0,
-            duration: 1,
+            duration: 0.5,
             ease: "power1.out",
             scrollTrigger: {
               trigger: card,
@@ -88,21 +108,23 @@ export default function About() {
 
   return (
     <section
-      
       id="about"
       className="flex flex-col w-full bg-white bg-fixed min-h-svh z-50 relative"
     >
-      <div className="w-full py-35 px-10 bg-black/5">
-        <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-center">
-          <p ref={sectionRef}>
-            A web design studio focused on delivering beautiful, user-friendly
-            websites that help businesses grow online. Whether you`re looking to
-            build a new site from scratch or revamp an existing one, we have the
-            skills and expertise to bring your vision to life.
+      <div className="w-full py-37 px-10 bg-black/5">
+        <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
+          <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
+            Design Studio
+          </h2>
+          <p ref={paraRef}>
+            We specialize in crafting beautiful, user-friendly websites that empower
+            businesses to grow and succeed online. Whether you need a brand new site
+            or a complete redesign, our team has the expertise and creativity to
+            bring your vision to life with exceptional results.
           </p>
         </div>
       </div>
-      <div className="w-full pb-20 px-10 bg-black/5">
+      <div className="w-full pb-20 px-10 bg-black/5 ">
         <div className="max-w-6xl mx-auto text-black text-2xl flex flex-col gap-6 md:gap-10 lg:gap-24">
           {content.map((item, index) => (
             <div
