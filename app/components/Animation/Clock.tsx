@@ -45,7 +45,7 @@ export default function Clock() {
   return (
     <div
       ref={clockRef}
-      className="clock z-9999 text-white/50 cursor-pointer flex flex-col items-center"
+      className="clock z-9999 text-white/50 flex flex-col items-center"
       style={{ willChange: "transform" }}
     >
         

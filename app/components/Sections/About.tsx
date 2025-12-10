@@ -14,7 +14,7 @@ const content = [
     title: "Hillside House",
     description:
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
-    img: "/projects/hillside.png",
+    img: "/projects/hls.svg",
     vid: "/Vids/hls.mp4",
   },
   {

@@ -22,8 +22,8 @@ export default function Card({ content  }: { content: { title: string; descripti
             </div>
             <div className={`px-4 py-2 sm:px-6`} style={{ position: "relative", zIndex: 10 }}>
                 <div className="text-base -mt-5 w-full justify-center flex">
-                    <div className="lg:text-xl inline-block bg-white rounded-sm ">
-                        <h2 className="text-foreground bg-black/5 px-2 ">{content.title}</h2>
+                    <div className="md:text-xl inline-block bg-white rounded-xs ">
+                        <h2 className="text-foreground bg-black/5 px-2 lowercase home-title tracking-wide pt-0.5">{content.title}</h2>
                     </div>
                 </div>
                 <p className="hidden mt-2 text-sm text-foreground/80">{content.description}</p>
