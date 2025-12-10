@@ -12,13 +12,13 @@ const content = [
     title: "Project 1",
     description:
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
-    img: "/LayeredL1.png",
+    img: "/projects/cio1.svg",
   },
   {
     title: "Project 2",
     description:
       "The brief of this website is to provide top-notch web design services that combine aesthetics with functionality.",
-    img: "/LayeredL1.png",
+    img: "/projects/gro1.svg",
   },
   {
     title: "Project 3",
