@@ -46,31 +46,31 @@ export default function Header() {
         className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 max"
       >
         {/* Desktop links */}
-        <div className="hidden md:flex flex-1 items-center">
-          <div className="font-josefin-sans text-base/6 lg:text-lg/6 gap-x-7 items-center flex">
+        <div className="hidden md:flex flex-1 items-center lowercase home-title text-white">
+          <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
             <Link
               href="/"
-              className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
+              className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
             >
-              ONE
+              PROJECTS
             </Link>
             <Link
               href="/rooms"
-              className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
+              className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
             >
-              TWO
+              PHOTO
             </Link>
             <Link
               href="/book"
-              className="hover:brightness-150 rounded-xs px-2 transistion-all duration-500"
+              className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
             >
-              THREE
+              CONTACT
             </Link>
           </div>
         </div>
         {/* Logo */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
-          <h2 className="home-title text-xl mt-1.5 lg:text-xl text-sceondary pl-3 md:pl-0">
+          <h2 className="home-title text-xl mt-1.5 lg:text-xl text-white pl-3 md:pl-0">
             lewis scrimgeour
           </h2>
         </div>
@@ -86,7 +86,7 @@ export default function Header() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-999 cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
-              <NavIcon open={mobileMenuOpen} color="accent" hoverColor="secondary" />
+              <NavIcon open={mobileMenuOpen} color="white" hoverColor="secondary" />
             </button>
           </div>
         </div>
@@ -101,24 +101,24 @@ export default function Header() {
           <div className="flex flex-col gap-y-2 pl-5">
             <Link
               href="/"
-              className="text-background/75 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250"
+              className="text-white/75 hover:text-white pop-up text-left active:translate-y-px transition-all duration-250"
               style={{ animationDelay: "0ms" }}
             >
-              ONE
+              PROJECTS
             </Link>
             <Link
               href="/rooms"
-              className="text-background/75 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250"
+              className="text-white/75 hover:text-white pop-up text-left active:translate-y-px transition-all duration-250"
               style={{ animationDelay: "75ms" }}
             >
-              TWO
+              PHOTO
             </Link>
             <Link
               href="/book"
-              className="text-background/75 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250"
+              className="text-white/75 hover:text-white pop-up text-left active:translate-y-px transition-all duration-250"
               style={{ animationDelay: "150ms" }}
             >
-              THREE
+              CONTACT
             </Link>
           </div>
         )}
