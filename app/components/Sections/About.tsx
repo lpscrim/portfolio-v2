@@ -1,36 +1,44 @@
 "use client";
 
 import { useRef, useEffect } from "react";
+import Button from "../UI/Button";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "../UI/Card";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const content = [
   {
-    title: "Project 1",
+    title: "Hillside House",
     description:
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
-    img: "/projects/cio1.svg",
+    img: "/projects/hillside.png",
+    vid: "/Vids/hls.mp4",
   },
   {
-    title: "Project 2",
+    title: "No Grout About It",
     description:
       "The brief of this website is to provide top-notch web design services that combine aesthetics with functionality.",
     img: "/projects/gro1.svg",
+    vid: "/Vids/gro.mp4",
   },
+
   {
-    title: "Project 3",
-    description:
-      "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
-    img: "/LayeredL1.png",
-  },
-  {
-    title: "Project 4",
+    title: "Cioch",
     description:
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
-    img: "/LayeredL1.png",
+    img: "/projects/cio1.svg",
+    vid: "/Vids/cio.mp4",
+  },
+
+  {
+    title: "Lampman",
+    description:
+      "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
+    img: "/projects/lmp1.svg",
+    vid: "/Vids/lmp.mp4",
   },
 ];
 
@@ -40,7 +48,6 @@ export default function About() {
   const paraRef = useRef<HTMLParagraphElement | null>(null);
 
   useEffect(() => {
-    // Animate heading
     if (headingRef.current) {
       gsap.fromTo(
         headingRef.current,
@@ -58,7 +65,6 @@ export default function About() {
         }
       );
     }
-    // Animate paragraph
     if (paraRef.current) {
       gsap.fromTo(
         paraRef.current,
@@ -77,7 +83,6 @@ export default function About() {
         }
       );
     }
-    // Animate cards (as before)
     cardsRef.current.forEach((card, i) => {
       if (card) {
         gsap.fromTo(
@@ -93,7 +98,7 @@ export default function About() {
             paddingRight: "0px",
             opacity: 1,
             y: 0,
-            duration: 0.5,
+            duration: 0.1,
             ease: "power1.out",
             scrollTrigger: {
               trigger: card,
@@ -114,25 +119,28 @@ export default function About() {
       <div className="w-full py-37 px-10 bg-black/5">
         <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
-            Design Studio
+            Web Design Studio
           </h2>
           <p ref={paraRef}>
-            We specialize in crafting beautiful, user-friendly websites that empower
-            businesses to grow and succeed online. Whether you need a brand new site
-            or a complete redesign, our team has the expertise and creativity to
-            bring your vision to life with exceptional results.
+            We specialize in crafting beautiful, user-friendly websites that
+            empower businesses to grow and succeed online. Whether you need a
+            brand new site or a complete redesign, we have the expertise and
+            creativity to bring your vision to life with exceptional results.
           </p>
         </div>
       </div>
       <div className="w-full pb-20 px-10 bg-black/5 ">
-        <div className="max-w-6xl mx-auto text-black text-2xl flex flex-col gap-6 md:gap-10 lg:gap-24">
+        <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
+          <h2 className="mb-14 text-2xl font-semibold">Recent Projects</h2>
+        </div>
+        <div className="max-w-6xl mx-auto text-black flex flex-col gap-10 lg:gap-16">
           {content.map((item, index) => (
             <div
               key={index}
               ref={(el) => {
                 cardsRef.current[index] = el;
               }}
-              className={`transition-all duration-600`}
+              className={`transition-all duration-600 rounded-sm`}
               style={{
                 paddingLeft: index % 2 === 0 ? "60px" : "0px",
                 paddingRight: index % 2 !== 0 ? "60px" : "0px",
@@ -140,9 +148,16 @@ export default function About() {
                 transform: "translateY(40px)",
               }}
             >
-              <Card content={item} bottom={index % 2 === 0} />
+              <Card content={item} />
             </div>
           ))}
+          <div className=" flex justify-center">
+            <Button className="px-4 py-2 bg-black text-white transition-all">
+              <Link href="/projects">
+                See more
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
