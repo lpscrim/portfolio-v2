@@ -12,7 +12,7 @@ export default function Photo() {
   const [showAll, setShowAll] = useState(false);
 
   const photos = [
-    { src: "/photos/photo (1).webp", alt: "Photo 1" },
+    { src: "/photos/photo (11).webp", alt: "Photo 1" },
     { src: "/photos/photo (2).webp", alt: "Photo 2" },
     { src: "/photos/photo (3).webp", alt: "Photo 3" },
     { src: "/photos/photo (4).webp", alt: "Photo 4" },
