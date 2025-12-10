@@ -98,24 +98,24 @@ export default function Header() {
         }`}
       >
         {mobileMenuOpen && (
-          <div className="flex flex-col gap-y-2 pl-5">
+          <div className="flex flex-col gap-y-2 pl-5 text-lg">
             <Link
               href="/"
-              className="text-white/75 hover:text-white pop-up text-left active:translate-y-px transition-all duration-250"
+              className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "0ms" }}
             >
               PROJECTS
             </Link>
             <Link
               href="/rooms"
-              className="text-white/75 hover:text-white pop-up text-left active:translate-y-px transition-all duration-250"
+              className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "75ms" }}
             >
               PHOTO
             </Link>
             <Link
               href="/book"
-              className="text-white/75 hover:text-white pop-up text-left active:translate-y-px transition-all duration-250"
+              className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "150ms" }}
             >
               CONTACT
