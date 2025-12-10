@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -31,6 +32,13 @@ export default function RootLayout({
         <div className="">{children}</div>
         <footer className="w-full py-5 bg-foreground z-9999">
           TESTING
+           <Image 
+            src="/logo1.svg"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="w-8 h-8 scale-75 object-contain"
+        />
         </footer>
       </body>
       <LenisScroll />

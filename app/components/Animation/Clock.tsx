@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { createAnimatable } from "animejs";
 
@@ -49,7 +48,7 @@ export default function Clock() {
       className="clock z-9999 text-white/50 cursor-pointer flex flex-col items-center"
       style={{ willChange: "transform" }}
     >
-        {/*
+        
       <svg
         width="24"
         height="24"
@@ -70,14 +69,8 @@ export default function Clock() {
           strokeWidth="2"
         />
         <polygon points="12,5 10,9 14,9" fill="currentColor" />
-      </svg> */}
-        <Image 
-            src="/logo1.svg"
-            alt="Logo"
-            width={32}
-            height={32}
-            className="w-8 h-8 scale-75 object-contain"
-        />
+      </svg> 
+       
     </div>
   );
 }
