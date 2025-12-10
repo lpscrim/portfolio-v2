@@ -80,7 +80,7 @@ export default function Photo() {
         </div>
         <div className="mt-16 grid grid-cols-2 gap-4 max-w-6xl mx-auto">
             {visiblePhotos.map((photo, index) => (
-            <div key={index} className="col-span-1 max-w-4xl mx-auto pop-up">
+            <div key={index} className="col-span-2 xl:col-span-1 max-w-4xl mx-auto pop-up">
                 <Image
                 
                 src={photo.src}
