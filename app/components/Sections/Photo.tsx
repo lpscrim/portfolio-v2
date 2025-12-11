@@ -77,9 +77,9 @@ export default function Photo() {
   return (
     <section
       id="photo"
-      className="flex flex-col w-full bg-white bg-fixed min-h-svh z-50 relative"
+      className="border flex flex-col w-full bg-white bg-fixed min-h-svh z-50 relative"
     >
-      <div className="w-full py-37 px-10 bg-black/5">
+      <div className="w-full py-35 px-10 bg-black/5 pb-50">
         <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
             Photography

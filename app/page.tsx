@@ -2,6 +2,7 @@ import Header from "./components/Layout/Header";
 import Hero from "./components/Sections/Hero";
 import About from "./components/Sections/About";
 import Photo from "./components/Sections/Photo";
+import Form from "./components/Layout/Form";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <Header />
       <About />
       <Photo />
+      <div className=""></div>
+      <Form />
     </main>
-    
   );
 }

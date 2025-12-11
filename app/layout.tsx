@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Footer from "./components/Layout/Footer";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,17 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
-        <div className="flex-1 flex flex-col">{children}</div>
-        <footer className="w-full py-5 bg-foreground z-9999">
-          TESTING
-          <Image
-            src="/logo1.svg"
-            alt="Logo"
-            width={32}
-            height={32}
-            className="w-8 h-8 scale-75 object-contain"
-          />
-        </footer>
+      <div className="flex-1 flex flex-col">{children}</div>
+      <Footer />
       </body>
       <LenisScroll />
     </html>
