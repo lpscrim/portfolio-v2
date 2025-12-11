@@ -10,6 +10,7 @@ export default function Photo() {
   const headingRef = useRef<HTMLHeadingElement | null>(null);
   const paraRef = useRef<HTMLParagraphElement | null>(null);
   const [showAll, setShowAll] = useState(false);
+  const [largeScreen, setLargeScreen] = useState(false);
 
   const photos = [
     { src: "/photos/photo (11).webp", alt: "Photo 1" },
@@ -62,7 +63,16 @@ export default function Photo() {
     }
   }, []);
 
-  const visiblePhotos = !showAll ? photos.slice(0, 4) : photos;
+  useEffect(() => {
+    function handleResize() {
+      setLargeScreen(window.innerWidth >= 1280);
+    }
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const visiblePhotos = !showAll ? (largeScreen ? photos.slice(0, 4) : photos.slice(0, 3)) : photos;
 
   return (
     <section
@@ -76,6 +86,9 @@ export default function Photo() {
           </h2>
           <p ref={paraRef}>
             We also specialise in photography, capturing stunning visuals that tell a story and evoke emotions. 
+            <br />
+            We offer a range of photography services including portrait, landscape, event, and product photography.
+            Creating powerful brand identity and unique visual experiences.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-2 gap-4 max-w-6xl mx-auto">
@@ -93,7 +106,7 @@ export default function Photo() {
             ))}
             </div>
             <div className="mt-10 flex justify-center">
-            {photos.length > 4 && (
+            {photos.length > 3 && (
                 <Button
                 className="mt-4 px-4 py-2 bg-black text-white transition-all"
                 onClick={() => setShowAll((v) => !v)}
