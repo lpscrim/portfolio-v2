@@ -74,6 +74,13 @@ export default function Photo() {
 
   const visiblePhotos = !showAll ? (largeScreen ? photos.slice(0, 4) : photos.slice(0, 3)) : photos;
 
+  const handleShowAll = () => {
+    setShowAll((v) => !v);
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 100); 
+  };
+
   return (
     <section
       id="photo"
@@ -109,7 +116,7 @@ export default function Photo() {
             {photos.length > 3 && (
                 <Button
                 className="mt-4 px-4 py-2 bg-black text-white transition-all"
-                onClick={() => setShowAll((v) => !v)}
+                onClick={handleShowAll}
                 >
                 {showAll ? "Show less" : "Show more"}
                 </Button>

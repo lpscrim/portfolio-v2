@@ -17,21 +17,36 @@ export default function Form() {
     const uncover = gsap.timeline({ paused: true })
       .to(formRef.current, { yPercent: 0, ease: "none" });
 
-    ScrollTrigger.create({
+    const st = ScrollTrigger.create({
       trigger: triggerRef.current,
-      start: "top bottom", // when the top of trigger hits bottom of viewport
+      start: "top bottom",
       end: "+=75%",
       animation: uncover,
       scrub: true,
       markers: true,
+      invalidateOnRefresh: true,
     });
 
-    setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 150);
+    // Refresh on resize for dynamic layouts
+    const handleResize = () => ScrollTrigger.refresh();
+    window.addEventListener("resize", handleResize);
+
+    // Optionally, refresh when images load
+    const imgs = document.querySelectorAll("img");
+    imgs.forEach(img => {
+      img.addEventListener("load", handleResize);
+    });
+
+    // Initial refresh after mount
+    ScrollTrigger.refresh();
 
     return () => {
       uncover.kill();
+      st.kill();
+      window.removeEventListener("resize", handleResize);
+      imgs.forEach(img => {
+        img.removeEventListener("load", handleResize);
+      });
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, []);
@@ -39,10 +54,10 @@ export default function Form() {
   return (
     <>
       <section ref={triggerRef} id="trigger"></section>
-      <form className="w-vw h-[75svh] bg-foreground z-45 overflow-hidden">
+      <form className="w-vw h-[80svh] bg-foreground z-45 overflow-hidden">
         <section
           ref={formRef}
-          className="form-container h-[75svh] bg-white flex flex-col text-foreground justify-center items-center"
+          className="form-container h-[80svh] bg-foreground flex flex-col text-white justify-center items-center"
         >
           TESTING
           <Image
