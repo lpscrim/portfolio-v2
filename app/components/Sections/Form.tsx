@@ -331,11 +331,11 @@ export default function Form() {
           ref={formRef}
           className="form-container pt-12 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
         >
-          <h2 className="text-2xl sm:text-3xl">Get in Touch</h2>
-          <div id="contact-form" className="w-full px-10 md:px-20 lg:px-32">
+          <h2 className="text-2xl">Get in Touch</h2>
+          <div id="contact-form" className="w-full px-16 md:px-20 lg:px-32">
             {submitMessage && (
               <div
-                className={`mx-auto mt-4 max-w-2xl text-center p-4 rounded-md ${
+                className={`mx-auto mt-4 max-w-2xl text-center p-4 rounded-xs ${
                   submitMessage.includes("Thank you")
                     ? "bg-green-100 text-green-800"
                     : "bg-red-100 text-red-800"
@@ -351,7 +351,7 @@ export default function Form() {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              className="mx-auto mt-8 max-w-4xl sm:mt-14"
+              className="mx-auto mt-8 max-w-3xl sm:mt-14"
             >
               <input type="hidden" name="form-name" value="contact-2" />
               <input type="hidden" name="form-type" value="Contact" />
@@ -373,7 +373,7 @@ export default function Form() {
                       required
                       autoComplete="given-name"
                       disabled={isSubmitting}
-                      className="block w-full rounded-md bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
+                      className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -393,7 +393,7 @@ export default function Form() {
                       required
                       autoComplete="family-name"
                       disabled={isSubmitting}
-                      className="block w-full rounded-md bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
+                      className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -412,7 +412,7 @@ export default function Form() {
                       type="text"
                       autoComplete="organization"
                       disabled={isSubmitting}
-                      className="block w-full rounded-md bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
+                      className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -432,7 +432,7 @@ export default function Form() {
                       required
                       autoComplete="email"
                       disabled={isSubmitting}
-                      className="block w-full rounded-md bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
+                      className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -445,7 +445,7 @@ export default function Form() {
                     Phone number
                   </label>
                   <div className="mt-2.5">
-                    <div className="flex rounded-md bg-background/80 outline-1 -outline-offset-1 outline-secondary/60 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-accent">
+                    <div className="flex rounded-xs bg-background/80 outline-1 -outline-offset-1 outline-secondary/60 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-accent">
                       <div className="grid shrink-0 grid-cols-1 focus-within:relative">
                         <select
                           id="country"
@@ -453,7 +453,7 @@ export default function Form() {
                           autoComplete="country"
                           aria-label="Country"
                           disabled={isSubmitting}
-                          className="col-start-1 row-start-1 w-full appearance-none rounded-md py-2 pr-7 pl-3.5 text-base text-foreground/80 placeholder:text-background/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent sm:text-sm/6 disabled:opacity-50"
+                          className="col-start-1 row-start-1 w-full appearance-none rounded-xs py-2 pr-7 pl-3.5 text-base text-foreground/80 placeholder:text-background/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent sm:text-sm/6 disabled:opacity-50"
                           defaultValue="UK"
                         >
                           {countryOptions.map((country) => (
@@ -501,17 +501,17 @@ export default function Form() {
                       rows={2}
                       required
                       disabled={isSubmitting}
-                      className="block w-full rounded-md bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
+                      className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="mt-10 items-center">
+              <div className="mt-10 items-center flex flex-row justify-between gap-x-6 sm:gap-x-8">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-40 rounded-md bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-text shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent cursor-pointer transition-all  ${
+                  className={`w-40 rounded-xs bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-text shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent cursor-pointer transition-all  ${
                     isSubmitting
                       ? "opacity-50 cursor-not-allowed"
                       : "hover:brightness-110 hover:-translate-y-0.5 active:brightness-90 active:translate-y-0.5"
@@ -519,6 +519,7 @@ export default function Form() {
                 >
                   {isSubmitting ? "Sending..." : "Send"}
                 </button>
+                <div mailto="Lpscrim@gmail.com" className="cursor-pointer hover:text-secondary transition-colors duration-300"><span >Lpscrim@gmail.com</span></div>
               </div>
             </form>
           </div>
