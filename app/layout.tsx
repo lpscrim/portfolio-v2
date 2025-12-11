@@ -1,4 +1,5 @@
 import Footer from "./components/Layout/Footer";
+import Form from "./components/Layout/Form";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,8 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
-      <div className="flex-1 flex flex-col">{children}</div>
-      <Footer />
+        <div className="flex-1 flex flex-col">{children}</div>
+        <section id="trigger"></section>
+        <Form />
+        <Footer />
       </body>
       <LenisScroll />
     </html>
