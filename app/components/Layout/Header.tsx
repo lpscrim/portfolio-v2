@@ -35,6 +35,15 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    setMobileMenuOpen(false);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header
       className={`${
@@ -49,20 +58,21 @@ export default function Header() {
         <div className="hidden md:flex flex-1 items-center lowercase home-title text-white tracking-wide">
           <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
             <Link
-              href="/"
+              href="/projects"
               className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
             >
               PROJECTS
             </Link>
             <Link
-              href="/rooms"
+              href="/photo"
               className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
             >
               PHOTO
             </Link>
             <Link
-              href="/book"
-              className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
+              href="#contact"
+              onClick={e => handleSmoothScroll(e, "contact")}
+              className="hover:text-secondary rounded-xs px-2 transition-all duration-500"
             >
               CONTACT
             </Link>
@@ -100,21 +110,22 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide">
             <Link
-              href="/"
+              href="/projects"
               className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "0ms" }}
             >
               PROJECTS
             </Link>
             <Link
-              href="/rooms"
+              href="/photo"
               className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "75ms" }}
             >
               PHOTO
             </Link>
             <Link
-              href="/book"
+              href="#contact"
+              onClick={e => handleSmoothScroll(e, "contact")}
               className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "150ms" }}
             >

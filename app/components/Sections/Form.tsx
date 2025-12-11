@@ -295,7 +295,6 @@ export default function Form() {
       end: "+=75%",
       animation: uncover,
       scrub: true,
-      markers: true,
       invalidateOnRefresh: true,
     });
 
@@ -328,6 +327,7 @@ export default function Form() {
       <div ref={triggerRef} id="trigger"></div>
       <div className="w-vw pt-12 bg-foreground z-45 overflow-hidden">
         <section
+          id="contact"
           ref={formRef}
           className="form-container pt-12 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
         >
@@ -498,7 +498,7 @@ export default function Form() {
                     <textarea
                       id="message"
                       name="message"
-                      rows={3}
+                      rows={2}
                       required
                       disabled={isSubmitting}
                       className="block w-full rounded-md bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
