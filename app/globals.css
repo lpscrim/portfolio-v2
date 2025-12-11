@@ -2,9 +2,9 @@
 
 
 @theme {
-  --background: #f0e8e0;
+  --background: #ece9e6;
   --foreground: #141414;
-  --color-background: #f0e8e0;
+  --color-background: #ece9e6;
   --color-foreground: #141414;
   --color-primary: #6C9A8B;
   --color-secondary: #E8998D;
@@ -16,9 +16,9 @@
 }
 
 :root {
-  --background: #f0e8e0;
+  --background: #ece9e6;
   --foreground: #141414;
-  --color-background: #f0e8e0;
+  --color-background: #ece9e6;
   --color-foreground: #141414;
   --color-primary: #6C9A8B;
   --color-secondary: #32726d;

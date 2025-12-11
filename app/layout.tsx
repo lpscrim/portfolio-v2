@@ -1,5 +1,5 @@
 import Footer from "./components/Layout/Footer";
-import Form from "./components/Layout/Form";
+import Form from "./components/Sections/Form";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
