@@ -29,16 +29,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
-        <div className="">{children}</div>
+        <div className="flex-1 flex flex-col">{children}</div>
         <footer className="w-full py-5 bg-foreground z-9999">
           TESTING
-           <Image 
+          <Image
             src="/logo1.svg"
             alt="Logo"
             width={32}
             height={32}
             className="w-8 h-8 scale-75 object-contain"
-        />
+          />
         </footer>
       </body>
       <LenisScroll />
