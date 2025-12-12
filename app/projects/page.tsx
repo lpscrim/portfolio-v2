@@ -1,10 +1,10 @@
-import HeroProjects from "@/app/components/Sections/Projects/HeroProjects";
+import ProjectContainer from "@/app/components/Sections/Projects/ProjectContainer";
 
 export default function ProjectsMain() {
     return (
         <div className="min-h-[400svh]">
             <div className="relative w-full">
-                <HeroProjects />
+                <ProjectContainer />
             </div>
         </div>
     )

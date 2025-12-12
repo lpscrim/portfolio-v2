@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import Proj from "../../Sections/Projects/Proj";
 
-export default function HeroProjects() {
+export default function ProjectContainer() {
   useEffect(() => {
-    const desktopSpeeds = [0.002, 0.004, 0.008, 0.006, 1,  0.01];
+    const desktopSpeeds = [0.004, 0.005, 0.3, 0.009, 1,  0.012];
 
     const handleResize = () => {
       window.location.reload();
@@ -40,13 +40,13 @@ export default function HeroProjects() {
         <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/LayeredL1.png')]"></div>
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/LayeredL8.png')] mt-0.5 z-5"></div>
-        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-7">
-          <h2 className="home-title -mt-22 xl:-mt-28  text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">projects</h2>
+        <div className="parallax-layer pt-100 pointer-events-auto fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center z-7">
+          <h2 className="home-title mt-100 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2025</h2>
+          <h2 className="home-title mt-100 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2024</h2>
         </div>
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/LayeredL3.png')] flex items-center justify-center z-10"></div>
         <div className="parallax-layer pointer-events-none fixed top-0 left-0 w-full h-4vh flex items-center justify-center z-15">
-          <h2 className="home-title pt-[110vh] text-background/80 text-2xl">123123</h2>
           <Proj />
         </div>
         <div className="parallax-layer pointer-events-none fixed z-25 w-full left-0 top-0 -mt-0.5">
