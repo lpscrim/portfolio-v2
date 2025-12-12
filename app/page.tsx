@@ -1,7 +1,7 @@
 import Header from "./components/Layout/Header";
-import Hero from "./components/Sections/Hero";
-import About from "./components/Sections/About";
-import Photo from "./components/Sections/Photo";
+import Hero from "./components/Sections/Home/Hero";
+import About from "./components/Sections/Home/About";
+import Photo from "./components/Sections/Home/Photo";
 
 export default function Home() {
   return (
