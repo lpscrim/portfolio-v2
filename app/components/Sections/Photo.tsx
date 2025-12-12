@@ -84,7 +84,7 @@ export default function Photo() {
   return (
     <section
       id="photo"
-      className="flex flex-col w-full bg-white bg-fixed min-h-svh z-50 relative"
+      className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
     >
       <div className="w-full py-35 px-10 bg-black/5 pb-50">
         <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
@@ -115,7 +115,7 @@ export default function Photo() {
             <div className="mt-10 flex justify-center">
             {photos.length > 3 && (
                 <Button
-                className="mt-4 px-4 py-2 bg-black text-white transition-all"
+                className="mt-4 px-4 py-2 bg-black text-background transition-all"
                 onClick={handleShowAll}
                 >
                 {showAll ? "Show less" : "Show more"}

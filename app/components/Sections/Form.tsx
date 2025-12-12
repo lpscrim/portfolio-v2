@@ -332,7 +332,7 @@ export default function Form() {
           className="form-container pt-12 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
         >
           <h2 className="text-2xl">Get in Touch</h2>
-          <div id="contact-form" className="w-full px-16 md:px-20 lg:px-32">
+          <div id="contact-form" className="w-full px-16 md:px-32 lg:px-38">
             {submitMessage && (
               <div
                 className={`mx-auto mt-4 max-w-2xl text-center p-4 rounded-xs ${
@@ -351,7 +351,7 @@ export default function Form() {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              className="mx-auto mt-8 max-w-3xl sm:mt-14"
+              className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
               <input type="hidden" name="form-name" value="contact-2" />
               <input type="hidden" name="form-type" value="Contact" />

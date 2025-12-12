@@ -15,14 +15,14 @@ const content = [
     description:
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
     img: "/projects/hls.svg",
-    vid: "/Vids/hls.mp4",
+    vid: "/Vids/Hls.mp4",
   },
   {
     title: "No Grout About It",
     description:
       "The brief of this website is to provide top-notch web design services that combine aesthetics with functionality.",
     img: "/projects/gro1.svg",
-    vid: "/Vids/gro.mp4",
+    vid: "/Vids/Gro.mp4",
   },
 
   {
@@ -30,7 +30,7 @@ const content = [
     description:
       "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
     img: "/projects/cio1.svg",
-    vid: "/Vids/cio.mp4",
+    vid: "/Vids/Cio.mp4",
   },
 
   {
@@ -38,7 +38,7 @@ const content = [
     description:
       "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
     img: "/projects/lmp1.svg",
-    vid: "/Vids/lmp.mp4",
+    vid: "/Vids/Lmp.mp4",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col w-full bg-white bg-fixed min-h-svh z-50 relative"
+      className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
     >
       <div className="w-full py-37 px-10 bg-black/5">
         <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
@@ -133,7 +133,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 className="mb-14 text-2xl font-semibold">Recent Projects</h2>
         </div>
-        <div className="max-w-6xl mx-auto text-black flex flex-col gap-10 lg:gap-16">
+        <div className="max-w-5xl mx-auto text-black flex flex-col gap-10 lg:gap-16">
           {content.map((item, index) => (
             <div
               key={index}
@@ -152,7 +152,7 @@ export default function About() {
             </div>
           ))}
           <div className=" flex justify-center">
-            <Button className="px-4 py-2 bg-black text-white transition-all">
+            <Button className="px-4 py-2 bg-black text-background transition-all">
               <Link href="/projects">
                 See more
               </Link>

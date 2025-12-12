@@ -59,7 +59,7 @@ export default function Clock() {
       {/* Clock */}
       <div
         ref={clockRef}
-        className={`clock z-9999 text-white/50 flex flex-col items-center transition-opacity duration-700 cursor-pointer ${
+        className={`clock z-9999 text-background/50 flex flex-col items-center transition-opacity duration-700 cursor-pointer ${
           showClock ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setShowClock(false)}

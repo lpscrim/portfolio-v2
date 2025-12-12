@@ -55,7 +55,7 @@ export default function Header() {
         className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 max"
       >
         {/* Desktop links */}
-        <div className="hidden md:flex flex-1 items-center lowercase home-title text-white tracking-wide">
+        <div className="hidden md:flex flex-1 items-center lowercase home-title text-background tracking-wide">
           <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
             <Link
               href="/projects"
@@ -80,7 +80,7 @@ export default function Header() {
         </div>
         {/* Logo */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
-          <h2 className="home-title text-xl tracking-wide mt-1.5 lg:text-xl text-white pl-3 md:pl-0">
+          <h2 className="home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0">
             lewis scrimgeour
           </h2>
         </div>
@@ -96,7 +96,7 @@ export default function Header() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-999 cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
-              <NavIcon open={mobileMenuOpen} color="white" hoverColor="secondary" />
+              <NavIcon open={mobileMenuOpen} color="background" hoverColor="secondary" />
             </button>
           </div>
         </div>
@@ -111,14 +111,14 @@ export default function Header() {
           <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide">
             <Link
               href="/projects"
-              className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "0ms" }}
             >
               PROJECTS
             </Link>
             <Link
               href="/photo"
-              className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "75ms" }}
             >
               PHOTO
@@ -126,7 +126,7 @@ export default function Header() {
             <Link
               href="#contact"
               onClick={e => handleSmoothScroll(e, "contact")}
-              className="text-white hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "150ms" }}
             >
               CONTACT
