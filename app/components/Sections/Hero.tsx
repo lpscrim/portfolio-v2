@@ -56,7 +56,7 @@ export default function Hero() {
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/Layered3.svg')] flex items-center justify-center z-10"></div>
         <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 ">
           <div className="w-full h-screen bg-[url('/Layered/Layered4.svg')] bg-cover bg-center"></div>
-          <div className="w-full h-screen bg-black "></div>
+          <div className="w-full h-screen bg-foreground "></div>
         </div>
       </div>
       <div
@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
         <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 -mt-0.5">
           <div className="w-full h-screen bg-[url('/Layered/LayeredL4.png')] bg-cover bg-center"></div>
-          <div className="w-full h-[50vh] bg-black"></div>
+          <div className="w-full h-[50vh] bg-foreground"></div>
         </div>
       </div>
     </section>

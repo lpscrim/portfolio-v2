@@ -116,8 +116,8 @@ export default function About() {
       id="about"
       className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
     >
-      <div className="w-full py-37 px-10 bg-black/5">
-        <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
+      <div className="w-full py-37 px-10 bg-foreground/5">
+        <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
             Web Design Studio
           </h2>
@@ -129,11 +129,11 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="w-full pb-20 px-10 bg-black/5 ">
-        <div className="max-w-3xl mx-auto text-black text-2xl bg-background/0 p-6 text-left md:text-center">
+      <div className="w-full pb-20 px-10 bg-foreground/5 ">
+        <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 className="mb-14 text-2xl font-semibold">Recent Projects</h2>
         </div>
-        <div className="max-w-5xl mx-auto text-black flex flex-col gap-10 lg:gap-16">
+        <div className="max-w-5xl mx-auto text-foreground flex flex-col gap-10 lg:gap-16">
           {content.map((item, index) => (
             <div
               key={index}
@@ -152,7 +152,7 @@ export default function About() {
             </div>
           ))}
           <div className=" flex justify-center">
-            <Button className="px-4 py-2 bg-black text-background transition-all">
+            <Button className="px-4 py-2 bg-foreground text-background transition-all">
               <Link href="/projects">
                 See more
               </Link>

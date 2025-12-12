@@ -23,7 +23,7 @@ export default function Card({ content  }: { content: { title: string; descripti
             <div className={`px-4 py-2 sm:px-6`} style={{ position: "relative", zIndex: 10 }}>
                 <div className="text-base -mt-5 w-full justify-center flex">
                     <div className="md:text-xl inline-block rounded-xs group-hover:bg-background transition-all duration-700">
-                        <h2 className="text-foreground group-hover:bg-black/5 px-4 lowercase home-title tracking-wide pt-0.5 transition-all duration-700">{content.title}</h2>
+                        <h2 className="text-foreground group-hover:bg-foreground/5 px-4 lowercase home-title tracking-wide pt-0.5 transition-all duration-700">{content.title}</h2>
                     </div>
                 </div>
                 <p className="hidden mt-2 text-sm text-foreground/80">{content.description}</p>
