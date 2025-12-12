@@ -325,7 +325,7 @@ export default function Form() {
   return (
     <>
       <div ref={triggerRef} id="trigger"></div>
-      <div className="w-vw pt-12 bg-foreground z-45 overflow-hidden">
+      <div className="w-vw pt-12 bg-foreground z-65 overflow-hidden">
         <section
           id="contact"
           ref={formRef}

@@ -4,7 +4,7 @@ import Proj from "../../Sections/Projects/Proj";
 
 export default function HeroProjects() {
   useEffect(() => {
-    const desktopSpeeds = [0.001, 0.002, 0.004, 0.003, 1,  0.005];
+    const desktopSpeeds = [0.002, 0.004, 0.008, 0.006, 1,  0.01];
 
     const handleResize = () => {
       window.location.reload();
@@ -49,8 +49,8 @@ export default function HeroProjects() {
           <h2 className="home-title pt-[110vh] text-background/80 text-2xl">123123</h2>
           <Proj />
         </div>
-        <div className="parallax-layer pointer-events-none fixed z-55 w-full left-0 top-0 -mt-0.5">
-          <div className="w-full h-screen bg-[url('/Layered/LayeredL4.png')] bg-cover bg-center"></div>
+        <div className="parallax-layer pointer-events-none fixed z-25 w-full left-0 top-0 -mt-0.5">
+          <div className="w-full h-svh bg-[url('/Layered/LayeredL4.png')] bg-cover bg-center"></div>
           <div className="w-full h-[50vh] bg-foreground"></div>
         </div>
       </div>
