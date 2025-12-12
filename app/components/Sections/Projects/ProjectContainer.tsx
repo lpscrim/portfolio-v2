@@ -35,14 +35,15 @@ export default function ProjectContainer() {
     <section id="heroProjects">
       <div
         id="parallax-container"
-        className="hidden sm:flex parallax-container relative overflow-x-hidden"
+        className="flex parallax-container relative overflow-x-hidden"
       >
         <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/LayeredL1.png')]"></div>
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/LayeredL8.png')] mt-0.5 z-5"></div>
-        <div className="parallax-layer pt-100 pointer-events-auto fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center z-7">
-          <h2 className="home-title mt-100 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2025</h2>
-          <h2 className="home-title mt-100 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2024</h2>
+        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex flex-col items-center justify-start z-7">
+          <h2 className="home-title mt-140 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2025</h2>
+          <h2 className="home-title mt-70 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2024</h2>
+          <h2 className="home-title mt-70 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2023</h2>        
         </div>
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/LayeredL3.png')] flex items-center justify-center z-10"></div>

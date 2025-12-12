@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (pathname === "/1" || pathname === "/2") {
+      if (pathname === "/projects" || pathname === "/2") {
         setIsFixed(true);
         return;
       }
@@ -80,9 +80,11 @@ export default function Header() {
         </div>
         {/* Logo */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
-          <h2 className="home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0">
-            lewis scrimgeour
-          </h2>
+          <Link href="/">
+            <h2 className="home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0">
+              lewis scrimgeour
+            </h2>
+          </Link>
         </div>
         {/* Mobile menu button */}
         <div className="flex-1 flex justify-end items-center">

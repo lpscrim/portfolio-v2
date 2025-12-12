@@ -1,11 +1,13 @@
-import ProjectContainer from "@/app/components/Sections/Projects/ProjectContainer";
+import ProjectContainer from "../components/Sections/Projects/ProjectContainer";
+import Header from "../components/Layout/Header";
 
 export default function ProjectsMain() {
     return (
-        <div className="min-h-[400svh]">
-            <div className="relative w-full">
+        <div className="">
+            <div className="relative w-full min-h-[500svh]">
                 <ProjectContainer />
             </div>
+            <Header />
         </div>
     )
 }
