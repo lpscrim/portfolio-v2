@@ -115,7 +115,7 @@ export default function Photo() {
             <div className="mt-10 flex justify-center">
             {photos.length > 3 && (
                 <Button
-                className="mt-4 px-4 py-2 bg-foreground text-background transition-all"
+                className="mt-4 px-4 py-2 bg-foreground text-background  transition-all"
                 onClick={handleShowAll}
                 >
                 {showAll ? "Show less" : "Show more"}
