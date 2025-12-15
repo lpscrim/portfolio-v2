@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Lewis Scrimgeour Web Design",
   description:
     "Portfolio website of Lewis Scrimgeour, a web designer and developer specializing in creating modern, responsive, and user-friendly websites.",
