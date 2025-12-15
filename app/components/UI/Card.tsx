@@ -38,8 +38,10 @@ export default function Card({
             src={content.vid}
             autoPlay
             loop
+            preload="metadata"
             muted
             playsInline
+            poster={content.img}
           />
         </div>
         <div
