@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lewis Scrimgeour Web Design",
+  title: "Lewis Scrimgeour",
   description:
     "Portfolio website of Lewis Scrimgeour, a web designer and developer specializing in creating modern, responsive, and user-friendly websites.",
   icons: [
