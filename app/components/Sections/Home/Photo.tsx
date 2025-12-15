@@ -95,7 +95,7 @@ export default function Photo() {
           <h2 ref={headingRef} className="mb-14 text-3xl font-semibold home-title lowercase text-foreground/90 tracking-wider underline">
             Photography
           </h2>
-          <p ref={paraRef}>
+          <p ref={paraRef} className="text-xl sm:text-2xl">
             We also specialise in photography, capturing stunning visuals that tell a story and evoke emotions. 
             <br />
             We offer a range of photography services including portrait, landscape, event, and product photography.

@@ -95,7 +95,7 @@ export default function About() {
           <h2 ref={headingRef} className="mb-14 text-3xl font-semibold home-title lowercase underline text-foreground/90">
             Web Design Studio
           </h2>
-          <p ref={paraRef}>
+          <p ref={paraRef} className="text-xl sm:text-2xl">
             We specialize in crafting beautiful, user-friendly websites that
             empower businesses to grow and succeed online. Whether you need a
             brand new site or a complete redesign, we have the expertise and
