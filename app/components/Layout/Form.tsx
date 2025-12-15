@@ -17,10 +17,21 @@ export default function Form() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    // Convert FormData to URL-encoded string
+    const formParams = new URLSearchParams();
+    formData.forEach((value, key) => {
+      if (typeof value === "string") {
+        formParams.append(key, value);
+      } else if (value instanceof File) {
+        formParams.append(key, value.name);
+      }
+    });
+
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/contact.html", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formParams.toString(),
       });
 
       if (response.ok) {
@@ -104,6 +115,8 @@ export default function Form() {
             <form
               onSubmit={handleSubmit}
               name="contact"
+              method="POST"
+              action="/contact.html"
               className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
               <input type="hidden" name="form-name" value="contact" />
