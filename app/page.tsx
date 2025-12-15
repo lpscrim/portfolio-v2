@@ -15,8 +15,10 @@ export default function Home() {
       <About />
       <Photo />
       <section id="trigger"></section>
-              <Form />
-              <Footer />
+      <div className="z-50 relative">        
+        <Form />
+        <Footer />
+      </div>
     </main>
   );
 }

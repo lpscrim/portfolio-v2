@@ -43,9 +43,9 @@ export default async function ProjectPage({
             />
           </div>
           <div className="w-full flex flex-col gap-y-2">
-            <h1 className="text-2xl px-2 font-bold mb-4">{project.title}</h1>
+            <h1 className="text-xl sm:text-2xl px-2 font-bold mb-4">{project.title}</h1>
 
-            <p className="w-full px-4 text-lg mb-4 whitespace-pre-line">
+            <p className="w-full px-4 sm:text-lg mb-4 whitespace-pre-line">
               {project.description}
             </p>
             <div className="w-full px-4 text-lg home-title ">
@@ -59,7 +59,7 @@ export default async function ProjectPage({
               </ul>
             </div>
           </div>
-          <div className="absolute home-title text-lg tracking-wider bottom-40 right-5 opacity-30 font-bold hover:opacity-100 transition-all duration-500">
+          <div className="absolute home-title text-lg tracking-wider bottom-45 right-5 opacity-30 font-bold hover:opacity-100 transition-all duration-500">
             <Link href="/projects">
               <p>all projects</p>
             </Link>
