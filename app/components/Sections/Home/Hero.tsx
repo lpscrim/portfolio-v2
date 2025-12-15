@@ -55,7 +55,7 @@ export default function Hero() {
         className="sm:hidden flex parallax-container relative overflow-x-hidden"
       >
         <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/Layered1.svg')]"></div>
-        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-2">
+        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-svh flex items-center justify-center z-2">
           {/* Mobile Title */}
           <h2
             className="home-title -mt-60 text-background/80 text-3xl fade-in border-2 border-transparent hover:border-background/80 rounded-sm pb-0.5 pt-1 px-1.5 transition-all duration-1500 cursor-pointer"
