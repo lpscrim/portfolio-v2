@@ -6,41 +6,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "../../UI/Card";
 import Link from "next/link";
+import projects from "../../../data/projects";
+
+const content = projects.slice(0, 4); 
 
 gsap.registerPlugin(ScrollTrigger);
 
-const content = [
-  {
-    title: "Hillside House",
-    description:
-      "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
-    img: "/projects/hls.svg",
-    vid: "/Vids/Hls.mp4",
-  },
-  {
-    title: "No Grout About It",
-    description:
-      "The brief of this website is to provide top-notch web design services that combine aesthetics with functionality.",
-    img: "/projects/gro1.svg",
-    vid: "/Vids/Gro.mp4",
-  },
 
-  {
-    title: "Cioch",
-    description:
-      "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
-    img: "/projects/cio1.svg",
-    vid: "/Vids/Cio.mp4",
-  },
-
-  {
-    title: "Lampman",
-    description:
-      "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
-    img: "/projects/lmp1.svg",
-    vid: "/Vids/Lmp.mp4",
-  },
-];
 
 export default function About() {
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
