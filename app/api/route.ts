@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
   });
 
   // Replace with your Netlify site form endpoint if needed
-  const NETLIFY_FORM_ENDPOINT = "https://your-site.netlify.app/";
+  const NETLIFY_FORM_ENDPOINT = "https://lpscrimv2.netlify.app";
 
   try {
     await fetch(NETLIFY_FORM_ENDPOINT, {
