@@ -99,7 +99,7 @@ export default function Form() {
           className="form-container pt-12 xl:pt-16 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
         >
           <h2 className="text-3xl lowercase home-title underline">Get in Touch</h2>
-          <div id="contact-form" className="w-full px-16 md:px-32 lg:px-38">
+          <div id="contact-form" className="w-full px-12 md:px-32 lg:px-38">
             {submitMessage && (
               <div
                 className={`mx-auto mt-4 max-w-2xl text-center p-4 rounded-xs ${
