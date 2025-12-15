@@ -57,7 +57,7 @@ const projects = [
       " A simple and fast portfolio website built using HTML, CSS, and vanilla JavaScript to achieve optimal performance and compliance.",
     description:
       "After using various frameworks for serverside projects and API requests, I decided to return to HTML/vanillaJS to create a simple and fast portfolio website. With no need for a virtual DOM or huge amounts of reusable components, a more simple approach felt more applicable. No vast libraries and dependencies were required, allowing for a more direct HTML led site. As a result the simple website has achieved 100% scores on lighthouse, is lightning fast and extremely compliant. Browsers that do not support Javascript will still be able to view the full site.",
-    img: "/projects/prof1.svg",
+    img: "/projects/prof1.png",
     vid: "/Vids/Pro.mp4",
     url: "https://lpscrim.netlify.app/",
     date: "2024-01-20",
