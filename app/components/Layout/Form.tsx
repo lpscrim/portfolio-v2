@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Form() {
   const formRef = useRef<HTMLDivElement>(null);
-  const triggerRef = useRef<HTMLElement>(null);
+  const triggerRef = useRef<HTMLDivElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<string | null>(null);
   const countryOptions = [
@@ -264,9 +264,6 @@ export default function Form() {
       if (response.ok) {
         setSubmitMessage("Thank you! Your message has been sent.");
         form.reset();
-        setTimeout(() => {
-          handleClose();
-        }, 2000);
       } else {
         throw new Error("Form submission failed");
       }
@@ -519,7 +516,7 @@ export default function Form() {
                 >
                   {isSubmitting ? "Sending..." : "Send"}
                 </button>
-                <div mailto="Lpscrim@gmail.com" className="cursor-pointer hover:text-secondary transition-colors duration-300"><span >Lpscrim@gmail.com</span></div>
+                <div mail-to="Lpscrim@gmail.com" className="cursor-pointer hover:text-secondary transition-colors duration-300"><span >Lpscrim@gmail.com</span></div>
               </div>
             </form>
           </div>

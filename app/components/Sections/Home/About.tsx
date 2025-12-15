@@ -47,6 +47,7 @@ export default function About() {
   const headingRef = useRef<HTMLHeadingElement | null>(null);
   const paraRef = useRef<HTMLParagraphElement | null>(null);
 
+  {/* Animations */}
   useEffect(() => {
     if (headingRef.current) {
       gsap.fromTo(
@@ -116,6 +117,7 @@ export default function About() {
       id="about"
       className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
     >
+      {/* About Section */}
       <div className="w-full py-37 px-10 bg-foreground/5">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
@@ -129,6 +131,7 @@ export default function About() {
           </p>
         </div>
       </div>
+      {/* Projects Section */}
       <div className="w-full pb-20 px-10 bg-foreground/5 ">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 className="mb-14 text-2xl font-semibold">Recent Projects</h2>
@@ -151,6 +154,7 @@ export default function About() {
               <Card content={item} />
             </div>
           ))}
+          {/* See more button */}
           <div className=" flex justify-center">
             <Button className="px-4 py-2 bg-foreground text-background transition-all">
               <Link href="/projects">

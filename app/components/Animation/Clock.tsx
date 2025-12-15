@@ -54,7 +54,7 @@ export default function Clock() {
         onClick={() => setShowClock(true)}
         style={{ zIndex: 10, cursor: "pointer" }}
       >
-        <Image src="/logo1.svg" alt="Logo" width={80} height={80} />
+        <Image src="/icon.svg" alt="Logo" width={80} height={80} />
       </div>
       {/* Clock */}
       <div

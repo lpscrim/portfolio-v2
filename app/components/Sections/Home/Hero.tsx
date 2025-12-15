@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 
 export default function Hero() {
+  {/* Parallax Effect */}
   useEffect(() => {
     const mobileSpeeds = [0.2, 0.3, 0.5, 0.6, 0.7];
     const desktopSpeeds = [0.1, 0.2, 0.4, 0.3, 1.4,  0.5];
@@ -14,6 +15,7 @@ export default function Hero() {
       const mobile = document.getElementById("parallax-container-mobile");
       const desktop = document.getElementById("parallax-container-desktop");
 
+      {/* Mobile Parallax */}
       if (mobile && window.innerWidth < 640) {
         const children = mobile.getElementsByClassName("parallax-layer");
         for (let i = 0; i < children.length; i++) {
@@ -23,6 +25,7 @@ export default function Hero() {
           ).style.transform = `translateY(${yPos}px)`;
         }
       }
+      {/* Desktop Parallax */}
       if (desktop && window.innerWidth >= 640) {
         const children = desktop.getElementsByClassName("parallax-layer");
         for (let i = 0; i < children.length; i++) {
@@ -44,6 +47,7 @@ export default function Hero() {
 
   return (
     <section id="hero">
+      {/* Parallax Containers */}
       <div
         id="parallax-container-mobile"
         className="sm:hidden flex parallax-container relative overflow-x-hidden"

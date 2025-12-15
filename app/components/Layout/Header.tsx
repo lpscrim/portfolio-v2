@@ -78,7 +78,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        {/* Logo */}
+        {/* Name */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
           <Link href="/">
             <h2 className="home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0">
@@ -86,7 +86,7 @@ export default function Header() {
             </h2>
           </Link>
         </div>
-        {/* Mobile menu button */}
+        {/* Mobile menu / logo */}
         <div className="flex-1 flex justify-end items-center">
           <div className="hidden md:flex">
             <Clock />

@@ -26,6 +26,7 @@ export default function Photo() {
   ];
 
   useEffect(() => {
+    {/* Animations */}
     if (headingRef.current) {
       gsap.fromTo(
         headingRef.current,
@@ -64,6 +65,7 @@ export default function Photo() {
   }, []);
 
   useEffect(() => {
+    {/* Responsive check */}
     function handleResize() {
       setLargeScreen(window.innerWidth >= 1280);
     }
@@ -72,6 +74,7 @@ export default function Photo() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  {/* Determine photos to display */}
   const visiblePhotos = !showAll ? (largeScreen ? photos.slice(0, 4) : photos.slice(0, 3)) : photos;
 
   const handleShowAll = () => {
@@ -86,6 +89,7 @@ export default function Photo() {
       id="photo"
       className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
     >
+      {/* Photography Section */}
       <div className="w-full py-35 px-10 bg-foreground/5 pb-50">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
@@ -98,6 +102,7 @@ export default function Photo() {
             Creating powerful brand identity and unique visual experiences.
           </p>
         </div>
+        {/* Photo Gallery */}
         <div className="mt-16 grid grid-cols-2 gap-4 max-w-7xl mx-auto">
             {visiblePhotos.map((photo, index) => (
             <div key={index} className="col-span-2 xl:col-span-1 max-w-4xl mx-auto pop-up">

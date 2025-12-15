@@ -1,121 +1,59 @@
+const projects = [
+  {
+    title: "Hillside House",
+    description:
+      "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
+    img: "/projects/hls.svg",
+    vid: "/Vids/Hls.mp4",
+  },
+
+  {
+    title: "Shopify kiosk QR" ,
+    description: ""
+  }
+  {
+    title: "No Grout About It",
+    brief:"This is the website for an independent tiling company, No Grout About It. Built with Next.js, it was designed to offer a modern, responsive, and user-friendly experience.",
+    description:
+      "The brief of this website is to provide top-notch web design services that combine aesthetics with functionality.",
+    img: "/projects/gro1.svg",
+    vid: "/Vids/Gro.mp4",
+  },
+
+  {
+    title: "Cioch",
+    description:
+      "This website aims to create stunning, responsive, and user-friendly websites that help businesses establish a strong online presence.",
+    img: "/projects/cio1.svg",
+    vid: "/Vids/Cio.mp4",
+  },
+
+  {
+    title: "Profile v.1",
+    description:
+      "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
+    img: "/projects/pro1.svg",
+    vid: "/Vids/Pro.mp4",
+  },
+
+
+
+  {
+    title: "Lampman",
+    description:
+      "A creative approach to a website that focuses on delivering exceptional user experiences through innovative design solutions.",
+    img: "/projects/lmp1.svg",
+    vid: "/Vids/Lmp.mp4",
+  },
+
+];
+
 export default function Proj() {
   return (
     <div className="relative w-full flex flex-col">
-      <div className="w-full h-screen flex flex-col items-center justify-center">
-      </div>
-      <div className="px-4 z-45 flex flex-col md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-        <div className="px-4 z-45 flex flex-col md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div><div className="px-4 z-45 flex flex-col md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div><div className="px-4 z-45 flex flex-col md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-
-
-
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">
-          Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
-      <div className="px-4 z-45 md:px-80 lg:px-16 py-8 lg:py-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl py-50 font-bold mb-6 text-blue-500">
-            Projects Section Content
-        </h2>
-        <p className="text-foreground/80">
-          This is where the projects content will go.
-        </p>
-      </div>
+      
+       
+      
     </div>
   );
 }

@@ -20,6 +20,7 @@ export default function Card({ content  }: { content: { title: string; descripti
                 playsInline
                 />
             </div>
+            {/* Overlay */}
             <div className={`px-4 py-2 sm:px-6`} style={{ position: "relative", zIndex: 10 }}>
                 <div className="text-base -mt-5 w-full justify-center flex">
                     <div className="md:text-xl inline-block rounded-xs group-hover:bg-background transition-all duration-700">
