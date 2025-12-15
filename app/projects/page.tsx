@@ -1,5 +1,6 @@
 import ProjectContainer from "../components/Sections/Projects/ProjectContainer";
-import Form from 
+import Form from "../components/Layout/Form";
+import Footer from "../components/Layout/Footer";
 
 export default function ProjectsMain() {
     return (
@@ -8,8 +9,10 @@ export default function ProjectsMain() {
                 <ProjectContainer />
             </div>
             <section id="trigger"></section>
-        <Form />
-        <Footer />
+        <div className="z-50 relative">
+          <Form />
+          <Footer />
+        </div>
         </section>
     )
 }

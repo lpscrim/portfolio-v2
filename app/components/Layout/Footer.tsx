@@ -1,6 +1,8 @@
+import Link from "next/link"
+
 export default function Footer() {
     return (
-        <footer className="w-full bg-foreground text-background pt-24 pb-6 text-center z-50">
+        <footer className="w-full bg-foreground text-background pt-18 pb-6 text-center z-50">
             <div className="w-full mx-auto px-18 xl:px-32 flex flex-col md:flex-row-reverse justify-between items-center">    
                 {/*Copyright*/}
                 <div>
@@ -10,6 +12,7 @@ export default function Footer() {
                 </div>
                 {/* Social Links */}
                 <div className="flex justify-center gap-6 mt-4">
+                   
                     <a
                         href="https://github.com/lpscrim"
                         target="_blank"
@@ -32,6 +35,15 @@ export default function Footer() {
                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/>
                         </svg>
                     </a>
+                     <Link
+                        href="/#contact"
+                        aria-label="Email"
+                        className="hover:text-secondary transition-colors duration-500"
+                    >
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z"/>
+                        </svg>
+                    </Link>
                 </div>
             </div>
         </footer>
