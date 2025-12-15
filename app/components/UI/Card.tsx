@@ -23,7 +23,6 @@ export default function Card({ content, main }: { content: { title: string; desc
                 playsInline
                 />
             </div>
-            {/* Overlay */}
             <div className={`px-4 py-2 sm:px-6`} style={{ position: "relative", zIndex: 10 }}>
                 <div className="text-base -mt-5 w-full justify-center flex">
                     <div className="md:text-xl inline-block rounded-xs group-hover:bg-background transition-all duration-700">
@@ -32,7 +31,7 @@ export default function Card({ content, main }: { content: { title: string; desc
                         }>{content.title}</h2>
                     </div>
                 </div>
-                <p className="hidden mt-2 text-sm text-foreground/80">{content.description}</p>
+                <p className={`mt-2 text-sm px-2 ` + (main ? "text-foreground/80" : "text-background/80")}>{content.description}</p>
             </div>
             </Link>
         </div>

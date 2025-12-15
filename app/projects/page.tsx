@@ -4,7 +4,7 @@ import Header from "../components/Layout/Header";
 export default function ProjectsMain() {
     return (
         <div className="">
-            <div className="relative w-full min-h-[480svh] sm:min-h-[520svh] md:min-h-[580svh] lg:min-h-[700svh] ">
+            <div className="relative w-full min-h-[570svh] sm:min-h-[590svh] md:min-h-[650svh] lg:min-h-[770svh] ">
                 <ProjectContainer />
             </div>
             <Header />

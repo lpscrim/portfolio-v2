@@ -5,7 +5,7 @@ import Proj from "../../Sections/Projects/Proj";
 export default function ProjectContainer() {
   {/* Parallax Effect */}
   useEffect(() => {
-    const desktopSpeeds = [0.004, 0.005, 0.3, 0.009, 1,  0.012];
+    const desktopSpeeds = [0.004, 0.005, 0.3, 0.008, 1,  0.009];
 
     const handleResize = () => {
       window.location.reload();
@@ -54,9 +54,9 @@ export default function ProjectContainer() {
         <div className="parallax-layer pointer-events-none fixed top-0 left-0 w-full h-4vh flex items-center justify-center z-15 px-1 sm:px-4">
           <Proj />
         </div>
-        <div className="parallax-layer pointer-events-none fixed z-25 w-full left-0 top-0 -mt-0.5">
+        <div className="parallax-layer pointer-events-none fixed z-25 w-full left-0 top-0 -mt-0.5 ">
           <div className="w-full h-svh bg-[url('/Layered/LayeredL4.png')] bg-cover bg-center"></div>
-          <div className="w-full h-[50vh] bg-foreground"></div>
+          <div className="w-full h-[50svh] -mt-px bg-foreground"></div>
         </div>
       </div>
     </section>
