@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
         {/* Hidden Netlify Form */}
-        <form name="contact" netlify hidden>
+        <form name="contact" data-netlify="true" hidden>
           <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="name" />
           <input type="text" name="company" />
