@@ -136,7 +136,7 @@ export default function Form() {
                   >
                     Name
                   </label>
-                  <div className="mt-2.5">
+                  <div className="mt-3.5">
                     <input
                       id="name"
                       name="name"
@@ -156,7 +156,7 @@ export default function Form() {
                   >
                     Company
                   </label>
-                  <div className="mt-2.5">
+                  <div className="mt-3.5">
                     <input
                       id="company"
                       name="company"
@@ -175,7 +175,7 @@ export default function Form() {
                   >
                     Email
                   </label>
-                  <div className="mt-2.5">
+                  <div className="mt-3.5">
                     <input
                       id="email"
                       name="email"
@@ -197,7 +197,7 @@ export default function Form() {
                   >
                     Message
                   </label>
-                  <div className="mt-2.5">
+                  <div className="mt-3.5">
                     <textarea
                       id="message"
                       name="message"
