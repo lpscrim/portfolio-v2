@@ -62,7 +62,7 @@ export default function Header() {
     <header
       className={`${
         isFixed ? "fixed top-0 " : "absolute -bottom-[52px] "
-      } left-0 z-200 w-lvw text-background transition-all duration-300`}
+      } left-0 z-9999 w-lvw text-background transition-all duration-300`}
     >
       <nav
         aria-label="Global"
