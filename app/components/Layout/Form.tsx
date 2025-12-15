@@ -115,8 +115,6 @@ export default function Form() {
             <form
               onSubmit={handleSubmit}
               name="contact"
-              method="POST"
-              action="/contact.html"
               className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
               <input type="hidden" name="form-name" value="contact" />
