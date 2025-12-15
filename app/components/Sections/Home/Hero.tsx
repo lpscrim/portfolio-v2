@@ -60,7 +60,7 @@ export default function Hero() {
   return (
     <section id="hero">
       {/* Tester Button */}
-      <div className="fixed top-4 right-4 z-9999 flex gap-2">
+      <div className="fixed top-4 right-20 z-999 flex gap-2 opacity-20">
         <button
           className={`px-2 py-1 rounded ${mode === "auto" ? "bg-secondary text-background" : "bg-background text-secondary"} border`}
           onClick={() => setMode("auto")}
