@@ -64,8 +64,8 @@ export default function Hero() {
             lewis scrimgeour
           </h2>
         </div>
-        <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/Layered2.svg')] z-5"></div>
-        <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/Layered3.svg')] flex items-center justify-center z-10"></div>
+        <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/Layered2.svg')] z-5"></div>
+        <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/Layered3.svg')] flex items-center justify-center z-10"></div>
         <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 ">
           <div className="w-full h-svh bg-[url('/Layered/Layered4.svg')] bg-cover bg-center"></div>
           <div className="w-full h-svh bg-foreground "></div>
