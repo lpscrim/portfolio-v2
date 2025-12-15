@@ -10,7 +10,6 @@ export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<string | null>(null);
 
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -19,19 +18,9 @@ export default function Form() {
     const formData = new FormData(form);
 
     try {
-      const formParams = new URLSearchParams();
-      formData.forEach((value, key) => {
-        if (typeof value === "string") {
-          formParams.append(key, value);
-        } else if (value instanceof File) {
-          formParams.append(key, value.name);
-        }
-      });
-
-      const response = await fetch("/contact.html", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formParams.toString(),
+        body: formData,
       });
 
       if (response.ok) {
@@ -44,7 +33,7 @@ export default function Form() {
       setSubmitMessage(
         "Sorry, there was an error sending your message. Please try again."
       );
-      console.log('error:'+ error)
+      console.log("error:" + error);
     } finally {
       setIsSubmitting(false);
     }
@@ -68,17 +57,14 @@ export default function Form() {
       invalidateOnRefresh: true,
     });
 
-    // Refresh on resize for dynamic layouts
     const handleResize = () => ScrollTrigger.refresh();
     window.addEventListener("resize", handleResize);
 
-    // Optionally, refresh when images load
     const imgs = document.querySelectorAll("img");
     imgs.forEach((img) => {
       img.addEventListener("load", handleResize);
     });
 
-    // Initial refresh after mount
     ScrollTrigger.refresh();
 
     return () => {
@@ -116,19 +102,10 @@ export default function Form() {
             )}
 
             <form
-              name="contact-2"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
-              <input type="hidden" name="form-name" value="contact-2" />
-              <input type="hidden" name="form-type" value="Contact" />
-              <input type="hidden" name="bot-field" />
-
               <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:gap-y-6 sm:grid-cols-2">
-               
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="name"
@@ -187,8 +164,6 @@ export default function Form() {
                     />
                   </div>
                 </div>
-
-                
 
                 <div className="sm:col-span-2">
                   <label

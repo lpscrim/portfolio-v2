@@ -50,7 +50,7 @@ export default async function ProjectPage({
           </p>
           <div className="w-full px-4 text-lg home-title ">
             <ul className="px-4">
-              <li className="hover:opacity-100 opacity-75  transition-all duration-500">
+              <li className="hover:opacity-100 opacity-75 transition-all duration-500">
                 <Link href={`/projects`} className="cursor-crosshair">{project.slug}</Link></li>
               <li className="opacity-75">{project.slug}</li>
             </ul>
