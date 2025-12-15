@@ -1,12 +1,14 @@
+import Header from "@/app/components/Layout/Header";
 
 export default function ProjectsLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-
-return (
+  return (
     <main className="flex flex-col w-full bg-background min-h-svh z-50 relative">
-        {children}
+    <Header />
+      {children}
     </main>
-)}
+  );
+}

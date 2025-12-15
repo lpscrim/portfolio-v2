@@ -16,7 +16,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (pathname === "/projects" || pathname === "/2") {
+      if (pathname !== "/" || pathname === "/projects/") {
         setIsFixed(true);
         return;
       }

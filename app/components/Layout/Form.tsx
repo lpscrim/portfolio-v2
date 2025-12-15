@@ -9,234 +9,7 @@ export default function Form() {
   const triggerRef = useRef<HTMLDivElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<string | null>(null);
-  const countryOptions = [
-    "UK",
-    "AF",
-    "AL",
-    "DZ",
-    "AS",
-    "AD",
-    "AO",
-    "AI",
-    "AQ",
-    "AG",
-    "AR",
-    "AM",
-    "AW",
-    "AU",
-    "AT",
-    "AZ",
-    "BS",
-    "BH",
-    "BD",
-    "BB",
-    "BY",
-    "BE",
-    "BZ",
-    "BJ",
-    "BM",
-    "BT",
-    "BO",
-    "BA",
-    "BW",
-    "BV",
-    "BR",
-    "BN",
-    "BG",
-    "BF",
-    "BI",
-    "KH",
-    "CM",
-    "CA",
-    "CV",
-    "KY",
-    "CF",
-    "TD",
-    "CL",
-    "CN",
-    "CX",
-    "CC",
-    "CO",
-    "KM",
-    "CG",
-    "CK",
-    "CR",
-    "CI",
-    "HR",
-    "CU",
-    "CY",
-    "CZ",
-    "DK",
-    "DJ",
-    "DM",
-    "DO",
-    "TL",
-    "EC",
-    "EG",
-    "SV",
-    "GQ",
-    "ER",
-    "EE",
-    "ET",
-    "FK",
-    "FJ",
-    "FI",
-    "FR",
-    "GF",
-    "PF",
-    "GA",
-    "GM",
-    "GE",
-    "DE",
-    "GH",
-    "GI",
-    "GR",
-    "GL",
-    "GD",
-    "GP",
-    "GU",
-    "GT",
-    "GN",
-    "GW",
-    "GY",
-    "HT",
-    "HN",
-    "HK",
-    "HU",
-    "IS",
-    "IN",
-    "ID",
-    "IR",
-    "IQ",
-    "IE",
-    "IL",
-    "IT",
-    "JM",
-    "JP",
-    "JO",
-    "KZ",
-    "KE",
-    "KI",
-    "KP",
-    "KR",
-    "KW",
-    "KG",
-    "LA",
-    "LV",
-    "LB",
-    "LS",
-    "LR",
-    "LY",
-    "LI",
-    "LT",
-    "LU",
-    "MO",
-    "MK",
-    "MG",
-    "MW",
-    "MY",
-    "MV",
-    "ML",
-    "MT",
-    "MH",
-    "MQ",
-    "MR",
-    "MU",
-    "YT",
-    "MX",
-    "FM",
-    "MD",
-    "MC",
-    "MN",
-    "MS",
-    "MA",
-    "MZ",
-    "MM",
-    "NA",
-    "NR",
-    "NP",
-    "NL",
-    "NZ",
-    "NI",
-    "NE",
-    "NG",
-    "NU",
-    "NF",
-    "NO",
-    "OM",
-    "PK",
-    "PW",
-    "PA",
-    "PG",
-    "PY",
-    "PE",
-    "PH",
-    "PN",
-    "PL",
-    "PT",
-    "PR",
-    "QA",
-    "RE",
-    "RO",
-    "RU",
-    "RW",
-    "KN",
-    "LC",
-    "VC",
-    "WS",
-    "SM",
-    "SA",
-    "RS",
-    "SN",
-    "SC",
-    "SL",
-    "SG",
-    "SK",
-    "SI",
-    "SB",
-    "SO",
-    "ZA",
-    "ES",
-    "LK",
-    "SH",
-    "SD",
-    "SR",
-    "SZ",
-    "SE",
-    "CH",
-    "SY",
-    "TW",
-    "TJ",
-    "TZ",
-    "TH",
-    "TG",
-    "TK",
-    "TO",
-    "TT",
-    "TN",
-    "TR",
-    "TM",
-    "TV",
-    "UG",
-    "UA",
-    "AE",
-    "GB",
-    "US",
-    "UY",
-    "UZ",
-    "VU",
-    "VA",
-    "VE",
-    "VN",
-    "VG",
-    "VI",
-    "EH",
-    "YE",
-    "CD",
-    "ZM",
-    "ZW",
-    "XX",
-  ];
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -355,40 +128,21 @@ export default function Form() {
               <input type="hidden" name="bot-field" />
 
               <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:gap-y-6 sm:grid-cols-2">
-                <div>
+               
+                <div className="sm:col-span-2">
                   <label
-                    htmlFor="first-name"
+                    htmlFor="name"
                     className="block text-sm/6 font-semibold text-background"
                   >
-                    First name
+                    Name
                   </label>
                   <div className="mt-2.5">
                     <input
-                      id="first-name"
-                      name="first-name"
+                      id="name"
+                      name="name"
                       type="text"
                       required
-                      autoComplete="given-name"
-                      disabled={isSubmitting}
-                      className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm/6 font-semibold text-background"
-                  >
-                    Last name
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      id="last-name"
-                      name="last-name"
-                      type="text"
-                      required
-                      autoComplete="family-name"
+                      autoComplete="name"
                       disabled={isSubmitting}
                       className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
                     />
@@ -434,55 +188,7 @@ export default function Form() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="phone-number"
-                    className="block text-sm/6 font-semibold text-background"
-                  >
-                    Phone number
-                  </label>
-                  <div className="mt-2.5">
-                    <div className="flex rounded-xs bg-background/80 outline-1 -outline-offset-1 outline-secondary/60 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-accent">
-                      <div className="grid shrink-0 grid-cols-1 focus-within:relative">
-                        <select
-                          id="country"
-                          name="country"
-                          autoComplete="country"
-                          aria-label="Country"
-                          disabled={isSubmitting}
-                          className="col-start-1 row-start-1 w-full appearance-none rounded-xs py-2 pr-7 pl-3.5 text-base text-foreground/80 placeholder:text-background/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent sm:text-sm/6 disabled:opacity-50"
-                          defaultValue="UK"
-                        >
-                          {countryOptions.map((country) => (
-                            <option key={country}>{country}</option>
-                          ))}
-                        </select>
-                        <svg
-                          aria-hidden="true"
-                          className="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-foreground/80 sm:size-4"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </div>
-                      <input
-                        id="phone-number"
-                        name="phone-number"
-                        type="text"
-                        placeholder="07123456789"
-                        disabled={isSubmitting}
-                        className="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-foreground placeholder:text-foreground/50 focus:outline-none sm:text-sm/6 disabled:opacity-50"
-                      />
-                    </div>
-                  </div>
-                </div>
+                
 
                 <div className="sm:col-span-2">
                   <label
@@ -495,7 +201,7 @@ export default function Form() {
                     <textarea
                       id="message"
                       name="message"
-                      rows={2}
+                      rows={4}
                       required
                       disabled={isSubmitting}
                       className="block w-full rounded-xs bg-background/80 px-3.5 py-2 text-base text-foreground outline-1 -outline-offset-1 outline-secondary/60 placeholder:text-foreground/50 focus:outline-2 focus:-outline-offset-2 focus:outline-accent disabled:opacity-50"
