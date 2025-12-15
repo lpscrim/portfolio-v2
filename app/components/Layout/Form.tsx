@@ -103,7 +103,7 @@ export default function Form() {
 
             <form
               onSubmit={handleSubmit}
-              netlify
+              data-netlify="true"
               className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
               <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:gap-y-6 sm:grid-cols-2">
