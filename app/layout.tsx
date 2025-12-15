@@ -41,9 +41,7 @@ export default function RootLayout({
       >
         
         <div className="flex-1 flex flex-col">{children}</div>
-        <section id="trigger"></section>
-        <Form />
-        <Footer />
+        
       </body>
       <LenisScroll />
     </html>

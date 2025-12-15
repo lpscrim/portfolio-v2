@@ -62,11 +62,11 @@ export default function Header() {
     <header
       className={`${
         isFixed ? "fixed top-0 " : "absolute -bottom-[52px] "
-      } left-0 z-9999 w-lvw text-background transition-all duration-300`}
+      } left-0 z-999 w-lvw text-background transition-all duration-300`}
     >
       <nav
         aria-label="Global"
-        className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 max"
+        className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 "
       >
         {/* Desktop links */}
         <div className="hidden md:flex flex-1 items-center lowercase home-title text-background tracking-wide">

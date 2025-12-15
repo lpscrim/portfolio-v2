@@ -1,4 +1,5 @@
 import ProjectContainer from "../components/Sections/Projects/ProjectContainer";
+import Form from 
 
 export default function ProjectsMain() {
     return (
@@ -6,6 +7,9 @@ export default function ProjectsMain() {
             <div className="relative w-full min-h-[570svh] sm:min-h-[590svh] md:min-h-[650svh] lg:min-h-[770svh] ">
                 <ProjectContainer />
             </div>
+            <section id="trigger"></section>
+        <Form />
+        <Footer />
         </section>
     )
 }
