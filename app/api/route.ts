@@ -3,15 +3,14 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   const formData = await req.formData();
 
-  // Optionally, validate or process the data here
 
-  // Forward to Netlify (required for Netlify Forms detection)
+  // Forward to Netlify 
   const data = new URLSearchParams();
   formData.forEach((value, key) => {
     data.append(key, value.toString());
   });
 
-  // Replace with your Netlify site form endpoint if needed
+ 
   const NETLIFY_FORM_ENDPOINT = "https://lpscrimv2.netlify.app";
 
   try {
