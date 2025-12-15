@@ -37,11 +37,25 @@ export default function Header() {
 
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    const el = document.getElementById(id);
     setMobileMenuOpen(false);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+
+    const scrollToElement = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+
+        // Check if fully in view after a short delay, and scroll again if needed
+        setTimeout(() => {
+          const rect = el.getBoundingClientRect();
+          if (rect.bottom > window.innerHeight) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 400); // adjust delay as needed
+      }
+    };
+
+    // Wait for next paint to ensure layout is updated
+    requestAnimationFrame(scrollToElement);
   };
 
   return (
