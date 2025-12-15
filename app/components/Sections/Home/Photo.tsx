@@ -92,7 +92,7 @@ export default function Photo() {
       {/* Photography Section */}
       <div className="w-full py-35 px-10 bg-foreground/5 pb-50">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
-          <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
+          <h2 ref={headingRef} className="mb-14 text-3xl font-semibold home-title lowercase text-foreground/90 tracking-wider underline">
             Photography
           </h2>
           <p ref={paraRef}>

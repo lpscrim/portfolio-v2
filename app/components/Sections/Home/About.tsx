@@ -92,7 +92,7 @@ export default function About() {
       {/* About Section */}
       <div className="w-full py-37 px-10 bg-foreground/5">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
-          <h2 ref={headingRef} className="mb-14 text-2xl font-semibold">
+          <h2 ref={headingRef} className="mb-14 text-3xl font-semibold home-title lowercase underline text-foreground/90">
             Web Design Studio
           </h2>
           <p ref={paraRef}>
@@ -106,7 +106,7 @@ export default function About() {
       {/* Projects Section */}
       <div className="w-full pb-20 px-10 bg-foreground/5 ">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
-          <h2 className="mb-14 text-2xl font-semibold">Recent Projects</h2>
+          <h2 className="mb-14 text-3xl font-semibold lowercase home-title underline">Recent Projects</h2>
         </div>
         <div className="max-w-5xl mx-auto text-foreground flex flex-col gap-10 lg:gap-16">
           {content.map((item, index) => (
