@@ -151,7 +151,7 @@ export default function About() {
                 transform: "translateY(40px)",
               }}
             >
-              <Card content={item} />
+              <Card content={item} main={true} />
             </div>
           ))}
           {/* See more button */}
