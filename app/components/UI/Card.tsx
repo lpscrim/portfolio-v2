@@ -32,7 +32,7 @@ export default function Card({
         />
 
         {/* Content */}
-        <div className="px-4 py-5 md:px-8 md:py-7 xl:p-14 relative items-center justify-center flex z-10 ">
+        <div className="px-4 py-8 md:px-8 md:py-7 xl:p-14 relative items-center justify-center flex z-10 ">
           <video
             className="w-full h-auto object-cover rounded-sm aspect-video max-w-4xl "
             src={content.vid}

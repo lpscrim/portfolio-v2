@@ -225,3 +225,45 @@ body {
  transform: translateY(0px);
  width: 100%;
 }
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) scaleY(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-1%) scaleY(1.1);
+  }
+  80% {
+    transform: translateX(0%) scaleY(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scaleY(1);
+  }
+}
+
+@keyframes bounce-normal {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-in-right {
+  animation:
+    bounce-in-right 10s ease-in-out 0s 1 both,
+    bounce-normal 3s 10s infinite;
+}
