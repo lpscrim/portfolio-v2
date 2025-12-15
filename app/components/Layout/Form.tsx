@@ -103,7 +103,6 @@ export default function Form() {
 
             <form
               onSubmit={handleSubmit}
-              data-netlify="true"
               name="contact"
               className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
