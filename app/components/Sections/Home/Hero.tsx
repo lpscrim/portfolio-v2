@@ -54,7 +54,13 @@ export default function Hero() {
       >
         <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/Layered1.svg')]"></div>
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-2">
-          <h2 className="home-title -mt-60 text-background/80 text-3xl fade-in border-2 border-transparent hover:border-background/80 rounded-sm pb-0.5 pt-1 px-1.5 transition-all duration-1500">lewis scrimgeour</h2>
+          {/* Mobile Title */}
+          <h2
+            className="home-title -mt-60 text-background/80 text-3xl fade-in border-2 border-transparent hover:border-background/80 rounded-sm pb-0.5 pt-1 px-1.5 transition-all duration-1500 cursor-pointer"
+            onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            lewis scrimgeour
+          </h2>
         </div>
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/Layered2.svg')] z-5"></div>
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/Layered3.svg')] flex items-center justify-center z-10"></div>
@@ -71,7 +77,13 @@ export default function Hero() {
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/LayeredL8.png')] mt-0.5 z-5"></div>
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-full flex items-center justify-center z-7">
-          <h2 className="home-title -mt-22 xl:-mt-28  text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">lewis scrimgeour</h2>
+          {/* Desktop Title */}
+          <h2
+            className="home-title -mt-22 xl:-mt-28 text-background text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2 cursor-pointer"
+            onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            lewis scrimgeour
+          </h2>
         </div>
 
         <div className="parallax-layer pointer-events-none h-full fixed bg-[url('/Layered/LayeredL3.png')] flex items-center justify-center z-10"></div>
