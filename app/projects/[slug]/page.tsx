@@ -51,11 +51,11 @@ export default async function ProjectPage({
             <div className="w-full px-4 text-lg home-title ">
               <ul className="px-4">
                 <li className="hover:opacity-100 opacity-75 transition-all duration-500">
-                  <Link href={`/projects`} className="cursor-crosshair">
-                    {project.slug}
+                  <Link href={project.url} target="_blank" className="cursor-crosshair">
+                    {project.url.replace(/^https?:\/\/(www\.)?/, "")}
                   </Link>
                 </li>
-                <li className="opacity-75">{project.slug}</li>
+                <li className="opacity-75">{project.date}</li>
               </ul>
             </div>
           </div>
