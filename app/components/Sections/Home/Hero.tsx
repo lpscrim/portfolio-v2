@@ -8,7 +8,7 @@ export default function Hero() {
     const desktopSpeeds = [0.1, 0.2, 0.4, 0.3, 1.4,  0.5];
 
     const handleResize = () => {
-      if (desktop && window.innerWidth >= 640) {
+      if ( window.innerWidth >= 640) {
         window.location.reload();
       }
     };
