@@ -117,7 +117,7 @@ export default function Photo() {
         <div className="max-w-3xl  mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2
             ref={headingRef}
-            className="hidden sm:block mb-8 sm:mb-14 text-2xl sm:text-3xl home-title lowercase text-foreground/90 tracking-wider underline"
+            className="hidden mb-8 sm:mb-14 text-2xl sm:text-3xl home-title lowercase text-foreground/90 tracking-wider underline"
           >
             Photography
           </h2>
@@ -127,7 +127,7 @@ export default function Photo() {
           </p>
         </div>
         {/* Photo Gallery */}
-        <div className="px-2 mt-16 grid grid-cols-2 2xl:grid-cols-3 gap-4 max-w-7xl 2xl:max-w-[1600px] mx-auto">
+        <div className="px-2 mt-16 grid grid-cols-2 2xl:grid-cols-3 gap-4  mx-auto">
           {visiblePhotos.map((photo, index) => (
             <div
               key={index}
