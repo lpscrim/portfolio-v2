@@ -48,7 +48,7 @@ export default function ProjectContainer() {
         <div className="parallax-layer pointer-events-none h-[105lvh] fixed bg-[url('/Layered/LayeredL8.png')] mt-0.5 z-5"></div>
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-[105lvh] flex flex-col items-center justify-start z-7">
           <h2 className="xl:ml-180 md:ml-160 sm:ml-140 ml-85  home-title mt-170 md:mt-180  text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2025</h2>
-          <h2 className="xl:ml-180 md:ml-160 sm:ml-140 ml-85 home-title mt-120 md:mt-180 xl:mt-200 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2024</h2>
+          <h2 className="xl:ml-180 md:ml-160 sm:ml-140 ml-85 home-title mt-120 md:mt-140 xl:mt-200 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2024</h2>
           <h2 className="hidden xl:ml-180 md:ml-160 sm:ml-140 ml-85 home-title mt-80 text-background text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">2023</h2>        
         </div>
 
