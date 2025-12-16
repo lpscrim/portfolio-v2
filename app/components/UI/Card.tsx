@@ -25,7 +25,8 @@ export default function Card({
     if (!card || !video) return;
 
     function checkInMiddle() {
-      const rect = card.getBoundingClientRect();
+      if (!cardRef.current || !videoRef.current) return;
+      const rect = cardRef.current.getBoundingClientRect();
       const vh = window.innerHeight;
       const middleStart = vh * 0.25;
       const middleEnd = vh * 0.75;
@@ -33,10 +34,10 @@ export default function Card({
       const active = cardMiddle >= middleStart && cardMiddle <= middleEnd;
       setIsActive(active);
       if (active) {
-        video.play();
+        if (videoRef.current.play) videoRef.current.play();
       } else {
-        video.pause();
-        video.currentTime = 0;
+        if (videoRef.current.pause) videoRef.current.pause();
+        if (typeof videoRef.current.currentTime === 'number') videoRef.current.currentTime = 0;
       }
     }
 
