@@ -21,7 +21,7 @@ export default async function ProjectPage({
     <div>
       <section
         id="projectPage"
-        className="max-w-6xl text-foreground mx-auto py-16 lg:px-8"
+        className="max-w-6xl text-foreground mx-auto py-20 min-h-svh lg:px-8"
       >
         <div className="px-2 flex mb-16 flex-col gap-y-8">
           <div className="relative w-full px-2 sm:px-8 sm:py-8 lg:px-12 lg:py-12 xl:px-24 xl:py-18 py-6 rounded-sm overflow-hidden">

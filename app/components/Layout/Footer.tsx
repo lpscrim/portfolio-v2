@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-foreground text-background pt-18 pb-6 text-center z-50">
+        <footer className="w-full bg-foreground text-background pt-10 pb-10 text-center z-50">
             <div className="w-full mx-auto px-18 xl:px-32 flex flex-col md:flex-row-reverse justify-between items-center">    
                 {/*Copyright*/}
                 <div>
