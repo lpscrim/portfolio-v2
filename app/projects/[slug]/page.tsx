@@ -43,26 +43,32 @@ export default async function ProjectPage({
             />
           </div>
           <div className="w-full flex flex-col gap-y-2">
-            <h1 className="text-xl sm:text-2xl px-2 font-bold mb-4">{project.title}</h1>
+            <h1 className="text-xl sm:text-2xl px-2 font-bold mb-4">
+              {project.title}
+            </h1>
 
             <p className="w-full px-4 sm:text-lg mb-4 whitespace-pre-line">
               {project.description}
             </p>
-            <div className="w-full px-4 text-lg home-title ">
+            <div className="flex flex-row justify-between w-full px-4 text-lg home-title">
               <ul className="px-4">
                 <li className="hover:opacity-100 opacity-75 transition-all duration-500">
-                  <Link href={project.url} target="_blank" className="cursor-crosshair">
+                  <Link
+                    href={project.url}
+                    target="_blank"
+                    className="cursor-crosshair"
+                  >
                     {project.url.replace(/^https?:\/\/(www\.)?/, "")}
                   </Link>
                 </li>
                 <li className="opacity-75">{project.date}</li>
               </ul>
+              <div className="flex flex-col justify-end home-title px-4 text-lg tracking-wider opacity-40 hover:opacity-100 transition-all duration-500">
+                <Link href="/projects">
+                  <p>all projects</p>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="absolute home-title text-lg tracking-wider bottom-45 right-5 opacity-30 font-bold hover:opacity-100 transition-all duration-500">
-            <Link href="/projects">
-              <p>all projects</p>
-            </Link>
           </div>
         </div>
       </section>
