@@ -62,12 +62,13 @@ export default async function ProjectPage({
                   </Link>
                 </li>
                 <li className="opacity-75">{project.date}</li>
-                {project.tech.map((tech) => (
+                {project.tech.map((tech, idx) => (
                   <li
-                    key={tech}
+                    key={tech + idx}
                     className="inline lowercase mr-2 opacity-75"
                   >
                     {tech}
+                    {idx < project.tech.length - 1 ? "/" : ""}
                   </li>
                 ))}
                 
