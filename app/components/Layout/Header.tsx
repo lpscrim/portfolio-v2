@@ -84,8 +84,7 @@ export default function Header() {
               PHOTO
             </Link>
             <Link
-              href="#contact"
-              onClick={e => handleSmoothScroll(e, "contact")}
+              href="/#contact"
               className="hover:text-secondary rounded-xs px-2 transition-all duration-500"
             >
               CONTACT

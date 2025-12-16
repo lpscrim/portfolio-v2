@@ -78,6 +78,14 @@ export default function Form() {
 
     ScrollTrigger.refresh();
 
+    // After a short delay, re-scroll to the anchor if present
+    setTimeout(() => {
+      if (window.location.hash === "#contact") {
+        const el = document.getElementById("contact");
+        if (el) el.scrollIntoView({ behavior: "auto" });
+      }
+    }, 650); 
+
     return () => {
       uncover.kill();
       st.kill();
@@ -96,7 +104,7 @@ export default function Form() {
         <section
           id="contact"
           ref={formRef}
-          className="form-container pt-12 xl:pt-16 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
+          className="form-container  pt-12 xl:pt-16 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
         >
           <h2 className="text-3xl lowercase home-title underline">Get in Touch</h2>
           <div id="contact-form" className="w-full px-12 md:px-32 lg:px-38">
