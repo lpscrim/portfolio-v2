@@ -90,9 +90,9 @@ export default function Photo() {
       className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
     >
       {/* Photography Section */}
-      <div className="w-full py-35 px-10 bg-foreground/5 pb-50">
+      <div className="w-full py-35 sm:px-10 bg-foreground/5 pb-50">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
-          <h2 ref={headingRef} className="mb-14 text-3xl font-semibold home-title lowercase text-foreground/90 tracking-wider underline">
+          <h2 ref={headingRef} className="mb-8 sm:mb-14 text-2xl sm:text-3xl home-title lowercase text-foreground/90 tracking-wider underline">
             Photography
           </h2>
           <p ref={paraRef} className="text-xl sm:text-2xl">
@@ -103,7 +103,7 @@ export default function Photo() {
           </p>
         </div>
         {/* Photo Gallery */}
-        <div className="mt-16 grid grid-cols-2 gap-4 max-w-7xl mx-auto">
+        <div className="px-2 mt-16 grid grid-cols-2 gap-4 max-w-7xl mx-auto">
             {visiblePhotos.map((photo, index) => (
             <div key={index} className="col-span-2 xl:col-span-1 max-w-4xl mx-auto pop-up">
                 <Image
