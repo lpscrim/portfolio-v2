@@ -93,19 +93,19 @@ export default function About() {
       <div className="w-full py-37 sm:px-10 bg-foreground/5">
         <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 ref={headingRef} className="mb-8 sm:mb-14 text-2xl sm:text-3xl home-title lowercase underline text-foreground/90">
-            Web Design Studio
+            Web Design / Development
           </h2>
           <p ref={paraRef} className="text-xl sm:text-2xl">
-            We specialize in crafting beautiful, user-friendly websites that
+            Crafting beautiful, unique websites that
             empower businesses to grow and succeed online. Whether you need a
             brand new site or a complete redesign, we have the expertise and
             creativity to bring your vision to life with exceptional results.
           </p>
-        </div>
+        </div> 
       </div>
       {/* Projects Section */}
       <div className="w-full pb-20 sm:px-10 bg-foreground/5 ">
-        <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
+        <div className="hidden max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
           <h2 className="mb-8 sm:mb-14 text-2xl sm:text-3xl lowercase home-title underline">Recent Projects</h2>
         </div>
         <div className="px-2 max-w-5xl mx-auto text-foreground flex flex-col gap-10 lg:gap-16">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRef, useEffect, useState } from "react";
 
 export default function Card({
   content,
@@ -14,8 +15,49 @@ export default function Card({
   };
   main?: boolean;
 }) {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const card = cardRef.current;
+    const video = videoRef.current;
+    if (!card || !video) return;
+
+    function checkInMiddle() {
+      const rect = card.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const middleStart = vh * 0.25;
+      const middleEnd = vh * 0.75;
+      const cardMiddle = rect.top + rect.height / 2;
+      const active = cardMiddle >= middleStart && cardMiddle <= middleEnd;
+      setIsActive(active);
+      if (active) {
+        video.play();
+      } else {
+        video.pause();
+        video.currentTime = 0;
+      }
+    }
+
+    checkInMiddle();
+    window.addEventListener("scroll", checkInMiddle, { passive: true });
+    window.addEventListener("resize", checkInMiddle);
+
+    return () => {
+      window.removeEventListener("scroll", checkInMiddle);
+      window.removeEventListener("resize", checkInMiddle);
+    };
+  }, []);
+
   return (
-    <div className="group w-full h-full overflow-hidden rounded-sm hover:shadow-md cursor-pointer justify-center flex flex-col relative transition-all duration-500 ease-in-out">
+    <div
+      ref={cardRef}
+      className={
+        "group w-full h-full overflow-hidden rounded-sm hover:shadow-md cursor-pointer justify-center flex flex-col relative transition-all duration-500 ease-in-out " +
+        (isActive ? "brightness-100" : "brightness-90")
+      }
+    >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
         {/* Background image */}
         <div
@@ -26,18 +68,17 @@ export default function Card({
           className={
             `absolute inset-0 w-full h-full ` +
             (main
-              ? "bg-background/75 backdrop-blur"
-              : " bg-foreground/75 backdrop-blur")
+              ? "bg-background/65 backdrop-blur"
+              : " bg-foreground/65 backdrop-blur")
           }
         />
 
         {/* Content */}
-        <div className="px-4 py-8 md:px-8 md:py-7 xl:p-14 relative items-center justify-center flex z-10 ">
+        <div className="px-4 py-4 md:px-6 md:py-6 lg:px-10 lg:py-10 xl:px-12 xl:py-12 relative items-center justify-center flex z-10 ">
           <video
-            className="w-full h-auto object-cover rounded-sm aspect-video max-w-4xl "
+            ref={videoRef}
+            className="w-full h-auto object-cover rounded-sm aspect-video "
             src={content.vid}
-            autoPlay
-            loop
             preload="metadata"
             muted
             playsInline
@@ -52,7 +93,7 @@ export default function Card({
             <div className={`md:text-xl inline-block rounded-xs ` + (main ? "group-hover:bg-background transition-all duration-700" : "")} >
               <h2
                 className={
-                  `group-hover:bg-foreground/5 px-4 lowercase home-title tracking-wide pt-0.5 transition-all duration-700 text-xl` +
+                  `group-hover:bg-foreground/5 px-4 lowercase home-title tracking-wide pt-0.5 transition-all duration-700 text-lg sm:text-xl` +
                   (main ? " text-foreground" : " text-background")
                 }
               >
