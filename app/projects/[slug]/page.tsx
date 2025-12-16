@@ -21,7 +21,7 @@ export default async function ProjectPage({
     <div>
       <section
         id="projectPage"
-        className="max-w-6xl text-foreground mx-auto py-20 min-h-svh lg:px-8"
+        className="max-w-6xl text-foreground mx-auto pt-16 min-h-svh lg:px-8"
       >
         <div className="px-2 flex mb-16 flex-col gap-y-8">
           <div className="relative w-full px-2 sm:px-8 sm:py-8 lg:px-12 lg:py-12 xl:px-24 xl:py-18 py-6 rounded-sm overflow-hidden">
@@ -42,15 +42,15 @@ export default async function ProjectPage({
               className="w-full rounded z-10 relative"
             />
           </div>
-          <div className="w-full flex flex-col gap-y-2">
+          <div className="w-full flex flex-col gap-y-4">
             <h1 className="text-xl sm:text-2xl px-2 font-bold mb-4">
               {project.title}
             </h1>
 
-            <p className="w-full px-4 sm:text-lg mb-4 whitespace-pre-line">
+            <p className="w-full px-4 sm:text-lg whitespace-pre-line">
               {project.description}
             </p>
-            <div className="flex flex-row justify-between w-full px-4 text-lg home-title">
+            <div className="mt-6 flex flex-row justify-between w-full text-lg home-title">
               <ul className="px-4">
                 <li className="hover:opacity-100 opacity-75 transition-all duration-500">
                   <Link
@@ -62,6 +62,15 @@ export default async function ProjectPage({
                   </Link>
                 </li>
                 <li className="opacity-75">{project.date}</li>
+                {project.tech.map((tech) => (
+                  <li
+                    key={tech}
+                    className="inline lowercase mr-2 opacity-75"
+                  >
+                    {tech}
+                  </li>
+                ))}
+                
               </ul>
               <div className="flex flex-col justify-end home-title px-4 text-lg tracking-wider opacity-40 hover:opacity-100 transition-all duration-500">
                 <Link href="/projects">

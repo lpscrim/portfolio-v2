@@ -10,6 +10,7 @@ const projects = [
     vid: "/Vids/Hls.mp4",
     url: "https://hillsidehouse.netlify.app",
     date: "2025-12-01",
+    tech: ["Next.js", "Tailwind CSS", "Guesty API"],
   },
 
   {
@@ -22,6 +23,7 @@ const projects = [
     vid: "/Vids/Kio.mp4",
     url: "https://merch.herts.ac.uk",
     date: "2025-10-05",
+    tech: ["Shopify Liquid", "JavaScript", "QR Code API"],
   },
 
   {
@@ -35,6 +37,7 @@ const projects = [
     vid: "/Vids/Gro.mp4",
     url: "https://nogroutaboutit.netlify.app",
     date: "2025-09-09",
+    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"],
   },
 
   {
@@ -48,6 +51,7 @@ const projects = [
     vid: "/Vids/Cio.mp4",
     url: "https://cioch-direct.co.uk",
     date: "2025-05-13",
+    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"],
   },
 
   {
@@ -61,8 +65,7 @@ const projects = [
     vid: "/Vids/Pro.mp4",
     url: "https://lpscrim.netlify.app",
     date: "2024-01-20",
-
-
+    tech: ["HTML", "CSS", "JavaScript"],
   },
 
   {
@@ -76,6 +79,7 @@ const projects = [
     vid: "/Vids/Lmp.mp4",
     url: "https://lampman.netlify.app",
     date: "2023-06-06",
+    tech: ["Next.js", "Tailwind CSS", "Stripe API"],
   },
 ];
 export default projects;
