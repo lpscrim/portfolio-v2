@@ -106,7 +106,7 @@ export default function Card({
       </Link>
       {/* Overlay moved outside Link */}
       {!main && content.brief && (
-        <div className="absolute inset-0 z-99 w-full h-full bg-foreground/95 text-background flex flex-col opacity-0 items-start justify-center text-center group-hover:opacity-100 transition-opacity duration-600 pointer-events-none">
+        <div className="absolute hidden inset-0 z-99 w-full h-full bg-foreground/95 text-background sm:flex flex-col opacity-0 items-start justify-center text-center group-hover:opacity-100 transition-opacity duration-600 pointer-events-none">
           <p className="pt-12 md:pt-16 lg:pt-24 text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-10 xl:px-16 w-full h-full  ">
             {content.brief}
           </p>
