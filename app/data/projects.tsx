@@ -10,7 +10,7 @@ const projects = [
     vid: "/Vids/Hls.mp4",
     url: "https://hillsidehouse.netlify.app",
     date: "2025-12-01",
-    tech: ["Next.js", "Tailwind CSS", "Guesty API"],
+    tech: ["Next.js", "Guesty API"],
   },
 
   {
@@ -23,7 +23,7 @@ const projects = [
     vid: "/Vids/Kio.mp4",
     url: "https://merch.herts.ac.uk",
     date: "2025-10-05",
-    tech: ["Shopify Liquid", "JavaScript", "QR Code API"],
+    tech: ["Shopify Liquid", "JS", "QR Code API"],
   },
 
   {
@@ -37,7 +37,7 @@ const projects = [
     vid: "/Vids/Gro.mp4",
     url: "https://nogroutaboutit.netlify.app",
     date: "2025-09-09",
-    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"],
+    tech: ["Next.js", "Sanity CMS"],
   },
 
   {
@@ -51,21 +51,21 @@ const projects = [
     vid: "/Vids/Cio.mp4",
     url: "https://cioch-direct.co.uk",
     date: "2025-05-13",
-    tech: ["Next.js", "Tailwind CSS", "Sanity CMS"],
+    tech: ["Next.js", "Sanity CMS"],
   },
 
   {
     title: "Profile v.1",
     slug: "profile-v1",
     brief:
-      " A simple and fast portfolio website built using HTML, CSS, and vanilla JavaScript to achieve optimal performance and compliance.",
+      " A simple and fast portfolio website built using HTML, CSS, and vanilla Javascript to achieve optimal performance and compliance.",
     description:
-      "After using various frameworks for serverside projects and API requests, I decided to return to HTML/vanillaJS to create a simple and fast portfolio website. With no need for a virtual DOM or huge amounts of reusable components, a more simple approach felt more applicable. No vast libraries and dependencies were required, allowing for a more direct HTML led site. As a result the simple website has achieved 100% scores on lighthouse, is lightning fast and extremely compliant. Browsers that do not support Javascript will still be able to view the full site.",
+      "After using various frameworks for serverside projects and API requests, I decided to return to HTML/vanillaJS to create a simple and fast portfolio website. With no need for a virtual DOM or huge amounts of reusable components, a more simple approach felt more applicable. No vast libraries and dependencies were required, allowing for a more direct HTML led site. As a result the simple website has achieved 100% scores on lighthouse, is lightning fast and extremely compliant. Browsers that do not support JS will still be able to view the full site.",
     img: "/projects/prof1.png",
     vid: "/Vids/Pro.mp4",
     url: "https://lpscrim.netlify.app",
     date: "2024-01-20",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["HTML", "CSS", "JS"],
   },
 
   {
@@ -79,7 +79,7 @@ const projects = [
     vid: "/Vids/Lmp.mp4",
     url: "https://lampman.netlify.app",
     date: "2023-06-06",
-    tech: ["Next.js", "Tailwind CSS", "Stripe API"],
+    tech: ["Next.js", "Stripe API"],
   },
 ];
 export default projects;
