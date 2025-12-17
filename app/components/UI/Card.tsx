@@ -69,8 +69,8 @@ export default function Card({
           className={
             `absolute inset-0 w-full h-full ` +
             (main
-              ? "bg-background/65 backdrop-blur"
-              : " bg-foreground/65 backdrop-blur")
+              ? "bg-background/75 backdrop-blur"
+              : " bg-foreground/75 backdrop-blur")
           }
         />
 
