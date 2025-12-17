@@ -63,7 +63,7 @@ export default function Services() {
 
   return (
     <section className="w-full bg-background relative">
-        <div className=" py-16 sm:py-20 px-4 sm:px-16 bg-foreground/5">
+        <div className=" pt-16 sm:pt-20 pb-2 px-4 sm:px-16 bg-foreground/5">
       <div className="max-w-3xl mx-auto text-foreground">
         {/* Services */}
         <div ref={servicesRef} className="py-20 border-t border-b border-foreground/40 mb-10">
