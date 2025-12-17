@@ -17,9 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lewis Scrimgeour",
-  description:
-    "Portfolio website of Lewis Scrimgeour, a web designer and developer specializing in creating modern, responsive, and user-friendly websites.",
+  title: "Lewis Scrimgeour | Web Designer & Developer",
+  description: "Portfolio of Lewis Scrimgeour - Modern web design and development. Next.js, React, and Tailwind CSS projects.",
+  keywords: ["web designer", "web developer", "Next.js", "React", "portfolio"],
+  
   icons: [
     { rel: "icon", url: "/favicon.ico" },
     { rel: "icon", type: "image/png", sizes: "32x32", url: "/favicon-32x32.png" },
@@ -27,6 +28,40 @@ export const metadata: Metadata = {
     { rel: "apple-touch-icon", sizes: "180x180", url: "/apple-touch-icon.png" },
   ],
   manifest: "/site.webmanifest",
+  
+  // Open Graph - improves social sharing
+  openGraph: {
+    title: "Lewis Scrimgeour - Web Designer & Developer",
+    description: "Explore my portfolio of modern, responsive websites",
+    url: "https://lpscrim.com",
+    siteName: "Lewis Scrimgeour Portfolio",
+    type: "website",
+    images: [
+      {
+        url: "https://lpscrim.com/og-image.png",
+        width: 1200,
+        height: 630,
+      }
+    ]
+  },
+  
+  // Canonical URL
+  alternates: {
+    canonical: "https://lpscrim.com"
+  },
+  
+  // Robots
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    }
+  }
 };
 
 export default function RootLayout({
