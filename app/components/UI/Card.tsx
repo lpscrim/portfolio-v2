@@ -75,7 +75,7 @@ export default function Card({
         />
 
         {/* Content */}
-        <div className="px-4 py-4 md:px-6 md:py-6 lg:px-10 lg:py-10 xl:px-12 xl:py-12 relative items-center justify-center flex z-10 ">
+        <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-14 xl:py-8 relative items-center justify-center flex z-10 ">
           <video
             ref={videoRef}
             className="w-full h-auto object-cover rounded-sm aspect-video "
