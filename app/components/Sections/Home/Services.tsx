@@ -70,7 +70,7 @@ export default function Services() {
        
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-sm sm:text-base">
             {services.map((service, i) => (
-              <p key={i} className="text-foreground transition-colors">
+              <p key={i} className="text-foreground">
                 {service}
               </p>
             ))}
