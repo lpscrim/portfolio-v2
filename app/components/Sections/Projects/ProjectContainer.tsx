@@ -43,7 +43,9 @@ export default function ProjectContainer() {
         id="parallax-container"
         className="flex parallax-container relative overflow-x-hidden"
       >
-        <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/LayeredL1.webp')]"></div>
+        <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/LayeredL1.webp')]">
+          <div className="w-full h-full bg-foreground/5"></div>
+        </div>
 
         <div className="parallax-layer pointer-events-none h-[105lvh] fixed bg-[url('/Layered/LayeredL8.webp')] mt-0.5 z-5"></div>
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-[105lvh] flex flex-col items-end justify-start z-7">
