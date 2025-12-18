@@ -3,7 +3,6 @@ import Hero from "./components/Sections/Home/Hero";
 import About from "./components/Sections/Home/About";
 import Form from "./components/Layout/Form";
 import Footer from "./components/Layout/Footer"
-import Services from "./components/Sections/Home/Services";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       </div>
       <Header />
       <About />
-      <Services />
       <section id="trigger"></section>
       <div className="z-50 relative">        
         <Form />

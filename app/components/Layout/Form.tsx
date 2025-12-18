@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import ServicesSection from "@/app/components/Sections/Home/Services";
 
 export default function Form() {
   const formRef = useRef<HTMLDivElement>(null);
@@ -104,8 +105,9 @@ export default function Form() {
         <section
           id="contact"
           ref={formRef}
-          className="form-container  pt-12 xl:pt-16 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
+          className="form-container pt-12 xl:pt-16 pb-4 bg-foreground flex flex-col text-white justify-center items-center"
         >
+          <ServicesSection />
           <h2 className="text-3xl lowercase home-title underline">Get in Touch</h2>
           <div id="contact-form" className="w-full px-12 md:px-32 lg:px-38">
             {submitMessage && (
