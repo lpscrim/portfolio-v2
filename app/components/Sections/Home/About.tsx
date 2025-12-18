@@ -56,16 +56,12 @@ export default function About() {
         }
       );
     }
-    cardsRef.current.forEach((card, i) => {
+    cardsRef.current.forEach((card) => {
       if (card) {
         gsap.fromTo(
           card,
-          {
-            paddingLeft: i % 2 === 0 ? "60px" : "0px",
-            paddingRight: i % 2 !== 0 ? "60px" : "0px",
-            opacity: 0,
-            y: 40,
-          },
+          { opacity: 0, y: 40 },
+
           {
             paddingLeft: "0px",
             paddingRight: "0px",
