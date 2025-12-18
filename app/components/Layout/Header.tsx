@@ -79,7 +79,7 @@ export default function Header() {
             </Link>
             <Link
               href="/photo"
-              className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
+              className="hidden hover:text-secondary rounded-xs px-2 transistion-all duration-500"
             >
               PHOTO
             </Link>
@@ -133,7 +133,7 @@ export default function Header() {
             </Link>
             <Link
               href="/photo"
-              className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="hidden text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "75ms" }}
             >
               PHOTO
