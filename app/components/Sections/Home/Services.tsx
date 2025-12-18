@@ -62,7 +62,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="w-full bg-background relative">
+    <section className="hidden w-full bg-background relative">
         <div className=" pt-16 sm:pt-20 pb-2 px-4 sm:px-16 bg-foreground/5">
       <div className="max-w-3xl mx-auto text-foreground">
         {/* Services */}
