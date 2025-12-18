@@ -1,5 +1,3 @@
-import Footer from "./components/Layout/Footer";
-import Form from "./components/Layout/Form";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lewis Scrimgeour | Web Designer & Developer",
-  description: "Portfolio of Lewis Scrimgeour - Modern web design and development. Next.js, React, and Tailwind CSS projects.",
-  keywords: ["web designer", "web developer", "Next.js", "React", "portfolio"],
+  title: "Lewis Scrimgeour | Web Design & Development",
+  description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
+  keywords: ["web designer", "web design", "web developent", "web developer", "Next.js", "React", "portfolio"],
   
   icons: [
     { rel: "icon", url: "/favicon.ico" },
@@ -29,25 +27,12 @@ export const metadata: Metadata = {
   ],
   manifest: "/site.webmanifest",
   
-  // Open Graph - improves social sharing
   openGraph: {
-    title: "Lewis Scrimgeour - Web Designer & Developer",
-    description: "Explore my portfolio of modern, responsive websites",
+    title: "Lewis Scrimgeour - Web Design & Development",
+    description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
     url: "https://lpscrim.com",
     siteName: "Lewis Scrimgeour Portfolio",
     type: "website",
-    images: [
-      {
-        url: "https://lpscrim.com/og-image.png",
-        width: 1200,
-        height: 630,
-      }
-    ]
-  },
-  
-  // Canonical URL
-  alternates: {
-    canonical: "https://lpscrim.com"
   },
   
   // Robots
