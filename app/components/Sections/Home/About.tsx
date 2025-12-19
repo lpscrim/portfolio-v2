@@ -97,8 +97,6 @@ export default function About() {
               }}
               className={`transition-all duration-600 rounded-sm`}
               style={{
-
-                opacity: 0.75,
                 transform: "translateY(40px)",
               }}
             >
