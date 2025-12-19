@@ -56,28 +56,7 @@ export default function About() {
         }
       );
     }
-    cardsRef.current.forEach((card) => {
-      if (card) {
-        gsap.fromTo(
-          card,
-          { opacity: 0, y: 40 },
-
-          {
-            paddingLeft: "0px",
-            paddingRight: "0px",
-            opacity: 1,
-            y: 0,
-            duration: 0.1,
-            ease: "power1.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 100%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      }
-    });
+    
   }, []);
 
   return (
@@ -118,8 +97,7 @@ export default function About() {
               }}
               className={`transition-all duration-600 rounded-sm`}
               style={{
-                paddingLeft: index % 2 === 0 ? "60px" : "0px",
-                paddingRight: index % 2 !== 0 ? "60px" : "0px",
+
                 opacity: 0.75,
                 transform: "translateY(40px)",
               }}
