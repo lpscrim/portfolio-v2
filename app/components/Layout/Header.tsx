@@ -1,13 +1,14 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import NavIcon from "../UI/NavIcon";
 import Clock from "../Animation/Clock";
 
 export default function Header() {
   const [isFixed, setIsFixed] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -16,7 +17,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (pathname !== "/" ) {
+      if (pathname !== "/") {
         setIsFixed(true);
         return;
       }
@@ -35,27 +36,26 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
-  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setMobileMenuOpen(false);
 
-    const scrollToElement = () => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-
-        // Check if fully in view after a short delay, and scroll again if needed
-        setTimeout(() => {
-          const rect = el.getBoundingClientRect();
-          if (rect.bottom > window.innerHeight) {
-            el.scrollIntoView({ behavior: "smooth" });
-          }
-        }, 400); // adjust delay as needed
-      }
+    const scrollToBottom = () => {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
     };
 
-    // Wait for next paint to ensure layout is updated
-    requestAnimationFrame(scrollToElement);
+    if (pathname === "/") {
+      // Already on main page, scroll immediately
+      scrollToBottom();
+    } else {
+      // Navigate to main page, then scroll
+      router.push("/");
+      // Wait for page to load before scrolling
+      setTimeout(scrollToBottom, 500);
+    }
   };
 
   return (
@@ -84,7 +84,8 @@ export default function Header() {
               PHOTO
             </Link>
             <Link
-              href="/#contact"
+              href="#contact"
+              onClick={handleContactClick}
               className="hover:text-secondary rounded-xs px-2 transition-all duration-500"
             >
               CONTACT
@@ -111,7 +112,11 @@ export default function Header() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-999 cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
-              <NavIcon open={mobileMenuOpen} color="background" hoverColor="secondary" />
+              <NavIcon
+                open={mobileMenuOpen}
+                color="background"
+                hoverColor="secondary"
+              />
             </button>
           </div>
         </div>
@@ -140,9 +145,8 @@ export default function Header() {
             </Link>
             <Link
               href="#contact"
-              onClick={e => handleSmoothScroll(e, "contact")}
+              onClick={handleContactClick}
               className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
-              style={{ animationDelay: "150ms" }}
             >
               CONTACT
             </Link>
