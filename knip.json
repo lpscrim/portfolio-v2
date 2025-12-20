@@ -1,0 +1,11 @@
+{
+  "entry": [
+    "app/layout.tsx",
+    "app/page.tsx",
+    "app/sitemap.ts"
+  ],
+  "project": [
+    "app/**/*.{ts,tsx,css}",
+    "*.config.{ts,mjs}"
+  ]
+}
