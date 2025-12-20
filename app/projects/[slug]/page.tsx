@@ -38,7 +38,6 @@ export default async function ProjectPage({
               autoPlay
               loop
               muted
-              controls-hidden
               className="w-full rounded z-10 relative"
             />
           </div>
