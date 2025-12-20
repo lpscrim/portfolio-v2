@@ -104,7 +104,7 @@ export default function About() {
             </div>
           ))}
           {/* See more button */}
-          <div className=" flex justify-center">
+          <div className="mt-12 flex justify-center">
             <Button className="px-4 py-2 bg-foreground text-background transition-all">
               <Link href="/projects">
                 See more
