@@ -61,7 +61,7 @@ export default function Header() {
   return (
     <header
       className={`${
-        isFixed ? "fixed top-0 " : "absolute -bottom-[52px] "
+        isFixed ? "fixed top-0 " : "absolute -bottom-13 "
       } left-0 z-999 w-lvw text-background transition-all duration-300`}
     >
       <nav
