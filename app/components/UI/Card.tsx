@@ -24,6 +24,8 @@ export default function Card({
     const video = videoRef.current;
     if (!card || !video) return;
 
+    let playPromise: Promise<void> | undefined;
+
     function checkInMiddle() {
       if (!cardRef.current || !videoRef.current) return;
       const rect = cardRef.current.getBoundingClientRect();
@@ -33,21 +35,28 @@ export default function Card({
       const cardMiddle = rect.top + rect.height / 2;
       const active = cardMiddle >= middleStart && cardMiddle <= middleEnd;
       setIsActive(active);
-      if (active) {
-        if (videoRef.current.play) videoRef.current.play();
-      } else {
-        if (videoRef.current.pause) videoRef.current.pause();
-        if (typeof videoRef.current.currentTime === 'number') videoRef.current.currentTime = 0;
+
+      // Prevent rapid play/pause calls
+      if (active && videoRef.current.paused) {
+        playPromise = videoRef.current.play().catch(() => {
+          // Silently catch play errors (autoplay restrictions, etc.)
+        });
+      } else if (!active && !videoRef.current.paused) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
       }
     }
 
     checkInMiddle();
     window.addEventListener("scroll", checkInMiddle, { passive: true });
-    window.addEventListener("resize", checkInMiddle);
+    window.addEventListener("resize", checkInMiddle, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", checkInMiddle);
       window.removeEventListener("resize", checkInMiddle);
+      if (videoRef.current && !videoRef.current.paused) {
+        videoRef.current.pause();
+      }
     };
   }, []);
 
@@ -80,9 +89,9 @@ export default function Card({
         <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-14 xl:py-8 relative items-center justify-center flex z-10 ">
           <video
             ref={videoRef}
-            className="w-full h-auto object-cover rounded-sm aspect-video "
+            className="w-full h-auto object-cover rounded-sm aspect-video"
             src={content.vid}
-            preload="none"
+            preload="metadata"
             muted
             playsInline
             poster={content.img}
@@ -106,15 +115,6 @@ export default function Card({
           </div>
         </div>
       </Link>
-      {/* Overlay moved outside Link */}
-      {!main && content.brief && (
-        <div className="absolute hidden inset-0 z-99 w-full h-full bg-foreground/95 text-background sm:flex flex-col opacity-0 items-start justify-center text-center group-hover:opacity-100 transition-opacity duration-600 pointer-events-none">
-          <p className="pt-12 md:pt-16 lg:pt-24 text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-10 xl:px-16 w-full h-full  ">
-            {content.brief}
-          </p>
-          <p className="home-title px-4 pb-10 lg:pb-16 mx-auto text-sm sm:text-base">click for more details</p>
-        </div>
-      )}
     </div>
   );
 }
