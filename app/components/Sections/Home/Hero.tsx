@@ -1,37 +1,9 @@
 "use client";
-import { useEffect } from "react";
+import { useParallax } from "../../Functions/hooks/useParallax";
 
 export default function Hero() {
-  useEffect(() => {
-    const speeds = [0.1, 0.2, 0.4, 0.3, 1.4, 0.5];
-
-    const handleResize = () => {
-      if (window.innerWidth >= 640) {
-        window.location.reload();
-      }
-    };
-
-    const handleScroll = () => {
-      const canvas = document.getElementById("parallax-container");
-
-      if (canvas) {
-        const children = canvas.getElementsByClassName("parallax-layer");
-        for (let i = 0; i < children.length; i++) {
-          const yPos = -(window.pageYOffset * speeds[i]);
-          (
-            children[i] as HTMLElement
-          ).style.transform = `translateY(${yPos}px)`;
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, false);
-    window.addEventListener("resize", handleResize, false);
-    return () => {
-      window.removeEventListener("scroll", handleScroll, false);
-      window.removeEventListener("resize", handleResize, false);
-    };
-  }, []);
+  const speeds = [0.1, 0.2, 0.4, 0.3, 1.4, 0.5];
+  useParallax("parallax-container", speeds, true);
 
   return (
     <section id="hero">

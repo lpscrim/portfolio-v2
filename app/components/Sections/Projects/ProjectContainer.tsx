@@ -1,40 +1,10 @@
 "use client";
-import { useEffect } from "react";
 import Proj from "../../Sections/Projects/Proj";
+import { useParallax } from "../../Functions/hooks/useParallax";
 
 export default function ProjectContainer() {
-  {/* Parallax Effect */}
-  useEffect(() => {
-    const desktopSpeeds = [0.004, 0.005, 0.3, 0.008, 1,  0.009];
-
-    const handleResize = () => {
-          if (window.innerWidth >= 640) {
-            window.location.reload();
-          }
-        };
-
-    const handleScroll = () => {
-      const desktop = document.getElementById("parallax-container");
-
-      if (desktop) {
-        const children = desktop.getElementsByClassName("parallax-layer");
-        for (let i = 0; i < children.length; i++) {
-          const yPos = -(window.pageYOffset * desktopSpeeds[i]);
-          (
-            children[i] as HTMLElement
-          ).style.transform = `translateY(${yPos}px)`;
-        }
-      }
-      
-    };
-
-    window.addEventListener("scroll", handleScroll, false);
-    window.addEventListener("resize", handleResize, false);
-    return () => {
-      window.removeEventListener("scroll", handleScroll, false);
-      window.removeEventListener("resize", handleResize, false);
-    };
-  }, []);
+  const desktopSpeeds = [0.004, 0.005, 0.3, 0.008, 1, 0.009];
+  useParallax("parallax-container", desktopSpeeds, true);
 
   return (
     <section id="heroProjects">

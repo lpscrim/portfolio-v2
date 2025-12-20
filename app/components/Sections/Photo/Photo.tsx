@@ -138,8 +138,6 @@ export default function Photo() {
                 alt={photo.alt}
                 width={800}
                 height={600}
-                priority={index < 3}
-                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 className="w-full h-auto object-cover rounded-sm"
               />
             </div>
