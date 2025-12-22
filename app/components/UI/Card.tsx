@@ -11,6 +11,7 @@ export default function Card({
     slug: string;
     description: string;
     img: string;
+    imgHdr: string;
     vid: string;
     brief?: string;
   };
@@ -71,7 +72,7 @@ export default function Card({
       ref={cardRef}
       className={
         "group w-full h-full overflow-hidden rounded-sm hover:shadow-md cursor-pointer justify-center flex flex-col relative transition-all duration-500 ease-in-out " +
-        (isActive ? "brightness-100" : "brightness-90")
+        (!main ? (isActive ? "brightness-100" : "brightness-90") : "")
       }
     >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
@@ -106,7 +107,7 @@ export default function Card({
           }
           {!main &&
             <Image 
-              src={content.img} 
+              src={content.imgHdr} 
               alt={content.title} 
               width={640}                
               height={360}
