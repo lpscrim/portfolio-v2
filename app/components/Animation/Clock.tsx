@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
-import { createAnimatable } from "animejs";
+import gsap from "gsap";
 
 export default function Clock() {
   const clockRef = useRef<HTMLDivElement>(null);
@@ -15,11 +15,6 @@ export default function Clock() {
     let bounds = $clock.getBoundingClientRect();
     const refreshBounds = () => (bounds = $clock.getBoundingClientRect());
 
-    const clock = createAnimatable($clock, {
-      rotate: { unit: "rad" },
-      duration: 400,
-    });
-
     const PI = Math.PI;
     let lastAngle = 0;
     let angle = PI / 2;
@@ -32,7 +27,11 @@ export default function Clock() {
       const diff = currentAngle - lastAngle;
       angle += diff > PI ? diff - 2 * PI : diff < -PI ? diff + 2 * PI : diff;
       lastAngle = currentAngle;
-      clock.rotate(angle);
+      gsap.to($clock, {
+        rotation: angle * (180 / PI),
+        duration: 0.4,
+        overwrite: "auto",
+      });
     };
 
     window.addEventListener("mousemove", onMouseMove);

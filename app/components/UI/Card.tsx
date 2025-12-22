@@ -24,8 +24,6 @@ export default function Card({
     const video = videoRef.current;
     if (!card || !video) return;
 
-    let playPromise: Promise<void> | undefined;
-
     function checkInMiddle() {
       if (!cardRef.current || !videoRef.current) return;
       const rect = cardRef.current.getBoundingClientRect();
@@ -38,8 +36,8 @@ export default function Card({
 
       // Prevent rapid play/pause calls
       if (active && videoRef.current.paused) {
-        playPromise = videoRef.current.play().catch(() => {
-          // Silently catch play errors (autoplay restrictions, etc.)
+        videoRef.current.play().catch((e) => {
+          console.error("Video play failed:", e);
         });
       } else if (!active && !videoRef.current.paused) {
         videoRef.current.pause();
