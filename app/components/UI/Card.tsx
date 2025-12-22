@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
 export default function Card({
@@ -20,9 +19,9 @@ export default function Card({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isActive, setIsActive] = useState(false);
 
-  
+  // Scroll-based animation for main cards
   useEffect(() => {
-  if (!main) return;
+    if (!main) return;
 
     const card = cardRef.current;
     const video = videoRef.current;
@@ -38,7 +37,6 @@ export default function Card({
       const active = cardMiddle >= middleStart && cardMiddle <= middleEnd;
       setIsActive(active);
 
-      // Prevent rapid play/pause calls
       if (active && videoRef.current.paused) {
         videoRef.current.play().catch((e) => {
           console.error("Video play failed:", e);
@@ -48,13 +46,11 @@ export default function Card({
         videoRef.current.currentTime = 0;
       }
     }
-  
 
     checkInMiddle();
     window.addEventListener("scroll", checkInMiddle, { passive: true });
     window.addEventListener("resize", checkInMiddle, { passive: true });
 
-    // Capture the current video element for cleanup
     const cleanupVideo = videoRef.current;
 
     return () => {
@@ -66,12 +62,44 @@ export default function Card({
     };
   }, [main]);
 
+  // Mouse-over animation for non-main cards
+  useEffect(() => {
+    if (main) return;
+
+    const card = cardRef.current;
+    const video = videoRef.current;
+    if (!card || !video) return;
+
+    const handleMouseEnter = () => {
+      if (video.paused) {
+        video.play().catch((e) => {
+          console.error("Video play failed:", e);
+        });
+      }
+    };
+
+    const handleMouseLeave = () => {
+      if (!video.paused) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    };
+
+    card.addEventListener("mouseenter", handleMouseEnter);
+    card.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      card.removeEventListener("mouseenter", handleMouseEnter);
+      card.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [main]);
+
   return (
     <div
       ref={cardRef}
       className={
         "group w-full h-full overflow-hidden rounded-sm hover:shadow-md cursor-pointer justify-center flex flex-col relative transition-all duration-500 ease-in-out " +
-        (isActive ? "brightness-100" : "brightness-90")
+        (main && isActive ? "brightness-100" : "brightness-90")
       }
     >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
@@ -93,26 +121,15 @@ export default function Card({
 
         {/* Content */}
         <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-14 xl:py-8 relative items-center justify-center flex z-10 ">
-          {main &&
-            <video
-              ref={videoRef}
-              className="w-full h-auto object-cover rounded-sm aspect-video"
-              src={content.vid}
-              preload="metadata"
-              muted
-              playsInline
-              poster={content.img}
-            />
-          }
-          {!main &&
-            <Image 
-              src={content.img} 
-              alt={content.title} 
-              width={640}                
-              height={360}
-              className="w-full h-auto object-cover rounded-sm aspect-video"
-            />
-          } 
+          <video
+            ref={videoRef}
+            className="w-full h-auto object-cover rounded-sm aspect-video"
+            src={content.vid}
+            preload="metadata"
+            muted
+            playsInline
+            poster={content.img}
+          />
         </div>
         <div
           className={`px-4 py-2 sm:px-6`}
