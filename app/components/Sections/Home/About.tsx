@@ -86,14 +86,14 @@ export default function About() {
       >
         {/* About Section */}
         <div className="w-full pt-32 sm:pt-42 pb-10 sm:pb-30 sm:px-10 bg-foreground/5">
-          <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
+          <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
             <h2
               ref={headingRef}
               className="hidden mb-8 sm:mb-14 text-2xl sm:text-3xl home-title lowercase underline text-foreground/90"
             >
               Web Design / Development
             </h2>
-            <p ref={paraRef} className="text-xl sm:text-2xl">
+            <p ref={paraRef} className="text-xl sm:text-2xl xl:text-3xl xl:leading-10">
               Collaborating with a variety of people and businesses to create
               bespoke websites. Whether you need a brand new site or a complete
               redesign, we have the expertise and creativity to bring your
