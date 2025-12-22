@@ -49,11 +49,14 @@ export default function Card({
     window.addEventListener("scroll", checkInMiddle, { passive: true });
     window.addEventListener("resize", checkInMiddle, { passive: true });
 
+    // Capture the current video element for cleanup
+    const cleanupVideo = videoRef.current;
+
     return () => {
       window.removeEventListener("scroll", checkInMiddle);
       window.removeEventListener("resize", checkInMiddle);
-      if (videoRef.current && !videoRef.current.paused) {
-        videoRef.current.pause();
+      if (cleanupVideo && !cleanupVideo.paused) {
+        cleanupVideo.pause();
       }
     };
   }, []);

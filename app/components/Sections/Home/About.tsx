@@ -86,7 +86,7 @@ export default function About() {
         {/* Projects Section */}
         <div className="w-full pb-20 sm:px-10 bg-foreground/5 ">
         <Services />
-          <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-left md:text-center">
+          <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
           
             <h2 className=" text-2xl sm:text-3xl lowercase home-title underline">
               Recent Projects
