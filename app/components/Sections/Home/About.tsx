@@ -14,9 +14,9 @@ const content = projects.slice(0, 4);
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
   const paraRef = useRef<HTMLParagraphElement | null>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   {
     /* Animations */
@@ -57,7 +57,26 @@ export default function About() {
         }
       );
     }
+    if (sectionRef.current) {
+      gsap.fromTo(
+        sectionRef.current,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: 0.5,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }
   }, []);
+
 
   return (
     <div>
@@ -85,7 +104,9 @@ export default function About() {
         </div>
         {/* Projects Section */}
         <div className="w-full pb-20 sm:px-10 bg-foreground/5 ">
-        <Services />
+          <div  ref={sectionRef}>
+            <Services />
+          
           <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
           
             <h2 className=" text-2xl sm:text-3xl lowercase home-title underline">
@@ -96,9 +117,6 @@ export default function About() {
             {content.map((item, index) => (
               <div
                 key={index}
-                ref={(el) => {
-                  cardsRef.current[index] = el;
-                }}
                 className={`transition-all duration-600 rounded-sm`}
                 style={{
                   transform: "translateY(40px)",
@@ -116,6 +134,7 @@ export default function About() {
                 </Link>
               </Button>
             </div>
+          </div>
           </div>
         </div>
       </section>

@@ -57,9 +57,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen bg-background`}
       >
-        <div className="flex-1 flex flex-col">{children}</div>
+        <div className="flex-1 flex flex-col bg-foreground/5">{children}</div>
         
       </body>
       <LenisScroll />

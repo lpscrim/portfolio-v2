@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useEffect, useState } from "react";
 
 export default function Card({
@@ -19,7 +20,10 @@ export default function Card({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isActive, setIsActive] = useState(false);
 
+  
   useEffect(() => {
+  if (!main) return;
+
     const card = cardRef.current;
     const video = videoRef.current;
     if (!card || !video) return;
@@ -44,6 +48,7 @@ export default function Card({
         videoRef.current.currentTime = 0;
       }
     }
+  
 
     checkInMiddle();
     window.addEventListener("scroll", checkInMiddle, { passive: true });
@@ -59,7 +64,7 @@ export default function Card({
         cleanupVideo.pause();
       }
     };
-  }, []);
+  }, [main]);
 
   return (
     <div
@@ -88,15 +93,26 @@ export default function Card({
 
         {/* Content */}
         <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-14 xl:py-8 relative items-center justify-center flex z-10 ">
-          <video
-            ref={videoRef}
-            className="w-full h-auto object-cover rounded-sm aspect-video"
-            src={content.vid}
-            preload="metadata"
-            muted
-            playsInline
-            poster={content.img}
-          />
+          {main &&
+            <video
+              ref={videoRef}
+              className="w-full h-auto object-cover rounded-sm aspect-video"
+              src={content.vid}
+              preload="metadata"
+              muted
+              playsInline
+              poster={content.img}
+            />
+          }
+          {!main &&
+            <Image 
+              src={content.img} 
+              alt={content.title} 
+              width={640}                
+              height={360}
+              className="w-full h-auto object-cover rounded-sm aspect-video"
+            />
+          } 
         </div>
         <div
           className={`px-4 py-2 sm:px-6`}
