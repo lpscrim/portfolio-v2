@@ -102,7 +102,6 @@ export default function Form() {
     <>
       <div ref={triggerRef} id="trigger"></div>
       <div className="w-vw pt-16 bg-foreground z-65 overflow-hidden">
-        <ServicesSection />
         <section
           id="contact"
           ref={formRef}
