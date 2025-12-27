@@ -61,7 +61,6 @@ portfolio-v2/
     projects/          # Project thumbnails
     Layered/           # Parallax layer images
     Vids/              # Project demo videos
-    site.webmanifest   # PWA manifest
   package.json
   postcss.config.mjs
   next.config.ts
