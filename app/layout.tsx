@@ -53,9 +53,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen bg-background`}
+        className={`bg-foreground ${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen bg-background`}
       >
         <div className="flex-1 flex flex-col bg-foreground/5">{children}</div>
         
