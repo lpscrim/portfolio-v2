@@ -3,12 +3,13 @@ export default function Services() {
     "Web Development",
     "Web Design",
     "E-Commerce",
+    "API /CMS Integration",
     "SEO",
-    "API /CMS/ DB Integration",
     "Brand Identity",
     "Shopify",
-    "Responsive Layouts",
     "UI/UX",
+    "Responsive Design",
+    "Accessibility",
   ];
 
   return (

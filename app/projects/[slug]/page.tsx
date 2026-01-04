@@ -42,9 +42,9 @@ export default async function ProjectPage({
             />
           </div>
           <div className="w-full flex flex-col gap-y-4">
-            <h1 className="text-xl sm:text-2xl px-2 font-bold mb-4">
+            <h2 className="text-xl sm:text-2xl px-2 font-bold mb-4">
               {project.title}
-            </h1>
+            </h2>
 
             <p className="w-full px-4 sm:text-lg whitespace-pre-line">
               {project.description}
