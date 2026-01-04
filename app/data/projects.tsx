@@ -8,7 +8,7 @@ const projects = [
       "This is the website for Hillside House, a boutique bed and breakfast. Built with Next.js, it was designed to offer a modern, responsive, and user-friendly experience. The design features a clean layout that highlights the property's amenities and scenic location.\n By using a similar color palette and local images, the site maintains a consistent brand identity. SEO was a priority, and the site was integrated with a Shopify affiliate program to allow easy booking and management of reservations instantly to avoid double bookings.",
     img: "/projects/hls.webp",
     vid: "/Vids/Hls.mp4",
-    url: "https://hillsidehouse.netlify.app",
+    url: "https://hillsidehouseelgol.com",
     date: "2025-12-01",
     tech: ["Next.js", "Guesty API"],
   },
