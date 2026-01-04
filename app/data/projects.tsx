@@ -5,7 +5,7 @@ const projects = [
     brief:
       "This project involved designing and developing a modern, responsive website for Hillside House, a boutique bed and breakfast. The site was built using Next.js to ensure fast load times and an optimal user experience across all devices.",
     description:
-      "This is the website for Hillside House, a boutique bed and breakfast. Built with Next.js, it was designed to offer a modern, responsive, and user-friendly experience. The design features a clean layout that highlights the property's amenities and scenic location.\n By using a similar color palette and local images, the site maintains a consistent brand identity. SEO was a priority, and the site was integrated with a Shopify affiliate program to allow easy booking and management of reservations instantly to avoid double bookings.",
+      "This is the website for Hillside House, a boutique bed and breakfast. Built with Next.js, it was designed to offer a modern, responsive, and user-friendly experience. The design features a clean layout that highlights the property's amenities and scenic location.\n By using a similar colour palette and local images, the site maintains a consistent brand identity. SEO was a priority, and the site was integrated with a Shopify affiliate program to allow easy booking and management of reservations instantly to avoid double bookings.",
     img: "/projects/hls.webp",
     vid: "/Vids/Hls.mp4",
     url: "https://hillsidehouseelgol.com",
@@ -32,7 +32,7 @@ const projects = [
     brief:
       "This project involved redesigning and developing a website for No Grout About It, an independent tiling company. The site was built using Next.js to create a modern, responsive, and user-friendly experience that effectively showcases the company's services and portfolio.",
     description:
-      "This is the website for an independent tiling company, No Grout About It. Built with Next.js, it was redesigned to offer a modern, responsive, and user-friendly experience. The website features a clean design that highlights the company's services and portfolio. By using a similar color palette and local images, the site maintains a consistent brand identity. The site includes an integrated CMS for managing the dynamic blog section, allowing the client to easily update content and images without needing extensive technical knowledge.",
+      "This is the website for an independent tiling company, No Grout About It. Built with Next.js, it was redesigned to offer a modern, responsive, and user-friendly experience. The website features a clean design that highlights the company's services and portfolio. By using a similar colour palette and local images, the site maintains a consistent brand identity. The site includes an integrated CMS for managing the dynamic blog section, allowing the client to easily update content and images without needing extensive technical knowledge.",
     img: "/projects/gro1.webp",
     vid: "/Vids/Gro.mp4",
     url: "https://nogroutaboutit.netlify.app",
@@ -46,7 +46,7 @@ const projects = [
     brief:
       "This project involved designing and developing a website for Cioch, a local business. The site was built using Next.js to ensure it was both visually appealing and highly functional, providing users with an excellent browsing experience.",
     description:
-      "This is the website for Cioch, a respected outdoor clothing brand. Built with Next.js, it was redesigned to offer a modern, responsive, and user-friendly experience. The design preserves the charm of the original style while incorporating modern principles. By using a similar color palette and local images, the site maintains a consistent brand identity. SEO was dramatically improved, and the site was integrated with a CMS using Sanity, allowing the owners to update gallery images independently. The site is fully responsive, ensuring a great user experience across all devices.",
+      "This is the website for Cioch, a respected outdoor clothing brand. Built with Next.js, it was redesigned to offer a modern, responsive, and user-friendly experience. The design preserves the charm of the original style while incorporating modern principles. By using a similar colour palette and local images, the site maintains a consistent brand identity. SEO was dramatically improved, and the site was integrated with a CMS using Sanity, allowing the owners to update gallery images independently. The site is fully responsive, ensuring a great user experience across all devices.",
     img: "/projects/cio1.webp",
     vid: "/Vids/Cio.mp4",
     url: "https://cioch-direct.co.uk",
