@@ -105,6 +105,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.3px;
 }
 
+section h2 {
+  font-style: italic;
+
+}
+
 #services {
   font-family: 'Vollkorn', sans-serif;
   font-style: italic;
