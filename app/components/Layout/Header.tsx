@@ -146,7 +146,7 @@ export default function Header() {
             <Link
               href="#contact"
               onClick={handleContactClick}
-              className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background hover:text-secondary pop-up-2 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
             >
               CONTACT
             </Link>
