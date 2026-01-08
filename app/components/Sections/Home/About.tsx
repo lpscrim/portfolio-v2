@@ -91,12 +91,9 @@ export default function About() {
             </h2>
             <p
               ref={firstRef}
-              className="text-xl sm:text-2xl xl:text-3xl xl:leading-10"
+              className="text-2xl xl:text-3xl xl:leading-10"
             >
-              Collaborating with a variety of people and businesses to create
-              bespoke websites. Whether you need a brand new site or a complete
-              redesign, we have the expertise and creativity to bring your
-              vision to life with exceptional results.
+              A web design and development studio. Collaborating with a variety of businesses and induviduals to create modern, responsive, and user-friendly websites.
             </p>
           </div>
         </div>
