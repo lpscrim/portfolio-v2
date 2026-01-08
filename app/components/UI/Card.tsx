@@ -19,7 +19,7 @@ export default function Card({
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isActive, setIsActive] = useState(false);
 
-  // Scroll-based animation for main cards
+  // IntersectionObserver-based animation for main cards
   useEffect(() => {
     if (!main) return;
 
@@ -27,37 +27,33 @@ export default function Card({
     const video = videoRef.current;
     if (!card || !video) return;
 
-    function checkInMiddle() {
-      if (!cardRef.current || !videoRef.current) return;
-      const rect = cardRef.current.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const middleStart = vh * 0.25;
-      const middleEnd = vh * 0.75;
-      const cardMiddle = rect.top + rect.height / 2;
-      const active = cardMiddle >= middleStart && cardMiddle <= middleEnd;
-      setIsActive(active);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const active = entry.isIntersecting;
+        setIsActive(active);
 
-      if (active && videoRef.current.paused) {
-        videoRef.current.play().catch((e) => {
-          console.error("Video play failed:", e);
-        });
-      } else if (!active && !videoRef.current.paused) {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
+        if (active && video.paused) {
+          video.play().catch((e) => {
+            console.error("Video play failed:", e);
+          });
+        } else if (!active && !video.paused) {
+          video.pause();
+          video.currentTime = 0;
+        }
+      },
+      {
+        // Trigger when card is in the middle 50% of the viewport
+        rootMargin: "-25% 0px -25% 0px",
+        threshold: 0.5,
       }
-    }
+    );
 
-    checkInMiddle();
-    window.addEventListener("scroll", checkInMiddle, { passive: true });
-    window.addEventListener("resize", checkInMiddle, { passive: true });
-
-    const cleanupVideo = videoRef.current;
+    observer.observe(card);
 
     return () => {
-      window.removeEventListener("scroll", checkInMiddle);
-      window.removeEventListener("resize", checkInMiddle);
-      if (cleanupVideo && !cleanupVideo.paused) {
-        cleanupVideo.pause();
+      observer.disconnect();
+      if (!video.paused) {
+        video.pause();
       }
     };
   }, [main]);

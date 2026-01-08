@@ -57,10 +57,9 @@ export default function RootLayout({
       <body
         className={`bg-foreground overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
+        <LenisScroll />
         <div className="flex-1 flex flex-col bg-foreground/5">{children}</div>
-        
       </body>
-      <LenisScroll />
     </html>
   );
 }

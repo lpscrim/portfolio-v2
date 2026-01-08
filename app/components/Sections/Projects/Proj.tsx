@@ -1,20 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Card from "../../UI/Card";
 import projects from "../../../data/projects";
 
 export default function Proj() {
   const [atTop, setAtTop] = useState(true);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setAtTop(window.scrollY < 10);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setAtTop(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
   }, []);
 
   return (
     <div className="relative w-full flex flex-col gap-y-50 xl:mr-150 lg:mr-80 md:mr-50 mr-0 ">
+      {/* Sentinel element for IntersectionObserver - detects when we're at top */}
+      <div ref={sentinelRef} className="absolute top-0 left-0 w-full h-1" />
       <h2 className="home-title mt-100  text-background text-5xl lg:text-6xl xl:text-7xl mx-auto font-semibold border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">
         projects
       </h2>
