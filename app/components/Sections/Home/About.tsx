@@ -47,7 +47,7 @@ export default function About() {
           opacity: 1,
           y: 0,
           duration: 1,
-          delay: 0.2,
+          delay: 0.1,
           ease: "power1.out",
           scrollTrigger: {
             trigger: secondRef.current,
@@ -65,7 +65,7 @@ export default function About() {
           opacity: 1,
           y: 0,
           duration: 1,
-          delay: 0.5,
+          delay: 0.2,
           ease: "power1.out",
           scrollTrigger: {
             trigger: thirdRef.current,
