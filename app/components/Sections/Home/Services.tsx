@@ -17,7 +17,7 @@ export default function Services() {
         <div className="pb-2 px-4 lg:px-16">
       <div className="max-w-4xl mx-auto text-center">
         {/* Services */}
-        <h2 className="mb-8 sm:mb-14 text-2xl sm:text-3xl underline">Services</h2>
+        <h2 className="mb-8 sm:mb-16 text-2xl sm:text-3xl underline">Services</h2>
         
         <div className="py-10 border-t border-b border-foreground/80 mt-8 mb-14 mx-10">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-lg lg:text-xl justify-center">

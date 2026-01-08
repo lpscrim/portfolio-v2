@@ -84,7 +84,7 @@ export default function About() {
         className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
       >
         {/* About Section */}
-        <div className="w-full pt-32 sm:pt-42 pb-10 sm:pb-30 sm:px-10 bg-foreground/5">
+        <div className="w-full pt-32 sm:pt-56 pb-10 sm:pb-32 sm:px-10 bg-foreground/5">
           <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
             <h2 className="hidden mb-8 sm:mb-14 text-2xl sm:text-3xl underline text-foreground/90">
               Web Design / Development
@@ -101,18 +101,18 @@ export default function About() {
           </div>
         </div>
         {/* Projects Section */}
-        <div className="w-full pb-20 sm:px-10 bg-foreground/5">
+        <div className="w-full pb-32 sm:px-10 bg-foreground/5">
           <div>
-            <div ref={secondRef}>
+            <div ref={secondRef} className="pb-16">
               <Services />
             </div>
             <div ref={thirdRef}>
-              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
+              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 px-6 pt-8 pb-16 text-center">
                 <h2 className=" text-2xl sm:text-3xl underline">
                   Recent Projects
                 </h2>
               </div>
-              <div className="px-2 max-w-5xl mx-auto text-foreground flex flex-col gap-10 lg:gap-16">
+              <div className="px-2 max-w-5xl mx-auto text-foreground flex flex-col gap-16 lg:gap-32">
                 {content.map((item, index) => (
                   <div
                     key={index}
@@ -125,7 +125,7 @@ export default function About() {
                   </div>
                 ))}
                 {/* See more button */}
-                <div className="mt-12 flex justify-center">
+                <div className="mt-16 flex justify-center">
                   <Button className="px-4 py-2 bg-foreground text-background transition-all">
                     <Link href="/projects">
                       See more
