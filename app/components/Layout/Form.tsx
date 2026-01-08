@@ -107,7 +107,7 @@ export default function Form() {
           ref={formRef}
           className="form-container pt-12 xl:pt-16 pb-6 bg-foreground flex flex-col text-white justify-center items-center"
         >
-          <h2 className="text-3xl lowercase home-title underline">
+          <h2 className="text-3xl underline">
             Get in Touch
           </h2>
           <div id="contact-form" className="w-full px-12 md:px-32 lg:px-38">

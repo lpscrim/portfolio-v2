@@ -89,7 +89,7 @@ export default function About() {
           <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
             <h2
               ref={headingRef}
-              className="hidden mb-8 sm:mb-14 text-2xl sm:text-3xl home-title lowercase underline text-foreground/90"
+              className="hidden mb-8 sm:mb-14 text-2xl sm:text-3xl underline text-foreground/90"
             >
               Web Design / Development
             </h2>
@@ -109,7 +109,7 @@ export default function About() {
           
           <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
           
-            <h2 className=" text-2xl sm:text-3xl lowercase home-title underline">
+            <h2 className=" text-2xl sm:text-3xl underline">
               Recent Projects
             </h2>
           </div>
