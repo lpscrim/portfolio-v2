@@ -139,7 +139,7 @@ export default function Card({
             <div className={`md:text-xl inline-block rounded-xs ` + (main ? "group-hover:bg-background transition-all duration-700" : "")} >
               <h2
                 className={
-                  `group-hover:bg-foreground/5 px-4 pt-0.5 transition-all duration-700 text-lg sm:text-xl` +
+                  `group-hover:bg-foreground/5 px-4 py-0.5 transition-all duration-700 text-lg sm:text-xl` +
                   (main ? " text-foreground" : " text-background home-title lowercase")
                 }
               >
