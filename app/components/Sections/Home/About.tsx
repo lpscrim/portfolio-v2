@@ -84,7 +84,7 @@ export default function About() {
         className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
       >
         {/* About Section */}
-        <div className="w-full pt-32 sm:pt-56 pb-10 sm:pb-32 sm:px-10 bg-foreground/5">
+        <div className="w-full pt-32 sm:pt-56 pb-16 sm:pb-32 sm:px-10 bg-foreground/5">
           <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
             <h2 className="hidden mb-8 sm:mb-14 text-2xl sm:text-3xl underline text-foreground/90">
               Web Design / Development
