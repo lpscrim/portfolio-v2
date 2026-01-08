@@ -20,7 +20,7 @@ export default function Services() {
         <h2 className="mb-8 sm:mb-14 text-2xl sm:text-3xl underline">Services</h2>
         
         <div className="py-10 border-t border-b border-foreground/80 mt-8 mb-14 mx-10">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-base sm:text-lg lg:text-xl justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-lg lg:text-xl justify-center">
             {services.map((service, i) => (
               <p key={i} className="text-center">
                 {service}

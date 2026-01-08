@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black">
       <body
-        className={`bg-foreground ${geistSans.variable} ${geistMono.variable} overflow-x-hidden antialiased flex flex-col min-h-screen bg-background`}
+        className={`bg-foreground overflow-x-hidden antialiased flex flex-col min-h-screen`}
       >
         <div className="flex-1 flex flex-col bg-foreground/5">{children}</div>
         
