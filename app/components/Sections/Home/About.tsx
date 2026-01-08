@@ -105,7 +105,7 @@ export default function About() {
             </div>
             <div ref={thirdRef}>
               <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 px-6 pt-8 pb-8 sm:pb-16 text-center">
-                <h2 className=" text-2xl sm:text-3xl underline">
+                <h2 className="text-2xl sm:text-3xl underline">
                   Recent Projects
                 </h2>
               </div>
