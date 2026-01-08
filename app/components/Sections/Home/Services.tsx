@@ -3,7 +3,7 @@ export default function Services() {
     "Web Development",
     "Web Design",
     "E-Commerce",
-    "API /CMS Integration",
+    "API /CMS",
     "SEO",
     "Brand Identity",
     "Shopify",
