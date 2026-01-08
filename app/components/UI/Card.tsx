@@ -100,9 +100,7 @@ export default function Card({
     >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
         <div
-          className={"absolute -inset-8 bg-cover bg-center blur-2xl " + 
-          (main ? "opacity-80" : "opacity-50")
-          }
+          className={"absolute -inset-8 bg-cover bg-center blur-2xl opacity-80"}
           style={{ backgroundImage: `url(${content.img})` }}
         />
         <div
@@ -110,12 +108,12 @@ export default function Card({
             `absolute inset-0 w-full h-full ` +
             (main
               ? "bg-background/60"
-              : " bg-foreground/75")
+              : " bg-foreground/60")
           }
         />
 
         {/* Content */}
-        <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-14 xl:py-8 relative items-center justify-center flex z-10 ">
+        <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-16 xl:py-8 relative items-center justify-center flex z-10 ">
           <video
             ref={videoRef}
             className="w-full h-auto object-cover rounded-sm aspect-video"
