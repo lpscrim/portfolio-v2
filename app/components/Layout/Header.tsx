@@ -124,11 +124,11 @@ export default function Header() {
       {/* Mobile dropdown menu */}
       <div
         className={`md:hidden bg-foreground w-full overflow-hidden transition-all duration-500 ${
-          mobileMenuOpen ? "max-h-60 py-4" : "max-h-0 py-0"
+          mobileMenuOpen ? "max-h-60 py-2" : "max-h-0 py-0"
         }`}
       >
         {mobileMenuOpen && (
-          <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide">
+          <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide ">
             <Link
               href="/projects"
               className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
