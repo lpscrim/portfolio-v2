@@ -46,7 +46,7 @@ const projects = [
     brief:
       "This project involved designing and developing a website for Cioch, a local business. The site was built using Next.js to ensure it was both visually appealing and highly functional, providing users with an excellent browsing experience.",
     description:
-      "This is the website for Cioch, a respected outdoor clothing brand. Built with Next.js, it was redesigned to offer a modern, responsive, and user-friendly experience. The design preserves the charm of the original style while incorporating modern principles. By using a similar colour palette and local images, the site maintains a consistent brand identity. SEO was dramatically improved, and the site was integrated with a CMS using Sanity, allowing the owners to update gallery images independently. The site is fully responsive, ensuring a great user experience across all devices.",
+      "This is the website for Cioch, a respected outdoor clothing brand. Built with Next.js, it was redesigned to offer a modern, responsive, and user-friendly experience. By using a similar colour palette and local images, the site maintains a consistent brand identity. SEO was dramatically improved, and the site was integrated with a CMS using Sanity, allowing the owners to update gallery images independently. The site is fully responsive, ensuring a fluid user experience across all devices.",
     img: "/projects/cio1.webp",
     vid: "/Vids/Cio.mp4",
     url: "https://cioch-direct.co.uk",

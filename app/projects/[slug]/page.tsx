@@ -46,7 +46,7 @@ export default async function ProjectPage({
               {project.title}
             </h2>
 
-            <p className="w-full px-4 sm:text-lg whitespace-pre-line">
+            <p className="w-full px-4 sm:text-lg lg:text-xl whitespace-pre-line">
               {project.description}
             </p>
             <div className="mt-6 flex flex-row justify-between w-full text-lg home-title">
