@@ -103,11 +103,11 @@ export default function About() {
         {/* Projects Section */}
         <div className="w-full pb-32 sm:px-10 bg-foreground/5">
           <div>
-            <div ref={secondRef} className="pb-16">
+            <div ref={secondRef} className="pb-8 sm:pb-16">
               <Services />
             </div>
             <div ref={thirdRef}>
-              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 px-6 pt-8 pb-16 text-center">
+              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 px-6 pt-8 pb-8 sm:pb-16 text-center">
                 <h2 className=" text-2xl sm:text-3xl underline">
                   Recent Projects
                 </h2>
