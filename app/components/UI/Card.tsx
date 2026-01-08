@@ -99,9 +99,8 @@ export default function Card({
       }
     >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
-        {/* Background image */}
         <div
-          className={"absolute inset-0 w-full h-full bg-cover bg-center " + 
+          className={"absolute -inset-8 bg-cover bg-center blur-2xl " + 
           (main ? "opacity-80" : "opacity-50")
           }
           style={{ backgroundImage: `url(${content.img})` }}
@@ -110,8 +109,8 @@ export default function Card({
           className={
             `absolute inset-0 w-full h-full ` +
             (main
-              ? "bg-background/80 backdrop-blur"
-              : " bg-foreground/75 backdrop-blur")
+              ? "bg-background/60"
+              : " bg-foreground/75")
           }
         />
 
