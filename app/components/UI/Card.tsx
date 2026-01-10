@@ -100,7 +100,7 @@ export default function Card({
     >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
         <div
-          className={"absolute -inset-8 bg-cover bg-center blur-2xl opacity-80"}
+          className={"absolute -inset-8 bg-cover bg-center blur-2xl opacity-60"}
           style={{ backgroundImage: `url(${content.img})` }}
         />
         <div
@@ -128,7 +128,7 @@ export default function Card({
           className={`px-4 py-2 sm:px-6`}
           style={{ position: "relative", zIndex: 10 }}
         >
-          <div className="text-base -mt-5 w-full justify-center flex">
+          <div className="text-base -mt-4 w-full justify-center flex">
             <div className={`md:text-xl inline-block rounded-xs ` + (main ? "group-hover:bg-background transition-all duration-700" : "")} >
               <h2
                 className={

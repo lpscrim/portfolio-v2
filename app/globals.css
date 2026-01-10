@@ -48,73 +48,30 @@ body {
 @font-face {
   font-family: 'Karla';
   src: url('/fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
   src: url('/fonts/Karla/Karla-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lora';
-  src: url('/fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype'),
-       url('/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-Thin.ttf') format('truetype');
-  font-weight: 100;
+  src: url('/fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
-  font-weight: 100;
+  font-family: 'Lora';
+  src: url('/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
   font-style: italic;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: url('/fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
 
 .home-title {
   font-family: 'Ballmer', sans-serif;
@@ -123,23 +80,19 @@ body {
 }
 
 body {
-  font-family: 'Karla', Helvetica , sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 button {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Karla', Arial, Helvetica, sans-serif sans-serif;
-  font-weight: 300;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
 }
 
-#services p {
-  font-family: 'Karla', sans-serif;
-  font-style: italic;
-}
 /* Animations */
 
 @keyframes popUp {

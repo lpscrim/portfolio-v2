@@ -81,35 +81,32 @@ export default function About() {
     <div>
       <section
         id="about"
-        className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative"
+        className="flex flex-col w-full bg-background bg-fixed min-h-svh z-50 relative px-4"
       >
         {/* About Section */}
-        <div className="w-full pt-32 sm:pt-56 pb-16 sm:pb-32 sm:px-10 bg-foreground/5">
-          <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground text-2xl bg-background/0 p-6 text-center">
-            <h2 className="hidden mb-8 sm:mb-14 text-3xl sm:text-4xl underline text-foreground/90">
-              Web Design / Development
-            </h2>
+        <div className="w-full pt-32 sm:pt-56 pb-16 sm:pb-32 sm:px-10 ">
+          <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground/80 text-2xl bg-background/0 py-6 text-left sm:text-center">
             <p
               ref={firstRef}
-              className="text-2xl xl:text-3xl xl:leading-10"
+              className="text-2xl xl:text-3xl xl:leading-10 "
             >
               A web design and development studio. Collaborating with a variety of businesses and induviduals to create modern, responsive, and user-friendly websites.
             </p>
           </div>
         </div>
         {/* Projects Section */}
-        <div className="w-full pb-32 sm:px-10 bg-foreground/5">
+        <div className="w-full pb-32 sm:px-10">
           <div>
             <div ref={secondRef} className="pb-8 sm:pb-16">
               <Services />
             </div>
             <div ref={thirdRef}>
-              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 px-6 pt-8 pb-8 sm:pb-16 text-center">
-                <h2 className="text-3xl sm:text-4xl underline">
+              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 py-4 sm:py-8">
+                <h2 className="text-3xl sm:text-4xl text-center ">
                   Recent Projects
                 </h2>
               </div>
-              <div className="px-2 max-w-5xl mx-auto text-foreground flex flex-col gap-16 lg:gap-32">
+              <div className=" max-w-5xl mx-auto text-foreground flex flex-col gap-16 lg:gap-32">
                 {content.map((item, index) => (
                   <div
                     key={index}

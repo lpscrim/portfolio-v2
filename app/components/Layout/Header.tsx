@@ -95,7 +95,8 @@ export default function Header() {
         {/* Name */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
           <Link href="/">
-            <h2 className="home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0">
+            <h2 className={`${
+        isFixed ? 'opacity-80' : 'opacity-0'} home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0 transition-all duration-500`}>
               lewis scrimgeour
             </h2>
           </Link>
