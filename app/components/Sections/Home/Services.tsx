@@ -17,10 +17,10 @@ export default function Services() {
         <div className="pb-2 px-4 lg:px-16">
       <div className="max-w-4xl mx-auto text-center">
         {/* Services */}
-        <h2 className="pb-8 sm:pb-16 text-2xl sm:text-3xl underline">Services</h2>
+        <h2 className="pb-8 sm:pb-16 text-3xl sm:text-4xl underline">Services</h2>
         
         <div className="py-10 border-t border-b border-foreground/80 mt-8 mb-14 mx-10">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 sm:text-lg xl:text-xl justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-2 gap-x-4 text-lg sm:text-xl xl:text-2xl justify-center">
             {services.map((service, i) => (
               <p key={i} className="text-center">
                 {service}
