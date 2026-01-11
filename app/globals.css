@@ -170,7 +170,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .pop-up-2 {
   animation: popUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  animation-delay: 40ms;
+  animation-delay: 75ms;
+}
+.pop-up-3 {
+  animation: popUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 150ms;
 }
 
 @keyframes fadeIn {

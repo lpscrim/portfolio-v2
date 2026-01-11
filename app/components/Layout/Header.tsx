@@ -77,12 +77,14 @@ export default function Header() {
             >
               PROJECTS
             </Link>
-            <Link
-              href="/photo"
-              className="hidden hover:text-background rounded-xs px-2 transistion-all duration-500"
+            <a
+              href="https://daydreamteam.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-background rounded-xs px-2 transistion-all duration-500"
             >
               PHOTO
-            </Link>
+            </a>
             <Link
               href="#contact"
               onClick={handleContactClick}
@@ -116,7 +118,7 @@ export default function Header() {
               <NavIcon
                 open={mobileMenuOpen}
                 color="background"
-                hoverColor="secondary"
+                hoverColor="background"
               />
             </button>
           </div>
@@ -133,21 +135,21 @@ export default function Header() {
             <Link
               href="/projects"
               className="text-background/80 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
-              style={{ animationDelay: "0ms" }}
             >
               PROJECTS
             </Link>
-            <Link
-              href="/photo"
-              className="hidden text-background/80 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
-              style={{ animationDelay: "75ms" }}
+            <a
+              href="https://daydreamteam.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-background/80 hover:text-background pop-up-2 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
             >
               PHOTO
-            </Link>
+            </a>
             <Link
               href="#contact"
               onClick={handleContactClick}
-              className="text-background/80 hover:text-background pop-up-2 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background/80 hover:text-background pop-up-3 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
             >
               CONTACT
             </Link>
