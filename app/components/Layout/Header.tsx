@@ -69,9 +69,9 @@ export default function Header() {
         className="relative max-w-7xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-0"
       >
         {/* Name */}
-        <div className="hidden md:flex flex-1 items-center">
+        <div className="flex flex-1 items-center">
           <Link href="/">
-            <h2 className={` home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background/80 hover:text-background transition-all duration-500`}>
+            <h2 className={` home-title whitespace-nowrap pl-2 text-xl tracking-wide mt-1.5 lg:text-xl text-background/80 hover:text-background transition-all duration-500`}>
               lewis scrimgeour
             </h2>
           </Link>
@@ -83,7 +83,7 @@ export default function Header() {
           </div>
         </div>
         {/* Desktop links / Mobile menu */}
-        <div className="flex-1 flex justify-end items-center">
+        <div className="flex-1 flex justify-end items-center sm:mr-2">
           <div className="hidden md:flex lowercase home-title text-background/80 tracking-wide">
             <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
               <Link
@@ -105,7 +105,7 @@ export default function Header() {
             <button
               type="button"
               onClick={toggleMobileMenu}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 z-999 cursor-pointer"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 -mr-5 lg:mr-0 z-999 cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
               <NavIcon

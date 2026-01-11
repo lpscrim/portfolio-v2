@@ -95,7 +95,7 @@ export default function About() {
           </div>
         </div>
         {/* Projects Section */}
-        <div className="w-full pb-32 sm:px-10">
+        <div className="w-full pb-32 sm:px-6 lg:px-10">
           <div>
             <div ref={secondRef} className="pb-8 sm:pb-16">
               <Services />
