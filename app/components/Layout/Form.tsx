@@ -222,7 +222,7 @@ export default function Form() {
                 </Button>
                 <div
                   mail-to="Lpscrim@gmail.com"
-                  className="cursor-pointer hover:text-secondary transition-colors duration-300"
+                  className="cursor-pointer text-background/80 hover:text-background transition-colors duration-300"
                 >
                   <span>Lpscrim@gmail.com</span>
                 </div>
