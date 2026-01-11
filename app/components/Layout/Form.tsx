@@ -212,10 +212,10 @@ export default function Form() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-40 rounded-xs bg-secondary px-3.5 py-2.5  ${
+                  className={`w-40 rounded-xs bg-background/80 text-foreground px-3.5 py-2.5  ${
                     isSubmitting
                       ? "opacity-50 cursor-not-allowed"
-                      : " "
+                      : " hover:bg-background"
                   }`}
                 >
                   {isSubmitting ? "Sending..." : "Send"}
