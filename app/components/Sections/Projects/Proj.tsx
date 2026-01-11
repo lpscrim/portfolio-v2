@@ -22,10 +22,10 @@ export default function Proj() {
   }, []);
 
   return (
-    <div className="relative w-full flex flex-col gap-y-50 xl:mr-150 lg:mr-80 md:mr-50 mr-0 ">
+    <div className="relative w-full flex flex-col gap-y-50 sm:pl-4 xl:pl-0 xl:max-w-7xl xl:mx-auto items-start">
       {/* Sentinel element for IntersectionObserver - detects when we're at top */}
       <div ref={sentinelRef} className="absolute top-0 left-0 w-full h-1" />
-      <h2 className="home-title mt-100  text-background text-5xl lg:text-6xl xl:text-7xl mx-auto font-semibold border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">
+      <h2 className="home-title mt-100 xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20 text-background text-5xl lg:text-6xl xl:text-7xl mx-auto font-semibold border-4 border-transparent hover:border-background/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">
         projects
       </h2>
       {atTop && (
@@ -53,7 +53,7 @@ export default function Proj() {
         </div>
       )}
 
-      <div className="max-w-4xl mt-200 mx-auto text-foreground flex flex-col gap-y-40 lg:gap-y-50">
+      <div className="sm:pl-8 max-w-3xl xl:max-w-4xl mt-200 text-foreground flex flex-col gap-y-40 lg:gap-y-50">
         {projects.map((project, index) => (
           <div key={index} className="rounded-sm" id={`project-${project.slug}`}>
             <Card content={project} />

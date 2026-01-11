@@ -85,7 +85,7 @@ export default function About() {
       >
         {/* About Section */}
         <div className="w-full pt-32 sm:pt-56 pb-16 sm:pb-32 sm:px-10 ">
-          <div className="max-w-3xl xl:max-w-4xl mx-auto text-foreground/80 text-2xl bg-background/0 py-6 text-left sm:text-center">
+          <div className="max-w-7xl mx-auto text-foreground/80 text-2xl bg-background/0 py-6 text-left sm:text-center">
             <p
               ref={firstRef}
               className="text-2xl xl:text-3xl xl:leading-10 "
@@ -101,12 +101,12 @@ export default function About() {
               <Services />
             </div>
             <div ref={thirdRef}>
-              <div className="max-w-3xl mx-auto text-foreground text-2xl bg-background/0 py-4 sm:py-8">
+              <div className="max-w-7xl mx-auto text-foreground text-2xl bg-background/0 py-4 sm:py-8">
                 <h2 className="text-3xl sm:text-4xl text-center ">
                   Recent Projects
                 </h2>
               </div>
-              <div className=" max-w-5xl mx-auto text-foreground flex flex-col gap-16 lg:gap-32">
+              <div className=" max-w-7xl mx-auto text-foreground flex flex-col gap-16 lg:gap-32">
                 {content.map((item, index) => (
                   <div
                     key={index}

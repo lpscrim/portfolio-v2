@@ -12,7 +12,7 @@ export default function ProjectContainer() {
       {/* Parallax Containers */}
       <div
         id="parallax-container"
-        className="flex parallax-container relative overflow-x-hidden"
+        className="flex parallax-container relative overflow-x-hidden "
       >
         <div className="parallax-layer pointer-events-none fixed h-[150vh] w-full will-change-transform">
           <Image
@@ -36,10 +36,12 @@ export default function ProjectContainer() {
             sizes="100vw"
           />
         </div>
-        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-[105lvh] flex flex-col items-end justify-start z-7">
-          <h2 className="xl:mr-80 md:mr-20 mr-2 home-title mt-170 md:mt-180  text-white text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-white/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2 brightness-150">2025</h2>
-          <h2 className="xl:mr-80 md:mr-20 mr-2 home-title mt-120 md:mt-140 xl:mt-200 text-white text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-white/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2 brightness-150">2024</h2>
-          <h2 className="hidden xl:mr-80 md:mr-20 mr-2 home-title mt-80 text-white text-5xl lg:text-6xl xl:text-7xl  border-4 border-transparent hover:border-white/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2 brightness-150">2023</h2>        
+        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-[105lvh] flex flex-col items-end justify-start z-7 pr-4 xl:pr-0">
+          <div className="w-full xl:max-w-7xl xl:mx-auto flex flex-col items-end pr-8">
+            <h2 className="home-title mt-170 md:mt-180 text-white text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-white/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 brightness-150">2025</h2>
+            <h2 className="home-title mt-120 md:mt-140 xl:mt-200 text-white text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-white/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 brightness-150">2024</h2>
+            <h2 className="hidden home-title mt-80 text-white text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-white/80 transition-all duration-1250 rounded-md fade-in pb-1 pt-2 brightness-150">2023</h2>
+          </div>
         </div>
 
         <div className="parallax-layer pointer-events-none h-[105lvh] w-full fixed flex items-center justify-center z-10 will-change-transform">

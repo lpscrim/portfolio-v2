@@ -62,44 +62,44 @@ export default function Header() {
     <header
       className={`${
         isFixed ? "fixed top-0 " : "absolute -bottom-13 "
-      } left-0 z-999 w-lvw text-background transition-all duration-300`}
+      } left-0 z-999 w-lvw text-background bg-foreground transition-all duration-300`}
     >
       <nav
         aria-label="Global"
-        className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 "
+        className="relative max-w-7xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-2"
       >
-        {/* Desktop links */}
-        <div className="hidden md:flex flex-1 items-center lowercase home-title text-background/80 tracking-wide">
-          <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
-            <Link
-              href="/projects"
-              className="hover:text-background rounded-xs px-2 transistion-all duration-500"
-            >
-              PROJECTS
-            </Link>
-         
-            <Link
-              href="#contact"
-              onClick={handleContactClick}
-              className="hover:text-background rounded-xs px-2 transition-all duration-500"
-            >
-              CONTACT
-            </Link>
-          </div>
-        </div>
         {/* Name */}
-        <div className="flex-1 flex justify-start md:justify-center items-center">
+        <div className="hidden md:flex flex-1 items-center">
           <Link href="/">
-            <h2 className={`${
-        isFixed ? 'opacity-100' : 'opacity-0'} home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background/80 hover:text-background pl-3 md:pl-0 transition-all duration-500`}>
+            <h2 className={` home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background/80 hover:text-background transition-all duration-500`}>
               lewis scrimgeour
             </h2>
           </Link>
         </div>
-        {/* Mobile menu / logo */}
-        <div className="flex-1 flex justify-end items-center">
-          <div className="hidden md:flex">
+        {/* Clock */}
+        <div className="flex-1 flex justify-start md:justify-center items-center">
+          <div className={`hidden ${isFixed ? 'opacity-100' : 'opacity-0'} md:flex`}>
             <Clock />
+          </div>
+        </div>
+        {/* Desktop links / Mobile menu */}
+        <div className="flex-1 flex justify-end items-center">
+          <div className="hidden md:flex lowercase home-title text-background/80 tracking-wide">
+            <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
+              <Link
+                href="/projects"
+                className="hover:text-background rounded-xs px-2 transition-all duration-500"
+              >
+                PROJECTS
+              </Link>
+              <Link
+                href="#contact"
+                onClick={handleContactClick}
+                className="hover:text-background rounded-xs px-2 transition-all duration-500"
+              >
+                CONTACT
+              </Link>
+            </div>
           </div>
           <div className="md:hidden flex items-center gap-x-4 xl:pr-10 mt-0.5">
             <button
