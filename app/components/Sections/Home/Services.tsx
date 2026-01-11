@@ -20,11 +20,11 @@ export default function Services() {
           <h2 className="py-4 sm:py-8 text-3xl sm:text-4xl">Services</h2>
 
           <div className="py-10 border-t border-b border-foreground/80 mt-8 mb-14 ">
-            <div className="flex flex-wrap justify-center italic gap-y-4 gap-x-4 text-lg sm:text-xl xl:text-2xl">
+            <div className="flex flex-wrap  justify-around sm:justify-center italic gap-y-4 gap-x-4 text-lg sm:text-xl xl:text-2xl">
               {services.map((service, i) => (
                 <p
                   key={i}
-                  className="text-center w-1/3 sm:w-1/3 lg:w-1/4 box-border px-2"
+                  className="text-center w-1/3 sm:w-1/3 lg:w-1/4 box-border sm:px-2 whitespace-nowrap"
                 >
                   {service}
                 </p>

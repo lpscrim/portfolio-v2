@@ -66,7 +66,7 @@ export default function Header() {
     >
       <nav
         aria-label="Global"
-        className="relative max-w-7xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-2"
+        className="relative max-w-7xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-0"
       >
         {/* Name */}
         <div className="hidden md:flex flex-1 items-center">
@@ -95,7 +95,7 @@ export default function Header() {
               <Link
                 href="#contact"
                 onClick={handleContactClick}
-                className="hover:text-background rounded-xs px-2 transition-all duration-500"
+                className="hover:text-background rounded-xs px-2 xl:px-2 transition-all duration-500"
               >
                 CONTACT
               </Link>
