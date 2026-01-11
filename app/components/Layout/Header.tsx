@@ -69,24 +69,24 @@ export default function Header() {
         className="relative bg-foreground mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 "
       >
         {/* Desktop links */}
-        <div className="hidden md:flex flex-1 items-center lowercase home-title text-background tracking-wide">
+        <div className="hidden md:flex flex-1 items-center lowercase home-title text-background/80 tracking-wide">
           <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
             <Link
               href="/projects"
-              className="hover:text-secondary rounded-xs px-2 transistion-all duration-500"
+              className="hover:text-background rounded-xs px-2 transistion-all duration-500"
             >
               PROJECTS
             </Link>
             <Link
               href="/photo"
-              className="hidden hover:text-secondary rounded-xs px-2 transistion-all duration-500"
+              className="hidden hover:text-background rounded-xs px-2 transistion-all duration-500"
             >
               PHOTO
             </Link>
             <Link
               href="#contact"
               onClick={handleContactClick}
-              className="hover:text-secondary rounded-xs px-2 transition-all duration-500"
+              className="hover:text-background rounded-xs px-2 transition-all duration-500"
             >
               CONTACT
             </Link>
@@ -96,7 +96,7 @@ export default function Header() {
         <div className="flex-1 flex justify-start md:justify-center items-center">
           <Link href="/">
             <h2 className={`${
-        isFixed ? 'opacity-80' : 'opacity-0'} home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background pl-3 md:pl-0 transition-all duration-500`}>
+        isFixed ? 'opacity-100' : 'opacity-0'} home-title text-xl tracking-wide mt-1.5 lg:text-xl text-background/80 hover:text-background pl-3 md:pl-0 transition-all duration-500`}>
               lewis scrimgeour
             </h2>
           </Link>
@@ -132,14 +132,14 @@ export default function Header() {
           <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide ">
             <Link
               href="/projects"
-              className="text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background/80 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "0ms" }}
             >
               PROJECTS
             </Link>
             <Link
               href="/photo"
-              className="hidden text-background hover:text-secondary pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="hidden text-background/80 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
               style={{ animationDelay: "75ms" }}
             >
               PHOTO
@@ -147,7 +147,7 @@ export default function Header() {
             <Link
               href="#contact"
               onClick={handleContactClick}
-              className="text-background hover:text-secondary pop-up-2 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
+              className="text-background/80 hover:text-background pop-up-2 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
             >
               CONTACT
             </Link>
