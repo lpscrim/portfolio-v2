@@ -73,6 +73,62 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicBook.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicDemi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/futura-pt/FuturaCyrillicHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 .home-title {
   font-family: 'Ballmer', sans-serif;
   font-weight: 400;
@@ -80,17 +136,17 @@ body {
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Futura PT', sans-serif;
 }
 
 button {
-  font-family: 'Ballmer', sans-serif;
-text-transform: lowercase;
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Futura PT', sans-serif;
   font-weight: 400;
   letter-spacing: -0.4px;
 }
