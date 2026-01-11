@@ -103,7 +103,7 @@ export default function About() {
             <div ref={thirdRef}>
               <div className="max-w-7xl mx-auto text-foreground text-2xl bg-background/0 py-4 sm:py-8">
                 <h2 className="text-3xl sm:text-4xl text-center ">
-                  Recent Projects
+                  Recent Works
                 </h2>
               </div>
               <div className=" max-w-7xl mx-auto text-foreground flex flex-col gap-16 lg:gap-32">
