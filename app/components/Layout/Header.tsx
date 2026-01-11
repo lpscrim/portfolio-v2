@@ -77,14 +77,7 @@ export default function Header() {
             >
               PROJECTS
             </Link>
-            <a
-              href="https://daydreamteam.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-background rounded-xs px-2 transistion-all duration-500"
-            >
-              PHOTO
-            </a>
+         
             <Link
               href="#contact"
               onClick={handleContactClick}
@@ -138,14 +131,7 @@ export default function Header() {
             >
               PROJECTS
             </Link>
-            <a
-              href="https://daydreamteam.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-background/80 hover:text-background pop-up-2 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
-            >
-              PHOTO
-            </a>
+           
             <Link
               href="#contact"
               onClick={handleContactClick}

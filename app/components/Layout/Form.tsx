@@ -3,8 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import ServicesSection from "@/app/components/Sections/Home/Services";
-
+import Button from "../UI/Button";
 export default function Form() {
   const formRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
@@ -210,17 +209,17 @@ export default function Form() {
               </div>
 
               <div className="mt-10 items-center flex flex-row justify-between gap-x-6 sm:gap-x-8">
-                <button
+                <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-40 rounded-xs bg-secondary px-3.5 py-2.5 text-center text-sm font-semibold text-text shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent cursor-pointer transition-all  ${
+                  className={`w-40 rounded-xs bg-secondary px-3.5 py-2.5  ${
                     isSubmitting
                       ? "opacity-50 cursor-not-allowed"
-                      : "hover:brightness-110 hover:-translate-y-0.5 active:brightness-90 active:translate-y-0.5"
+                      : " "
                   }`}
                 >
                   {isSubmitting ? "Sending..." : "Send"}
-                </button>
+                </Button>
                 <div
                   mail-to="Lpscrim@gmail.com"
                   className="cursor-pointer hover:text-secondary transition-colors duration-300"
