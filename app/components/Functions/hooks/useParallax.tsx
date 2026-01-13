@@ -20,10 +20,19 @@ export const useParallax = (containerId: string, speeds: number[], shouldReload:
       }
     };
 
+    // Call handleScroll immediately to set initial positions when loading from URL
+    handleScroll();
+
+    // Also call after a short delay to ensure DOM is fully rendered
+    const timeoutId = requestAnimationFrame(() => {
+      handleScroll();
+    });
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleResize, { passive: true });
 
     return () => {
+      cancelAnimationFrame(timeoutId);
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
