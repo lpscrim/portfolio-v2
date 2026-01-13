@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <About />
       <section id="trigger"></section>
-      <div className="z-50 relative">        
+      <div className="z-50 relative min-h-svh bg-foreground">        
         <Form />
         <Footer />
       </div>
