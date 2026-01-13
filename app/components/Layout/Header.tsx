@@ -78,7 +78,7 @@ export default function Header() {
         </div>
         {/* Clock */}
         <div className="flex-1 flex justify-start md:justify-center items-center">
-          <div className={`hidden ${isFixed ? 'opacity-100' : 'opacity-0'} md:flex`}>
+          <div className={`hidden ${isFixed ? 'opacity-100' : 'opacity-0'} `}>
             <Clock />
           </div>
         </div>
