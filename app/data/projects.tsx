@@ -1,5 +1,18 @@
 const projects = [
   {
+    title:"DayDreamTeam",
+    slug:"daydreamteam",
+    brief:
+      "A vibrant, user-friendly website for a photographer, featuring a minimal/ dynamic portfolio section.",
+    description:
+      "Website for DayDreamTeam, a dynamic photographer based in Scotland. The design focuses on a clean minimal style and user-friendly navigation. A minimalistic portfolio section that allows the photographs to take center stage. The site is fully responsive and optimized for performance across all devices.",
+    img: "/projects/ddt1.webp",
+    vid: "/Vids/Ddt.mp4",
+    url: "https://daydreamteam.co.uk",
+    date: "2026-03-15",
+    tech: ["Next.js", "Cloudinary"],
+  },
+  {
     title: "Hillside House",
     slug: "hillside-house",
     brief:
@@ -14,7 +27,7 @@ const projects = [
   },
 
   {
-    title: "Shopify kiosk QR",
+    title: "Shopify Kiosk QR",
     slug: "shopify-kiosk",
     brief:
       "A custom in-store kiosk system using dynamic QR codes for contactless product browsing and checkout.",
