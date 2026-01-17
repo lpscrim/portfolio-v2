@@ -1,11 +1,11 @@
 const projects = [
   {
-    title:"DayDreamTeam",
+    title:"Daydreamteam",
     slug:"daydreamteam",
     brief:
       "A vibrant, user-friendly website for a photographer, featuring a minimal/ dynamic portfolio section.",
     description:
-      "Website for DayDreamTeam, a dynamic photographer based in Scotland. The design focuses on a clean minimal style and user-friendly navigation. A minimalistic portfolio section that allows the photographs to take center stage. The site is fully responsive and optimized for performance across all devices.",
+      "Website for Daydreamteam, a dynamic photographer based in Scotland. The design focuses on a clean minimal style and user-friendly navigation. A minimalistic portfolio section that allows the photographs to take center stage. The site is fully responsive and optimized for performance across all devices.",
     img: "/projects/ddt1.webp",
     vid: "/Vids/Ddt.mp4",
     url: "https://daydreamteam.co.uk",
