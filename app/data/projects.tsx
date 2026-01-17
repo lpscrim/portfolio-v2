@@ -16,7 +16,7 @@ const projects = [
     title: "Hillside House",
     slug: "hillside-house",
     brief:
-      "A modern, responsive website for a boutique bed and breakfast, featuring Shopify integration for seamless booking management.",
+      "A modern, responsive website for a boutique bed and breakfast, featuring AirBnB integration for seamless booking management.",
     description:
       "Website for Hillside House, a boutique B&B on the Isle of Skye. The clean layout highlights the property's amenities and scenic location while maintaining brand consistency through a cohesive colour palette and local imagery. SEO was prioritized throughout, and Airbnb affiliate integration enables real-time booking management to prevent double bookings.",
     img: "/projects/hls.webp",
