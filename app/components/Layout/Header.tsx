@@ -66,7 +66,7 @@ export default function Header() {
     >
       <nav
         aria-label="Global"
-        className="relative max-w-7xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-0"
+        className="relative max-w-8xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-16"
       >
         {/* Name */}
         <div className="flex flex-1 items-center">

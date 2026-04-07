@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-foreground text-background pt-16 pb-12 text-center z-50">
-      <div className="w-full mx-auto px-18 xl:px-32 flex flex-col md:flex-row-reverse justify-between items-center">
+    <footer className="w-full bg-foreground text-background pt-24 pb-10 text-center z-50 max-w-8xl mx-auto px-2 sm:px-8 xl:px-16">
+      <div className="w-full mx-auto  flex flex-col md:flex-row-reverse justify-between items-center">
         {/*Copyright*/}
         <div>
           <p className="text-sm">
