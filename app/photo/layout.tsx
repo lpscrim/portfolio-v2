@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import Header from "@/app/components/Layout/Header";
 import Footer from "@/app/components/Layout/Footer";
+
+export const metadata: Metadata = {
+  title: "Photography | Lewis Scrimgeour",
+  description:
+    "Photography portfolio by Lewis Scrimgeour — striking visuals and meaningful storytelling.",
+  openGraph: {
+    title: "Photography | Lewis Scrimgeour",
+    description:
+      "Photography portfolio by Lewis Scrimgeour — striking visuals and meaningful storytelling.",
+    url: "https://lpscrim.com/photo",
+  },
+};
 
 export default function PhotosLayout({
   children,

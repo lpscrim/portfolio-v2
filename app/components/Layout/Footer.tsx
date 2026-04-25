@@ -17,7 +17,7 @@ export default function Footer() {
             href="https://github.com/lpscrim"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="Lewis Scrimgeour on GitHub"
             className="hover:text-background text-background/80 transition-colors duration-500"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
@@ -28,7 +28,7 @@ export default function Footer() {
             href="https://daydreamteam.co.uk"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Photography"
+            aria-label="Photography portfolio — Daydreamteam"
             className="hover:text-background text-background/80 transition-colors duration-500"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
@@ -41,7 +41,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/lewis-scrimgeour-13389b243/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            aria-label="Lewis Scrimgeour on LinkedIn"
             className="hover:text-background text-background/80 transition-colors duration-500"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ export default function Footer() {
           </a>
           <Link
             href="/#contact"
-            aria-label="Email"
+            aria-label="Contact Lewis Scrimgeour by email"
             className="hover:text-background text-background/80 transition-colors duration-500"
           >
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">

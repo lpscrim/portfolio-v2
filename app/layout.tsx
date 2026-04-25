@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lewis Scrimgeour | Web Design & Development",
   description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
-  keywords: ["web designer", "web design", "web developent", "web developer", "Next.js", "React", "portfolio"],
+  keywords: ["web designer", "web design", "web development", "web developer", "Next.js", "React", "portfolio"],
   
   icons: [
     { rel: "icon", url: "/favicon.ico" },

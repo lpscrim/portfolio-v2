@@ -21,11 +21,20 @@ export default function Hero() {
           {/* Desktop Title */}
           <h2
             className="home-title -mt-21 md:-mt-22 xl:-mt-24 2xl:-mt-28 brightness-150 text-background text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-background/80 transition-all duration-800 rounded-md fade-in pb-1 pt-2 px-2 cursor-pointer"
+            tabIndex={0}
             onClick={() =>
               document
                 .getElementById("about")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
           >
             lewis scrimgeour
           </h2>

@@ -128,6 +128,15 @@ export default function Form() {
               className="mx-auto mt-8 max-w-2xl sm:mt-14"
             >
               <input type="hidden" name="form-name" value="contact" />
+              {/* Netlify honeypot — hidden from humans, traps bots */}
+              <input
+                type="text"
+                name="bot-field"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}
+              />
               <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:gap-y-6 sm:grid-cols-2">
                 <div className="sm:col-span-2">
                   <label

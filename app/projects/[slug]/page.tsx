@@ -1,7 +1,27 @@
+import type { Metadata } from "next";
 import Footer from "../../components/Layout/Footer";
 import projects from "../../data/projects";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = projects.find((proj) => slug === proj.slug);
+  if (!project) return {};
+  return {
+    title: `${project.title} | Lewis Scrimgeour`,
+    description: project.brief,
+    openGraph: {
+      title: `${project.title} | Lewis Scrimgeour`,
+      description: project.brief,
+      images: [{ url: `https://lpscrim.com${project.img}` }],
+    },
+  };
+}
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
