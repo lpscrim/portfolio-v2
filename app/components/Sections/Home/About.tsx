@@ -1,82 +1,13 @@
-"use client";
-
-import { useRef, useEffect } from "react";
 import Button from "../../UI/Button";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "../../UI/Card";
 import Link from "next/link";
 import projects from "../../../data/projects";
 import Services from "./Services";
+import AnimateIn from "../../UI/AnimateIn";
 
 const content = projects.slice(0, 4);
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function About() {
-  const firstRef = useRef<HTMLHeadingElement | null>(null);
-  const secondRef = useRef<HTMLParagraphElement | null>(null);
-  const thirdRef = useRef<HTMLDivElement | null>(null);
-
-  {
-    /* Animations */
-  }
-  useEffect(() => {
-    if (firstRef.current) {
-      gsap.fromTo(
-        firstRef.current,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power1.out",
-          scrollTrigger: {
-            trigger: firstRef.current,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }
-    if (secondRef.current) {
-      gsap.fromTo(
-        secondRef.current,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          delay: 0.1,
-          ease: "power1.out",
-          scrollTrigger: {
-            trigger: secondRef.current,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }
-    if (thirdRef.current) {
-      gsap.fromTo(
-        thirdRef.current,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          delay: 0.2,
-          ease: "power1.out",
-          scrollTrigger: {
-            trigger: thirdRef.current,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-        }
-      );
-    }
-  }, []);
-
   return (
     <div>
       <section
@@ -85,22 +16,21 @@ export default function About() {
       >
         {/* About Section */}
         <div className="w-full pt-32 sm:pt-56 pb-16 sm:pb-32 sm:px-10 ">
-          <div className="max-w-7xl mx-auto text-foreground/80 text-2xl bg-background/0 py-6 text-left sm:text-center">
+          <AnimateIn className="max-w-7xl mx-auto text-foreground/80 text-2xl bg-background/0 py-6 text-left sm:text-center">
             <p
-              ref={firstRef}
               className="text-2xl xl:text-3xl xl:leading-10 "
             >
               A web design and development studio. Collaborating with a variety of businesses and induviduals to create modern, responsive, and user-friendly websites.
             </p>
-          </div>
+          </AnimateIn>
         </div>
         {/* Projects Section */}
         <div className="w-full pb-32 sm:px-6 lg:px-10">
           <div>
-            <div ref={secondRef} className="pb-8 sm:pb-16">
+            <AnimateIn delay={0.1} className="pb-8 sm:pb-16">
               <Services />
-            </div>
-            <div ref={thirdRef}>
+            </AnimateIn>
+            <AnimateIn delay={0.2}>
               <div className="max-w-7xl mx-auto text-foreground text-2xl bg-background/0 py-4 sm:py-8">
                 <h2 className="text-3xl sm:text-4xl text-center ">
                   Recent Works
@@ -128,7 +58,7 @@ export default function About() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </AnimateIn>
           </div>
         </div>
       </section>
