@@ -5,24 +5,9 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "@/app/components/Layout/Header";
 import Footer from "@/app/components/Layout/Footer";
+import { pageServices } from "@/app/data/services";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const services = [
-  "Front-End Development",
-  "E-Commerce",
-  "Design / Re-Design",
-  "SEO Optimisation",
-  "API Integration",
-  "CMS Integration",
-  "Brand Identity",
-  "Shopify Development",
-  "Responsive Layouts",
-  "UI/UX",
-  "Maintenance & Updates",
-  "Performance Optimisation",
-  "Copywriting",
-];
 
 export default function ServicesPage() {
   const headingRef = useRef<HTMLHeadingElement | null>(null);
@@ -83,7 +68,7 @@ export default function ServicesPage() {
             ref={servicesRef}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           >
-            {services.map((service, index) => (
+            {pageServices.map((service, index) => (
               <div
                 key={index}
                 className="p-4 sm:p-6 border border-foreground/20 rounded-sm hover:border-foreground/50 transition-all duration-300"

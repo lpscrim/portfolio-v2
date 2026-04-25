@@ -1,16 +1,7 @@
+import { homeServices } from "../../../data/services";
+
 export default function Services() {
-  const services = [
-    "Web Development",
-    "Web Design",
-    "E-Commerce",
-    "API /CMS",
-    "SEO",
-    "Brand Identity",
-    "Shopify",
-    "Accessibility",
-    "Responsive Design",
-    "UI/UX",
-  ];
+  const services = homeServices;
 
   return (
     <section id="services" className="w-full relative">
