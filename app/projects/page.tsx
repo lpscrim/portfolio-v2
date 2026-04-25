@@ -5,7 +5,7 @@ import Footer from "../components/Layout/Footer";
 export default function ProjectsMain() {
     return (
         <section id="projects" className="">
-            <div className="relative w-full min-h-[600lvh]  md:min-h-[650lvh] lg:min-h-[680lvh] xl:min-h-[730lvh] ">
+            <div className="relative w-full min-h-[660lvh]  md:min-h-[740lvh] lg:min-h-[760lvh] xl:min-h-[800lvh] ">
                 <ProjectContainer />
             </div>
             <section id="trigger"></section>
