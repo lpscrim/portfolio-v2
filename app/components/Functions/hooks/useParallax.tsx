@@ -5,7 +5,7 @@ export const useParallax = (containerId: string, speeds: number[], shouldReload:
   useEffect(() => {
     const handleResize = () => {
       if (shouldReload && window.innerWidth >= 640) {
-        window.location.reload();
+        handleScroll();
       }
     };
 

@@ -19,18 +19,23 @@ export default function Clock() {
     let lastAngle = 0;
     let angle = PI / 2;
 
+    let rafId: number | null = null;
     const onMouseMove = (e: MouseEvent) => {
-      const { width, height, left, top } = bounds;
-      const x = e.clientX - left - width / 2;
-      const y = e.clientY - top - height / 2;
-      const currentAngle = Math.atan2(y, x);
-      const diff = currentAngle - lastAngle;
-      angle += diff > PI ? diff - 2 * PI : diff < -PI ? diff + 2 * PI : diff;
-      lastAngle = currentAngle;
-      gsap.to($clock, {
-        rotation: angle * (180 / PI),
-        duration: 0.4,
-        overwrite: "auto",
+      if (rafId !== null) return;
+      rafId = requestAnimationFrame(() => {
+        rafId = null;
+        const { width, height, left, top } = bounds;
+        const x = e.clientX - left - width / 2;
+        const y = e.clientY - top - height / 2;
+        const currentAngle = Math.atan2(y, x);
+        const diff = currentAngle - lastAngle;
+        angle += diff > PI ? diff - 2 * PI : diff < -PI ? diff + 2 * PI : diff;
+        lastAngle = currentAngle;
+        gsap.to($clock, {
+          rotation: angle * (180 / PI),
+          duration: 0.4,
+          overwrite: "auto",
+        });
       });
     };
 
@@ -38,6 +43,7 @@ export default function Clock() {
     window.addEventListener("scroll", refreshBounds);
 
     return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("scroll", refreshBounds);
     };

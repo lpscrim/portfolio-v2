@@ -27,11 +27,6 @@ export default function Photo() {
   ];
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1040) {
-        window.location.reload();
-      }
-    };
     {
       /* Animations */
     }
@@ -70,10 +65,6 @@ export default function Photo() {
         }
       );
     }
-    window.addEventListener("resize", handleResize, false);
-    return () => {
-      window.removeEventListener("resize", handleResize, false);
-    };
   }, []);
 
   useEffect(() => {
