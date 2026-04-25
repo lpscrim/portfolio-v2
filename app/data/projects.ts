@@ -18,7 +18,7 @@ const projects = [
     brief:
       "A vibrant, user-friendly website for a photographer, featuring a minimal/ dynamic portfolio section.",
     description:
-      "Website for Daydreamteam, a dynamic photographer based in Scotland. The design focuses on a clean minimal style and user-friendly navigation. A minimalistic portfolio section that allows the photographs to take center stage. The site is fully responsive and optimized for performance across all devices.",
+      "DayDreamTeam is a custom portfolio site for presenting photography and visual art in a clean, immersive format. Built with Next.js and Cloudinary, it combines fast image delivery, dynamic project galleries, SEO-ready metadata, and a responsive viewing experience that lets visitors move seamlessly between curated projects and full photo collections.",
     img: "/projects/ddt1.webp",
     vid: "/Vids/Ddt.mp4",
     url: "https://daydreamteam.co.uk",
@@ -31,7 +31,7 @@ const projects = [
     brief:
       "A modern, responsive website for a boutique bed and breakfast, featuring AirBnB integration for seamless booking management.",
     description:
-      "Website for Hillside House, a boutique B&B on the Isle of Skye. The clean layout highlights the property's amenities and scenic location while maintaining brand consistency through a cohesive colour palette and local imagery. SEO was prioritized throughout, and Airbnb affiliate integration enables real-time booking management to prevent double bookings.",
+      "A marketing and booking website for Hillside House, a self-catering holiday rental in Elgol, Isle of Skye. Built with Next.js 15, TypeScript, and Tailwind CSS, the site features a full-screen hero landing section, a room-by-room photo gallery, a contact/enquiry form, and an integrated booking widget. Lenis smooth scrolling and Framer Motion animations provide a polished user experience, while structured metadata, Open Graph tags, a sitemap, and robots.txt cover SEO fundamentals.",
     img: "/projects/hls.webp",
     vid: "/Vids/Hls.mp4",
     url: "https://hillsidehouseelgol.com",
