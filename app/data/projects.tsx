@@ -6,8 +6,8 @@ const projects = [
       "Full-stack e-commerce site for an artist, featuring a filterable gallery, persistent cart, and Stripe Connect checkout with region-aware shipping.",
     description:
       "Full-stack e-commerce site for Anna Maia Art, built with Next.js 15 (App Router), TypeScript, and Tailwind CSS. The site allows the artist to showcase and sell original paintings and prints, with a filterable work gallery, deep-link modals, and a persistent cart. Checkout is powered by Stripe Connect, processing payments directly to the artist's account with a platform fee retained via application charges. Shipping is region-aware (UK / EU / International), with rates configurable from an admin panel and dynamic price updates at checkout. An admin panel protected via Supabase Auth handles product management, stock levels, order tracking, and editable home page content — all without touching code. Order notifications are sent via Resend, with Stripe webhook handling for both standard and Connect-forwarded events.",
-    img: "/projects/ana.webp",
-    vid: "/Vids/ana.mp4",
+    img: "/projects/ana1.webp",
+    vid: "/Vids/Ana3.mp4",
     url: "https://annamaiaart.com",
     date: "2026-04-25",
     tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Stripe Connect", "Supabase", "Resend"],
