@@ -20,7 +20,7 @@ export default function About() {
             <p
               className="text-2xl xl:text-3xl xl:leading-10 "
             >
-              A web design and development studio. Collaborating with a variety of businesses and induviduals to create modern, responsive, and user-friendly websites.
+              A web design and development studio. Collaborating with a variety of businesses and individuals to create modern, responsive, and user-friendly websites.
             </p>
           </AnimateIn>
         </div>
