@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL8.webp')] mt-0.5 z-5"></div>
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-svh flex items-center justify-center z-7">
           {/* Desktop Title */}
-          <h2
+          <h1
             className="home-title -mt-21 md:-mt-22 xl:-mt-24 2xl:-mt-28 brightness-150 text-background text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-background/80 transition-all duration-800 rounded-md fade-in pb-1 pt-2 px-2 cursor-pointer"
             tabIndex={0}
             onClick={() =>
@@ -37,7 +37,7 @@ export default function Hero() {
             }}
           >
             lewis scrimgeour
-          </h2>
+          </h1>
         </div>
 
         <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL3.webp')] flex items-center justify-center z-10"></div>

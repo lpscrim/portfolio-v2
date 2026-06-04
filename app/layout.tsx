@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisScroll from "./components/Functions/LenisScroll";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Lewis Scrimgeour | Web Design & Development",
   description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
   keywords: ["web designer", "web design", "web development", "web developer", "Next.js", "React", "portfolio"],
+  metadataBase: new URL("https://lpscrim.com"),
+  alternates: {
+    canonical: "/",
+  },
   
   icons: [
     { rel: "icon", url: "/favicon.ico" },
@@ -34,6 +29,11 @@ export const metadata: Metadata = {
     url: "https://lpscrim.com",
     siteName: "Lewis Scrimgeour Portfolio",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lewis Scrimgeour | Web Design & Development",
+    description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
   },
   
   // Robots
@@ -58,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black">
       <body
-        className={`bg-foreground overflow-x-hidden antialiased flex flex-col min-h-screen`}
+        className="bg-foreground overflow-x-hidden antialiased flex flex-col min-h-screen"
       >
         <LenisScroll />
         <div className="flex-1 flex flex-col bg-foreground/5">{children}</div>
