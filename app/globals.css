@@ -123,7 +123,7 @@ body {
 }
 
 .home-title {
-  font-family: 'Futura PT', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   letter-spacing: 0.7px;
 }
@@ -139,7 +139,7 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Futura PT', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   letter-spacing: -0.4px;
 }
