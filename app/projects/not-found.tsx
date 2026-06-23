@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ProjectNotFound() {
   return (
     <main className="flex flex-col items-center justify-center min-h-svh bg-background text-foreground px-4">
-      <h1 className="home-title text-6xl sm:text-8xl mb-6 lowercase">404</h1>
+      <h1 className="home-title text-6xl sm:text-8xl mb-6 capitalize">404</h1>
       <p className="text-foreground/60 text-lg mb-10">Project not found.</p>
       <Link
         href="/projects"

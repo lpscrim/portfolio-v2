@@ -134,7 +134,7 @@ export default function Card({
               <h2
                 className={
                   `group-hover:bg-foreground/5 px-4 py-0.5 transition-all duration-700 text-lg sm:text-xl` +
-                  (main ? " text-foreground" : " text-background home-title lowercase")
+                  (main ? " text-foreground" : " text-background home-title capitalize")
                 }
               >
                 {content.title}

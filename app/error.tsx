@@ -16,7 +16,7 @@ export default function Error({
 
   return (
     <main className="flex flex-col items-center justify-center min-h-svh bg-background text-foreground px-4">
-      <h1 className="home-title text-5xl sm:text-7xl mb-6 lowercase">
+      <h1 className="home-title text-5xl sm:text-7xl mb-6 capitalize">
         something went wrong
       </h1>
       <p className="text-foreground/60 text-lg mb-10">
