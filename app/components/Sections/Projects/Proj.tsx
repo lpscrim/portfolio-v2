@@ -26,7 +26,7 @@ export default function Proj() {
       {/* Sentinel element for IntersectionObserver - detects when we're at top */}
       <div ref={sentinelRef} className="absolute top-0 left-0 w-full h-1" />
       <h2 className="home-title mt-100 xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20 text-background text-5xl lg:text-6xl xl:text-7xl mx-auto font-semibold transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">
-        projects
+        Projects
       </h2>
       {atTop && (
         <div
