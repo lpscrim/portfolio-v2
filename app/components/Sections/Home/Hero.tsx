@@ -38,6 +38,7 @@ export default function Hero() {
           >
             Lewis Scrimgeour 
           </h1>
+          
         </div>
 
         <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL3.webp')] flex items-center justify-center z-10"></div>

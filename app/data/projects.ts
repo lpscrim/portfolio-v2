@@ -1,5 +1,26 @@
 const projects = [
   {
+    title: "John Sloan Pottery",
+    slug: "john-sloan-pottery",
+    brief:
+      "Full-stack e-commerce site for a potter, featuring a filterable work gallery, Etsy sync, custom mug builder, and Stripe Connect checkout with region-aware shipping.",
+    description:
+      "Full-stack e-commerce site for John Sloan Pottery, built with Next.js 15, TypeScript, and Tailwind CSS. The site showcases ceramic work through a filterable gallery with deep-link photo modals, a persistent cart, and Stripe Connect checkout — processing payments directly to the artist's account with a platform fee via application charges. Shipping is region-aware (UK / EU / International) with rates configurable from the admin panel. A custom mug builder lets customers specify shape and glaze options before purchase. Products sync bidirectionally with Etsy via a Vercel Cron job, keeping stock levels consistent across both storefronts. An admin panel protected via Supabase Auth handles product management, stock levels, order tracking, and editable home and about page content — all without touching code. Order notifications are sent via Resend, with Stripe webhook handling for both standard and Connect-forwarded events.",
+    img: "/projects/jsp1.webp",
+    vid: "/Vids/Jsp1.mp4",
+    url: "https://john-sloan-pottery.vercel.app/",
+    date: "2026-06-21",
+    tech: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "Stripe Connect",
+      "Supabase",
+      "Resend",
+      "Etsy API",
+    ],
+  },
+  {
     title: "Anna Maia Art",
     slug: "anna-maia-art",
     brief:
@@ -10,11 +31,18 @@ const projects = [
     vid: "/Vids/Ana3.mp4",
     url: "https://annamaiaart.com",
     date: "2026-04-25",
-    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Stripe Connect", "Supabase", "Resend"],
+    tech: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "Stripe Connect",
+      "Supabase",
+      "Resend",
+    ],
   },
   {
-    title:"Daydreamteam",
-    slug:"daydreamteam",
+    title: "Daydreamteam",
+    slug: "daydreamteam",
     brief:
       "A vibrant, user-friendly website for a photographer, featuring a minimal/ dynamic portfolio section.",
     description:
