@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-svh flex items-center justify-center z-7">
           {/* Desktop Title */}
           <h1
-            className="home-title -mt-24 xl:-mt-32 brightness-150 text-background text-5xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-background/80 transition-all duration-800 rounded-md fade-in pt-1 pb-2 px-2 cursor-pointer "
+            className="home-title -mt-22 xl:-mt-32 brightness-150 text-background text-4xl lg:text-6xl xl:text-7xl border-4 border-transparent hover:border-background/80 transition-all duration-800 rounded-md fade-in pt-1 pb-2 px-2 cursor-pointer "
             tabIndex={0}
             onClick={() =>
               document
