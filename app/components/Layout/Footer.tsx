@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-foreground text-background pt-24 pb-10 text-center z-50 max-w-8xl mx-auto px-2 sm:px-8 xl:px-16">
+    <footer className="w-full bg-foreground text-background lg:pt-8 pb-8 xl:pt-24 text-center z-50 max-w-8xl mx-auto px-2 sm:px-8 xl:px-16">
       <div className="w-full mx-auto  flex flex-col md:flex-row-reverse justify-between items-center">
         {/*Copyright*/}
         <div>
@@ -12,7 +12,7 @@ export default function Footer() {
           </p>
         </div>
         {/* Social Links */}
-        <div className="flex justify-center gap-6 mt-4 md:mt-0">
+        <div className="flex justify-center gap-6 mt-16 md:mt-0">
           <a
             href="https://github.com/lpscrim"
             target="_blank"
