@@ -72,7 +72,7 @@ export default function Header() {
         <div className="flex flex-1 items-center">
           <Link href="/">
             <h2 className={` home-title whitespace-nowrap pl-2 text-xl tracking-wide mt-1.5 lg:text-xl text-background/90 hover:text-background transition-all duration-500`}>
-              Lewis Scrimgeour
+              lewis scrimgeour
             </h2>
           </Link>
         </div>
@@ -90,14 +90,14 @@ export default function Header() {
                 href="/projects"
                 className="hover:text-background rounded-xs px-2 transition-all duration-500"
               >
-                Projects
+                projects
               </Link>
               <Link
                 href="#contact"
                 onClick={handleContactClick}
                 className="hover:text-background rounded-xs px-2 xl:px-2 transition-all duration-500"
               >
-                Contact
+                contact
               </Link>
             </div>
           </div>

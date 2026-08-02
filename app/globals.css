@@ -122,8 +122,15 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Ballmer';
+  src: url('/fonts/Ballmer/Architype-Ballmer.woff2') format('woff2'),
+       url('/fonts/Ballmer/Architype-Ballmer.woff') format('woff');
+  font-display: swap;
+}
+
 .home-title {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Ballmer', sans-serif;
   font-weight: 400;
   letter-spacing: 0.7px;
 }
