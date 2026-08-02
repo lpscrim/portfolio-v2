@@ -15,7 +15,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`mt-2 px-2 py-1 rounded-sm font-semibold cursor-pointer shadow  hover:shadow-xl active:translate-y-1 active:shadow-md active:scale-98 duration-150 transition-all ${className}`}
+      className={`home-title lowercase mt-2 px-2 py-1 rounded-sm font-semibold cursor-pointer shadow  hover:shadow-xl active:translate-y-1 active:shadow-md active:scale-98 duration-150 transition-all ${className}`}
       onClick={onClick}
       type={type}
       style={style}
