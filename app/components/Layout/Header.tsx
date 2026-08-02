@@ -66,12 +66,12 @@ export default function Header() {
     >
       <nav
         aria-label="Global"
-        className="relative max-w-8xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-16"
+        className="relative max-w-8xl text-xl xl:text-2xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-16"
       >
         {/* Name */}
         <div className="flex flex-1 items-center">
           <Link href="/">
-            <h2 className={` home-title whitespace-nowrap pl-2 text-xl tracking-wide mt-1.5 lg:text-xl text-background/90 hover:text-background transition-all duration-500`}>
+            <h2 className={` home-title whitespace-nowrap pl-2 tracking-wide mt-1.5 text-background/90 hover:text-background transition-all duration-500`}>
               lewis scrimgeour
             </h2>
           </Link>
@@ -85,7 +85,7 @@ export default function Header() {
         {/* Desktop links / Mobile menu */}
         <div className="flex-1 flex justify-end items-center sm:mr-2">
           <div className="hidden md:flex  home-title text-background/90 tracking-wide">
-            <div className="text-lg gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
+            <div className=" gap-x-2 xl:gap-x-4 items-center mt-1.5 flex">
               <Link
                 href="/projects"
                 className="hover:text-background rounded-xs px-2 transition-all duration-500"
