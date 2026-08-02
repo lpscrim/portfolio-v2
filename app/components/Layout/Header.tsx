@@ -127,7 +127,7 @@ export default function Header() {
           <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide ">
             <Link
               href="/projects"
-              className="text-background/90 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 capitalize home-title"
+              className="text-background/90 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
             >
               PROJECTS
             </Link>
@@ -135,7 +135,7 @@ export default function Header() {
             <Link
               href="#contact"
               onClick={handleContactClick}
-              className="text-background/90 hover:text-background pop-up-3 text-left active:translate-y-px transition-all duration-250 capitalize home-title"
+              className="text-background/90 hover:text-background pop-up-3 text-left active:translate-y-px transition-all duration-250 lowercase home-title"
             >
               CONTACT
             </Link>
