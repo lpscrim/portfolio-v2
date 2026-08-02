@@ -8,7 +8,7 @@ export default function Services() {
       <div className="pb-2 lg:px-16">
         <div className="max-w-7xl mx-auto text-center sm:pl-0">
           {/* Services */}
-          <h2 className="py-4 sm:py-8 text-3xl sm:text-4xl">Services</h2>
+          <h2 className="py-4 sm:py-8 text-2xl sm:text-3xl xl:text-4xl">Services</h2>
 
           <div className="py-10 border-t border-b border-foreground/80 mt-8 mb-14 ">
             <div className="flex flex-wrap  justify-around sm:justify-center italic gap-y-4 gap-x-4 text-lg sm:text-xl xl:text-2xl">

@@ -31,8 +31,8 @@ export default function About() {
               <Services />
             </AnimateIn>
             <AnimateIn delay={0.2}>
-              <div className="max-w-7xl mx-auto text-foreground text-2xl bg-background/0 py-4 sm:py-8">
-                <h2 className="text-3xl sm:text-4xl text-center ">
+              <div className="max-w-7xl mx-auto text-foreground bg-background/0 py-4 sm:py-8">
+                <h2 className="text-2xl sm:text-3xl xl:text-4xl text-center ">
                   Recent Works
                 </h2>
               </div>
