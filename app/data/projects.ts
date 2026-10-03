@@ -6,8 +6,8 @@ const projects = [
       "Modern holiday accommodation website with booking flow, dynamic property content, and a CMS-managed admin experience.",
     description:
       "A modern Next.js booking and property-content site for a Scottish accommodation business. The app supports property landing pages, grouped property and room listings, booking flows with Stripe payment intents, an admin login with CMS-style editing, Cloudinary image uploads and ordering, rich-text content sections for about, host, and room copy, and Prisma-backed booking records and site content.",
-    img: "/projects/hls.webp",
-    vid: "/Vids/Hls.mp4",
+    img: "/projects/Dch.webp",
+    vid: "/Vids/Dch.mp4",
     url: "https://www.duncaanholidays.com",
     date: "2026-10-03",
     tech: [
