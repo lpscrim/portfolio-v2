@@ -1,7 +1,7 @@
 const projects = [
   {
-    title: "Richard & Fiona",
-    slug: "richard-fiona",
+    title: "Duncaan Holidays",
+    slug: "duncaan-holidays",
     brief:
       "Modern holiday accommodation website with booking flow, dynamic property content, and a CMS-managed admin experience.",
     description:
