@@ -3,9 +3,9 @@ const projects = [
     title: "Duncaan Holidays",
     slug: "duncaan-holidays",
     brief:
-      "Modern holiday accommodation website with booking flow, dynamic property content, and a CMS-managed admin experience.",
+      "A polished holiday rental website with easy-to-navigate property pages, online booking, and a simple admin area for updates.",
     description:
-      "A modern Next.js booking and property-content site for a Scottish accommodation business. The app supports property landing pages, grouped property and room listings, booking flows with Stripe payment intents, an admin login with CMS-style editing, Cloudinary image uploads and ordering, rich-text content sections for about, host, and room copy, and Prisma-backed booking records and site content.",
+      "A straightforward holiday rental website designed to help guests browse properties, check availability, and book with confidence. The site makes it easy to explore rooms and listings, while the owner can update property details, pricing, and content through a simple admin area without needing technical help.",
     img: "/projects/Dch.webp",
     vid: "/Vids/Dch.mp4",
     url: "https://www.duncaanholidays.com",
@@ -25,9 +25,9 @@ const projects = [
     title: "John Sloan Pottery",
     slug: "john-sloan-pottery",
     brief:
-      "Full-stack e-commerce site for a potter, featuring a filterable work gallery, Etsy sync, custom mug builder, and Stripe Connect checkout with region-aware shipping.",
+      "An artist-led online shop with a gallery, custom mug builder, smooth checkout, and easy stock management.",
     description:
-      "Full-stack e-commerce site for John Sloan Pottery, built with Next.js 15, TypeScript, and Tailwind CSS. The site showcases ceramic work through a filterable gallery with deep-link photo modals, a persistent cart, and Stripe Connect checkout — processing payments directly to the artist's account with a platform fee via application charges. Shipping is region-aware (UK / EU / International) with rates configurable from the admin panel. A custom mug builder lets customers specify shape and glaze options before purchase. Products sync bidirectionally with Etsy via a Vercel Cron job, keeping stock levels consistent across both storefronts. An admin panel protected via Supabase Auth handles product management, stock levels, order tracking, and editable home and about page content — all without touching code. Order notifications are sent via Resend, with Stripe webhook handling for both standard and Connect-forwarded events.",
+      "A welcoming online shop for a ceramic artist, built to make browsing and buying feel simple. Customers can explore the collection, customise a mug, and check out without confusion. The studio can manage stock, orders, and product updates in one place, while the site also stays in sync with Etsy so both shops reflect the same availability.",
     img: "/projects/jsp1.webp",
     vid: "/Vids/Jsp1.mp4",
     url: "https://john-sloan-pottery.vercel.app/",
@@ -46,9 +46,9 @@ const projects = [
     title: "Anna Maia Art",
     slug: "anna-maia-art",
     brief:
-      "Full-stack e-commerce site for an artist, featuring a filterable gallery, persistent cart, and Stripe Connect checkout with region-aware shipping.",
+      "A calm, premium art shop that makes it easy to browse work, manage orders, and keep the sales process simple.",
     description:
-      "Full-stack e-commerce site for Anna Maia Art, built with Next.js 15 (App Router), TypeScript, and Tailwind CSS. The site allows the artist to showcase and sell original paintings and prints, with a filterable work gallery, deep-link modals, and a persistent cart. Checkout is powered by Stripe Connect, processing payments directly to the artist's account with a platform fee retained via application charges. Shipping is region-aware (UK / EU / International), with rates configurable from an admin panel and dynamic price updates at checkout. An admin panel protected via Supabase Auth handles product management, stock levels, order tracking, and editable home page content — all without touching code. Order notifications are sent via Resend, with Stripe webhook handling for both standard and Connect-forwarded events.",
+      "A beautifully simple shop for an artist who wants to sell paintings and prints with less friction. Visitors can browse by collection, add pieces to a cart, and complete their purchase smoothly. The site also gives the artist a straightforward way to manage products, inventory, and order updates without needing a complicated setup behind the scenes.",
     img: "/projects/ana1.webp",
     vid: "/Vids/Ana3.mp4",
     url: "https://annamaiaart.com",
@@ -66,9 +66,9 @@ const projects = [
     title: "Daydreamteam",
     slug: "daydreamteam",
     brief:
-      "A vibrant, user-friendly website for a photographer, featuring a minimal/ dynamic portfolio section.",
+      "A bright, modern portfolio for a photographer that puts the work front and centre and makes contact easy.",
     description:
-      "DayDreamTeam is a custom portfolio site for presenting photography and visual art in a clean, immersive format. Built with Next.js and Cloudinary, it combines fast image delivery, dynamic project galleries, SEO-ready metadata, and a responsive viewing experience that lets visitors move seamlessly between curated projects and full photo collections.",
+      "A clean and immersive portfolio site designed to help a photographer showcase their work beautifully. The layout keeps attention on the images, while the site also makes it easy for new clients to explore projects and get in touch. It feels polished and easy to use on both desktop and mobile.",
     img: "/projects/ddt1.webp",
     vid: "/Vids/Ddt.mp4",
     url: "https://daydreamteam.co.uk",
@@ -79,9 +79,9 @@ const projects = [
     title: "Hillside House",
     slug: "hillside-house",
     brief:
-      "A modern, responsive website for a boutique bed and breakfast, featuring AirBnB integration for seamless booking management.",
+      "A warm, welcoming website for a holiday cottage with room details, guest info, and a smoother booking journey.",
     description:
-      "A marketing and booking website for Hillside House, a self-catering holiday rental in Elgol, Isle of Skye. Built with Next.js 15, TypeScript, and Tailwind CSS, the site features a full-screen hero landing section, a room-by-room photo gallery, a contact/enquiry form, and an integrated booking widget. Lenis smooth scrolling and Framer Motion animations provide a polished user experience, while structured metadata, Open Graph tags, a sitemap, and robots.txt cover SEO fundamentals.",
+      "A polished marketing and booking website for a self-catering property on the Isle of Skye. It gives visitors a clear overview of the accommodation, showcases the rooms with photography, and makes it easy to ask questions or begin the booking process. The result is a website that feels friendly, professional, and easy to trust.",
     img: "/projects/hls.webp",
     vid: "/Vids/Hls.mp4",
     url: "https://hillsidehouseelgol.com",
@@ -93,8 +93,9 @@ const projects = [
     title: "Shopify Kiosk QR",
     slug: "shopify-kiosk",
     brief:
-      "A custom in-store kiosk system using dynamic QR codes for contactless product browsing and checkout.",
-    description: `Custom kiosk QR code system deployed across multiple retail stores. Customers scan QR codes to access product information and complete purchases on their mobile devices. Features include dynamically generated QR codes via external API, a rebuilt checkout page, session timers for security, and automatic "kiosk" tagging on orders for analytics tracking.`,
+      "A customer-friendly kiosk system that lets shoppers scan a QR code, browse products, and pay on their own phone.",
+    description:
+      "A practical in-store solution designed to make shopping feel faster and more convenient. Customers can scan a QR code, view the product range on their phone, and complete their purchase without waiting at a till. It also helps the business track customer activity and keep the buying process organised across multiple store locations.",
     img: "/projects/kio1.webp",
     vid: "/Vids/Kio.mp4",
     url: "https://merch.herts.ac.uk",
@@ -106,9 +107,9 @@ const projects = [
     title: "No Grout About It",
     slug: "no-grout-about-it",
     brief:
-      "Website redesign for an independent tiling company, featuring an integrated CMS for easy content management.",
+      "A cleaner, more confident website for a tiling business that makes services and previous work easier to understand.",
     description:
-      "Complete redesign for No Grout About It, an independent tiling company. The clean layout showcases services and portfolio work effectively. Integrated with Sanity CMS for the blog section, enabling the client to update content and images independently without technical expertise.",
+      "A full website refresh for a tiling company that needed a stronger online presence. The new design makes it easier for visitors to understand the services on offer, view finished work, and get in touch. The team can also update content and images in a simple way without needing technical support.",
     img: "/projects/gro1.webp",
     vid: "/Vids/Gro.mp4",
     url: "https://nogroutaboutit.netlify.app",
@@ -120,9 +121,9 @@ const projects = [
     title: "Cioch",
     slug: "cioch",
     brief:
-      "Website for an established outdoor clothing brand, with significant SEO improvements and CMS integration.",
+      "A refreshed outdoor brand website with clearer browsing, stronger search visibility, and easier content updates.",
     description:
-      "Website for Cioch, a respected outdoor clothing brand based in Scotland. Focus areas included dramatic SEO improvements and Sanity CMS integration for independent gallery management. Fully responsive across all devices with consistent brand identity throughout.",
+      "A website refresh for an established Scottish outdoor clothing brand. The aim was to make the site easier to browse, improve how it appears in search results, and give the team a simple way to update product imagery and content. The result is a cleaner, more consistent brand presence across devices.",
     img: "/projects/cio1.webp",
     vid: "/Vids/Cio.mp4",
     url: "https://cioch-direct.co.uk",
@@ -134,9 +135,9 @@ const projects = [
     title: "Profile v.1",
     slug: "profile-v1",
     brief:
-      "Minimal portfolio site built with vanilla HTML, CSS, and JavaScript, achieving 100% Lighthouse scores.",
+      "A lightweight personal portfolio focused on speed, clarity, and a straightforward experience.",
     description:
-      "A return to fundamentals—no frameworks, no virtual DOM, just HTML, CSS, and vanilla JavaScript. Without heavy libraries or dependencies, the site achieves 100% Lighthouse scores and remains fully functional even with JavaScript disabled. Built for speed and maximum compliance.",
+      "A simple, fast portfolio built using the fundamentals of the web. It keeps the experience clean and accessible while still feeling polished, and it performs extremely well because it avoids unnecessary complexity. The result is a site that feels quick, dependable, and easy to navigate.",
     img: "/projects/prof1.webp",
     vid: "/Vids/Pro.mp4",
     url: "https://lpscrim.netlify.app",
@@ -148,9 +149,9 @@ const projects = [
     title: "Lampman",
     slug: "lampman",
     brief:
-      "E-commerce site for an antiques restoration company, with Stripe-powered inventory and payments.",
+      "A simple online shop for an antique lighting business, designed to make browsing and buying straightforward.",
     description:
-      "E-commerce platform for an antiques restoration company specializing in British lamps. Stripe API handles both payments and inventory management, eliminating the need for a separate backend. Stock updates dynamically after each transaction, and the client manages products directly through Stripe's dashboard.",
+      "An online shop built to help an antiques business sell pieces more easily. The site makes it simple to browse stock, understand what is available, and complete purchases without a lot of friction. It also gives the business a cleaner way to keep products and stock levels up to date.",
     img: "/projects/lmp1.webp",
     vid: "/Vids/Lmp.mp4",
     url: "https://lampman.netlify.app",
