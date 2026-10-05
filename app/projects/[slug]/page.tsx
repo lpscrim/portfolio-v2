@@ -91,16 +91,17 @@ export default async function ProjectPage({
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col justify-end items-end gap-4 home-title px-4 text-lg tracking-wider opacity-40 hover:opacity-100 transition-all duration-500">
-                <Link href={`/projects/${nextProject.slug}`} className="group flex flex-col items-end text-right">
-                  <span className="text-[10px] uppercase tracking-[0.28em] opacity-60 group-hover:opacity-100">
-                    next project
-                  </span>
-                  <span className="text-base sm:text-lg leading-tight">
-                    {nextProject.title}
-                  </span>
+              <div className="flex flex-col justify-end items-end gap-4 home-title px-4 text-lg tracking-wider">
+                <Link
+                  href={`/projects/${nextProject.slug}`}
+                  className="group flex flex-col items-end text-right opacity-40 transition-all duration-500 hover:opacity-100 "
+                >
+                  next project
                 </Link>
-                <Link href="/projects">
+                <Link
+                  href="/projects"
+                  className="opacity-40 transition-all duration-500 hover:opacity-100 "
+                >
                   <p>all projects</p>
                 </Link>
               </div>

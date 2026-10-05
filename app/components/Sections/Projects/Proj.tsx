@@ -30,7 +30,7 @@ export default function Proj() {
       </h2>
       {atTop && (
         <div
-          className="flex flex-col items-center mt-20 lg:mt-40 xl:mt-64 bounce-in-right transition-opacity xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20"
+          className="flex flex-col items-center mt-24 lg:mt-40 xl:mt-64 bounce-in-right transition-opacity xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20"
           style={{
             opacity: atTop ? 1 : 0,
             pointerEvents: atTop ? "auto" : "none",
