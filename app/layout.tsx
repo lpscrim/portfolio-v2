@@ -5,10 +5,28 @@ import LenisScroll from "./components/Functions/LenisScroll";
 
 
 
+const title = "Lewis Scrimgeour | Web Design & Development";
+const description =
+  "Freelance web designer and developer based on the Isle of Skye, building fast, modern websites with Next.js and React for clients across Scotland, the UK and beyond.";
+
 export const metadata: Metadata = {
-  title: "Lewis Scrimgeour | Web Design & Development",
-  description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
-  keywords: ["web designer", "web design", "web development", "web developer", "Next.js", "React", "portfolio"],
+  title,
+  description,
+  keywords: [
+    "web designer",
+    "web design",
+    "web development",
+    "web developer",
+    "freelance web developer",
+    "web designer Isle of Skye",
+    "web design Scotland",
+    "web developer Scotland",
+    "Next.js",
+    "React",
+    "portfolio",
+  ],
+  authors: [{ name: "Lewis Scrimgeour", url: "https://lpscrim.com" }],
+  creator: "Lewis Scrimgeour",
   metadataBase: new URL("https://lpscrim.com"),
   alternates: {
     canonical: "/",
@@ -24,16 +42,17 @@ export const metadata: Metadata = {
   ],
   
   openGraph: {
-    title: "Lewis Scrimgeour - Web Design & Development",
-    description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
+    title,
+    description,
     url: "https://lpscrim.com",
     siteName: "Lewis Scrimgeour Portfolio",
+    locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lewis Scrimgeour | Web Design & Development",
-    description: "Portfolio of Lewis Scrimgeour - Modern web design and development.",
+    title,
+    description,
   },
   
   // Robots

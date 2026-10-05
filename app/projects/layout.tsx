@@ -1,21 +1,27 @@
 import type { Metadata } from "next";
 import Header from "@/app/components/Layout/Header";
 
+const title = "Web Design & Development Projects | Lewis Scrimgeour";
+const description =
+  "Recent web design and development projects by Lewis Scrimgeour, a freelance developer based on the Isle of Skye — from holiday rental sites to portfolios and web apps.";
+
 export const metadata: Metadata = {
-  title: "Projects | Lewis Scrimgeour",
-  description: "Web design and development projects by Lewis Scrimgeour — browse recent client work and case studies.",
+  title,
+  description,
   alternates: {
     canonical: "/projects",
   },
   openGraph: {
-    title: "Projects | Lewis Scrimgeour",
-    description: "Web design and development projects by Lewis Scrimgeour — browse recent client work and case studies.",
+    title,
+    description,
     url: "https://lpscrim.com/projects",
+    locale: "en_GB",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projects | Lewis Scrimgeour",
-    description: "Web design and development projects by Lewis Scrimgeour — browse recent client work and case studies.",
+    title,
+    description,
   },
 };
 
