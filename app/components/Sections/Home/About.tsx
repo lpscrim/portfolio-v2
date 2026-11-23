@@ -18,7 +18,7 @@ export default function About() {
         <div className="w-full pt-32 sm:pt-56 pb-16 sm:pb-32 sm:px-10 ">
           <AnimateIn className="max-w-7xl mx-auto text-foreground/80 text-2xl bg-background/0 py-6 text-left sm:text-center">
             <p
-              className="text-2xl xl:text-3xl xl:leading-10 "
+              className="mx-auto max-w-4xl text-xl xl:text-2xl xl:leading-10 "
             >
               A web design and development studio. Collaborating with a variety of businesses and individuals to create modern, responsive, and user-friendly websites.
             </p>
