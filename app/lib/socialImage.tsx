@@ -16,7 +16,7 @@ export function renderSocialImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 32, color: "#6C9A8B" }}>
-          lpscrim.com
+          lewisscrimgeour.com
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex", fontSize: 96, fontWeight: 700, lineHeight: 1.05 }}>

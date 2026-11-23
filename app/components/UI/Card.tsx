@@ -114,7 +114,7 @@ export default function Card({
         />
 
         {/* Content */}
-        <div className="px-4 py-4 md:px-6 md:py-6 lg:px-12 lg:py-8 xl:px-16 xl:py-8 relative items-center justify-center flex z-10 ">
+        <div className="px-2 py-2 md:px-4 md:py-4 lg:px-8 lg:py-6 xl:px-12 xl:py-8 relative items-center justify-center flex z-10 ">
           <video
             ref={videoRef}
             className="w-full h-auto object-cover rounded-sm aspect-video"
@@ -126,14 +126,14 @@ export default function Card({
           />
         </div>
         <div
-          className={`px-4 py-2 sm:px-6`}
+          className={`px-4 py-1 sm:px-6`}
           style={{ position: "relative", zIndex: 10 }}
         >
-          <div className="text-base -mt-4 w-full justify-center flex">
+          <div className="text-base -mt-2 lg:-mt-6 w-full justify-center flex">
             <div className={`md:text-xl inline-block rounded-xs ` + (main ? "group-hover:bg-background transition-all duration-700" : "")} >
               <h2
                 className={
-                  `group-hover:bg-foreground/5 px-4 py-0.5 transition-all duration-700 text-lg sm:text-xl` +
+                  `group-hover:bg-foreground/5 px-4 py-0.5 transition-all duration-700 text-base sm:text-lg` +
                   (main ? " text-foreground" : " text-background home-title lowercase")
                 }
               >
