@@ -229,12 +229,12 @@ export default function Form() {
                 >
                   {isSubmitting ? "Sending..." : "Send"}
                 </Button>
-                <div
-                  mail-to="Lpscrim@gmail.com"
+                <a
+                  href="mailto:Lpscrim@gmail.com"
                   className="cursor-pointer text-background/80 hover:text-background transition-colors duration-300"
                 >
-                  <span>Lpscrim@gmail.com</span>
-                </div>
+                  Lpscrim@gmail.com
+                </a>
               </div>
             </form>
           </div>

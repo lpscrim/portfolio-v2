@@ -222,6 +222,20 @@ h1, h2, h3, h4, h5, h6 {
     bounce-normal 3s 10s infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .pop-up,
+  .pop-up-2,
+  .pop-up-3,
+  .fade-in,
+  .bounce-in-right {
+    animation: none;
+  }
+
+  .parallax-layer {
+    transform: none !important;
+  }
+}
+
 /* Mobile scrollbar hidden */
 @media (max-width: 640px) {
   body {

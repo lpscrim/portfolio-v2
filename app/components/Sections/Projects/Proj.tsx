@@ -25,9 +25,9 @@ export default function Proj() {
     <div className="relative w-full flex flex-col gap-y-50 sm:pl-4 xl:pl-0 xl:max-w-7xl xl:mx-auto items-start">
       {/* Sentinel element for IntersectionObserver - detects when we're at top */}
       <div ref={sentinelRef} className="absolute top-0 left-0 w-full h-1" />
-      <h2 className="home-title mt-100 xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20 text-background text-5xl lg:text-6xl xl:text-7xl mx-auto font-semibold transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">
+      <h1 className="home-title mt-100 xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20 text-background text-5xl lg:text-6xl xl:text-7xl mx-auto font-semibold transition-all duration-1250 rounded-md fade-in pb-1 pt-2 px-2">
         projects
-      </h2>
+      </h1>
       {atTop && (
         <div
           className="flex flex-col items-center mt-24 lg:mt-40 xl:mt-64 bounce-in-right transition-opacity xl:pr-180 lg:pr-120 md:pr-80 sm:pr-40 pr-20"

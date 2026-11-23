@@ -44,7 +44,6 @@ export default function Home() {
       </div>
       <Header />
       <About />
-      <section id="trigger"></section>
       <div className="z-50 relative min-h-svh bg-foreground">        
         <Form />
         <Footer />

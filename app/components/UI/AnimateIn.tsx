@@ -16,6 +16,7 @@ export default function AnimateIn({ children, delay = 0, className }: Props) {
 
   useEffect(() => {
     if (!ref.current) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     gsap.fromTo(
       ref.current,
       { opacity: 0, y: 40 },

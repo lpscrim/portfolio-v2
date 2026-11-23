@@ -71,9 +71,9 @@ export default function Header() {
         {/* Name */}
         <div className="flex flex-1 items-center">
           <Link href="/">
-            <h2 className={` home-title whitespace-nowrap pl-2 tracking-wide mt-1 text-background/90 hover:text-background transition-all duration-500`}>
+            <span className={`block home-title whitespace-nowrap pl-2 tracking-wide mt-1 text-background/90 hover:text-background transition-all duration-500`}>
               lewis scrimgeour
-            </h2>
+            </span>
           </Link>
         </div>
         {/* Clock */}

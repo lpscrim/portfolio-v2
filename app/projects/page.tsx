@@ -16,7 +16,6 @@ export default function ProjectsMain() {
             <div className="projects-scroll-container relative w-full">
                 <ProjectContainer />
             </div>
-            <section id="trigger"></section>
         <div className="z-50 relative">
           <Form />
           <Footer />
