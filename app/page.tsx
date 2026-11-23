@@ -3,15 +3,16 @@ import Hero from "./components/Sections/Home/Hero";
 import About from "./components/Sections/Home/About";
 import Form from "./components/Layout/Form";
 import Footer from "./components/Layout/Footer"
+import { siteUrl } from "./lib/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": "https://lpscrim.com/#business",
+  "@id": `${siteUrl}/#business`,
   name: "Lewis Scrimgeour - Web Design & Development",
   description:
     "Freelance web designer and developer based on the Isle of Skye, building fast, modern websites with Next.js and React for clients across Scotland, the UK and beyond.",
-  url: "https://lpscrim.com",
+  url: siteUrl,
   email: "Lpscrim@gmail.com",
   founder: { "@type": "Person", name: "Lewis Scrimgeour" },
   address: {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import LenisScroll from "./components/Functions/LenisScroll";
+import { siteUrl } from "./lib/site";
 
 
 
@@ -25,9 +26,9 @@ export const metadata: Metadata = {
     "React",
     "portfolio",
   ],
-  authors: [{ name: "Lewis Scrimgeour", url: "https://lpscrim.com" }],
+  authors: [{ name: "Lewis Scrimgeour", url: siteUrl }],
   creator: "Lewis Scrimgeour",
-  metadataBase: new URL("https://lpscrim.com"),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
   },
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: "https://lpscrim.com",
+    url: siteUrl,
     siteName: "Lewis Scrimgeour Portfolio",
     locale: "en_GB",
     type: "website",

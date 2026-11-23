@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/app/components/Layout/Header";
+import { siteUrl } from "@/app/lib/site";
 
 const title = "Web Design & Development Projects | Lewis Scrimgeour";
 const description =
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: "https://lpscrim.com/projects",
+    url: `${siteUrl}/projects`,
     locale: "en_GB",
     type: "website",
   },

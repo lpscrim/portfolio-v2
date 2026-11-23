@@ -3,6 +3,7 @@ import Footer from "../../components/Layout/Footer";
 import projects from "../../data/projects";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { siteUrl } from "../../lib/site";
 
 export async function generateMetadata({
   params,
@@ -12,13 +13,18 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = projects.find((proj) => slug === proj.slug);
   if (!project) return {};
+  const pageTitle = `${project.title} | Lewis Scrimgeour`;
   return {
-    title: `${project.title} | Lewis Scrimgeour`,
+    title: pageTitle,
     description: project.brief,
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
     openGraph: {
-      title: `${project.title} | Lewis Scrimgeour`,
+      title: pageTitle,
       description: project.brief,
-      images: [{ url: `https://lpscrim.com${project.img}` }],
+      url: `${siteUrl}/projects/${project.slug}`,
+      images: [{ url: `${siteUrl}${project.img}` }],
     },
   };
 }
@@ -40,8 +46,25 @@ export default async function ProjectPage({
   const projectIndex = projects.findIndex((proj) => proj.slug === slug);
   const nextProject = projects[(projectIndex + 1) % projects.length];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.brief,
+    url: `${siteUrl}/projects/${project.slug}`,
+    image: `${siteUrl}${project.img}`,
+    dateCreated: project.date,
+    keywords: project.tech.join(", "),
+    creator: { "@type": "Person", name: "Lewis Scrimgeour", url: siteUrl },
+    isPartOf: { "@type": "WebSite", url: siteUrl },
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section
         id="projectPage"
         className="max-w-7xl text-foreground mx-auto pt-16 pb-2 min-h-svh "

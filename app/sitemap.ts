@@ -1,20 +1,26 @@
 import { MetadataRoute } from 'next';
 import projects from './data/projects';
+import { siteUrl } from './lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://lpscrim.com'; 
+  const baseUrl = siteUrl;
+
+  // Use the newest project date so static pages only change when the portfolio does
+  const latestUpdate = new Date(
+    projects.reduce((latest, project) => (project.date > latest ? project.date : latest), projects[0].date)
+  );
 
   // Static pages
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: latestUpdate,
       changeFrequency: 'weekly' as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/projects`,
-      lastModified: new Date(),
+      lastModified: latestUpdate,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
