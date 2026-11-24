@@ -71,14 +71,14 @@ export default function Header() {
         {/* Name */}
         <div className="flex flex-1 text-base items-center">
           <Link href="/">
-            <span className={`block capitalize whitespace-nowrap pl-2 tracking-wide mt-1 text-background/90 hover:text-background transition-all duration-500`}>
+            <span className={`block home-title whitespace-nowrap pl-2 tracking-wide mt-1 text-background/90 hover:text-background transition-all duration-500`}>
               lewis scrimgeour
             </span>
           </Link>
         </div>
         {/* Desktop links / Mobile menu */}
         <div className="flex-1 flex justify-end items-center sm:mr-2">
-          <div className="hidden md:flex capitalize text-background/90 tracking-wide">
+          <div className="hidden md:flex home-title text-background/90 tracking-wide">
             <div className=" gap-x-2 xl:gap-x-4 items-center mt-1 flex text-sm">
               <Link
                 href="/projects"

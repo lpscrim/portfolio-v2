@@ -13,7 +13,6 @@ export default function Hero() {
         className="flex parallax-container relative overflow-x-hidden"
       >
         <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/LayeredL1.webp')]">
-          
           <div className="w-full h-full bg-foreground/0"></div>
         </div>
 
@@ -37,18 +36,16 @@ export default function Hero() {
               }
             }}
           >
-            lewis scrimgeour 
+            lewis scrimgeour
           </h1>
-
         </div>
 
         <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL3.webp')] flex items-center justify-center z-10">
-                                    <h2 className="home-title brightness-180 ml-64 text-background text-lg sm:text-xl lg:text-2xl pt-1 pb-2  sm:pt-2 sm:pb-6 ">
-              web design
-            </h2>
+          <h2 className="home-title fade-in-2 brightness-180 ml-38 sm:ml-46 lg:ml-62 -mt-7 sm:-mt-3 lg:-mt-7  text-background text-base sm:text-lg lg:text-2xl ">
+            web design
+          </h2>
         </div>
-        <div className="parallax-layer pointer-events-none fixed top-0 left-0 w-full h-svh flex items-center justify-center z-15">
-        </div>
+        <div className="parallax-layer pointer-events-none fixed top-0 left-0 w-full h-svh flex items-center justify-center z-15"></div>
         <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 -mt-0.5">
           <div className="w-full h-svh bg-[url('/Layered/LayeredL4.webp')] bg-cover bg-center"></div>
           <div className="w-full h-[50vh] bg-foreground"></div>

@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: fadeIn 3s linear forwards;
 }
 .fade-in-2 {
-  animation: fadeIn 5s linear forwards;
+  animation: fadeIn 5s linear 6s both;
 }
 
 @keyframes bounce-in-right {
