@@ -53,76 +53,6 @@ body {
 }
 
 @font-face {
-  font-family: 'Lora';
-  src: url('/fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lora';
-  src: url('/fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype');
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicLight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicBook.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicMedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicDemi.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicBold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url('/fonts/futura-pt/FuturaCyrillicHeavy.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Ballmer';
   src: url('/fonts/Ballmer/Architype-Ballmer.woff2') format('woff2'),
        url('/fonts/Ballmer/Architype-Ballmer.woff') format('woff');
@@ -218,6 +148,18 @@ h1, h2, h3, h4, h5, h6 {
     bounce-normal 3s 10s infinite;
 }
 
+.see-more-line {
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease;
+}
+
+.see-more-link:hover .see-more-line,
+.see-more-link:focus-visible .see-more-line {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pop-up,
   .pop-up-2,
@@ -225,6 +167,10 @@ h1, h2, h3, h4, h5, h6 {
   .fade-in,
   .bounce-in-right {
     animation: none;
+  }
+
+  .see-more-line {
+    transition: none;
   }
 
   .parallax-layer {

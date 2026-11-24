@@ -2,7 +2,7 @@ import Card from "../../UI/Card";
 import Link from "next/link";
 import projects from "../../../data/projects";
 import AnimateIn from "../../UI/AnimateIn";
-
+import Services from "./Services";
 const content = projects.slice(0, 4);
 
 export default function About() {
@@ -25,7 +25,7 @@ export default function About() {
         {/* Projects Section */}
         <div className="w-full  pb-32 sm:px-6 lg:px-10">
           <div>
-
+            <Services />
             <AnimateIn delay={0.2}>
               <div className="max-w-6xl mx-auto text-foreground bg-background/0 py-4 sm:py-8">
                 <h2 className="hidden text-2xl sm:text-3xl xl:text-4xl text-center ">
@@ -48,13 +48,13 @@ export default function About() {
                 <div className="mt-16 flex justify-center">
                   <Link
                     href="/projects"
-                    className="relative inline-block pb-1 text-foreground uppercase tracking-[0.2em] text-sm sm:text-base transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:opacity-70"
+                    className="see-more-link relative inline-block text-foreground uppercase tracking-[0.2em] text-sm sm:text-base transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:opacity-70"
                   >
                     See more
                     <span className="sr-only"> web design projects</span>
                     <span
                       aria-hidden="true"
-                      className="absolute left-0 -bottom-0.5 h-px w-full bg-current"
+                      className="see-more-line absolute left-0 -bottom-0.5 h-px w-full origin-left bg-current"
                     />
                   </Link>
                 </div>
