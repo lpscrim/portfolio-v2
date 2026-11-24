@@ -25,7 +25,9 @@ export default function About() {
         {/* Projects Section */}
         <div className="w-full pb-32 sm:px-6 lg:px-10">
           <div>
+            <AnimateIn delay={0.1}>
             <Services />
+            </AnimateIn>
             <AnimateIn delay={0.2}>
               <div className="max-w-6xl mx-auto text-foreground bg-background/0 py-4 sm:py-8">
                 <h2 className="sr-only">
