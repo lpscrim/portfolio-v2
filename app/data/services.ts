@@ -3,13 +3,8 @@ export const homeServices = [
   "Web Development",
   "Web Design",
   "E-Commerce",
-  "API / CMS",
   "SEO",
-  "Brand Identity",
-  "Shopify",
-  "Accessibility",
-  "Responsive Design",
-  "UI/UX",
+  
 ];
 
 /** Full list used on the /services page */

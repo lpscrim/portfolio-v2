@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import Button from "../UI/Button";
 export default function Form() {
   const formRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
@@ -100,13 +99,13 @@ export default function Form() {
   return (
     <>
       <div ref={triggerRef} id="trigger"></div>
-      <div className="w-vw py-24 sm:py-32 bg-foreground z-65 overflow-hidden">
+      <div className="w-vw py-24 sm:pt-32 pb-32 bg-foreground z-65 overflow-hidden">
         <section
           id="contact"
           ref={formRef}
-          className="form-container pt-12 xl:pt-16 pb-6 bg-foreground flex flex-col text-white justify-center items-center"
+          className="form-container pb-6 bg-foreground flex flex-col text-white justify-center items-center"
         >
-          <h2 className="text-3xl sm:text-4xl">
+          <h2 className="text-2xl sm:text-3xl pb-4">
             Get in Touch
           </h2>
           <div id="contact-form" className="w-full px-12 md:px-32 lg:px-38">
@@ -218,20 +217,20 @@ export default function Form() {
               </div>
 
               <div className="mt-10 items-center flex flex-row justify-between gap-x-6 sm:gap-x-8">
-                <Button
+                <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-40 rounded-xs bg-background/80 text-foreground px-3.5 py-2.5  ${
-                    isSubmitting
-                      ? "opacity-50 cursor-not-allowed"
-                      : " hover:bg-background"
-                  }`}
+                  className="see-more-link relative inline-block  text-background uppercase tracking-[0.2em] text-xs sm:text-base transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:opacity-70 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Sending..." : "Send"}
-                </Button>
+                  <span
+                    aria-hidden="true"
+                    className="see-more-line absolute left-0 -bottom-0.5 h-px w-full origin-left bg-current"
+                  />
+                </button>
                 <a
                   href="mailto:Lpscrim@gmail.com"
-                  className="cursor-pointer text-background/80 hover:text-background transition-colors duration-300"
+                  className="cursor-pointer text-background/80 text-xs sm:text-base hover:text-background transition-colors duration-300"
                 >
                   Lpscrim@gmail.com
                 </a>
