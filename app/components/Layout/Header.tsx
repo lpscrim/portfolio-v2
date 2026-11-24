@@ -66,26 +66,20 @@ export default function Header() {
     >
       <nav
         aria-label="Global"
-        className="relative max-w-8xl text-lg mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-16"
+        className="relative max-w-8xl mx-auto flex w-full items-center overflow-hidden justify-between px-2 h-13 sm:px-8 xl:px-16"
       >
         {/* Name */}
-        <div className="flex flex-1 items-center">
+        <div className="flex flex-1 text-base items-center">
           <Link href="/">
             <span className={`block home-title whitespace-nowrap pl-2 tracking-wide mt-1 text-background/90 hover:text-background transition-all duration-500`}>
               lewis scrimgeour
             </span>
           </Link>
         </div>
-        {/* Clock */}
-        <div className="flex-1 flex justify-start md:justify-center items-center">
-          <div className={`hidden ${isFixed ? 'opacity-100' : 'opacity-0'} `}>
-            <Clock />
-          </div>
-        </div>
         {/* Desktop links / Mobile menu */}
         <div className="flex-1 flex justify-end items-center sm:mr-2">
           <div className="hidden md:flex home-title text-background/90 tracking-wide">
-            <div className=" gap-x-2 xl:gap-x-4 items-center mt-1 flex">
+            <div className=" gap-x-2 xl:gap-x-4 items-center mt-1 flex text-sm">
               <Link
                 href="/projects"
                 className="hover:text-background rounded-xs px-2 transition-all duration-500"
@@ -120,11 +114,11 @@ export default function Header() {
       {/* Mobile dropdown menu */}
       <div
         className={`md:hidden bg-foreground w-full overflow-hidden transition-all duration-500 ${
-          mobileMenuOpen ? "max-h-60 py-2" : "max-h-0 py-0"
+          mobileMenuOpen ? "max-h-60 pb-2" : "max-h-0 py-0"
         }`}
       >
         {mobileMenuOpen && (
-          <div className="flex flex-col gap-y-2 pl-5 text-lg tracking-wide ">
+          <div className="flex flex-col gap-y-2 pl-5 text-sm tracking-wide ">
             <Link
               href="/projects"
               className="text-background/90 hover:text-background pop-up text-left active:translate-y-px transition-all duration-250 lowercase home-title"
