@@ -134,7 +134,7 @@ export default function Card({
               <h2
                 className={
                   `group-hover:bg-foreground/5 px-3 transition-all duration-600 text-sm sm:text-base font-medium` +
-                  (main ? " text-foreground font-semibold" : " text-background/90 home-title lowercase")
+                  (main ? " text-foreground font-semibold" : " text-background")
                 }
               >
                 {content.title}
