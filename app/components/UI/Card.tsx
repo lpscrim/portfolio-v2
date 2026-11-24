@@ -133,7 +133,7 @@ export default function Card({
             <div className={`md:text-xl inline-block ` + (main ? "group-hover:bg-background/60 transition-all duration-600" : "")} >
               <h2
                 className={
-                  `group-hover:bg-foreground/5 px-3 transition-all duration-600 text-sm sm:text-base font-medium` +
+                  ` px-3 transition-all duration-600 text-sm sm:text-base font-medium` +
                   (main ? " text-foreground font-semibold" : " text-background")
                 }
               >
