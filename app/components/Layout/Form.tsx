@@ -78,7 +78,7 @@ export default function Form() {
     ScrollTrigger.refresh();
 
     // After a short delay, re-scroll to the anchor if present
-    setTimeout(() => {
+    const anchorTimer = setTimeout(() => {
       if (window.location.hash === "#contact") {
         const el = document.getElementById("contact");
         if (el) el.scrollIntoView({ behavior: "auto" });
@@ -86,13 +86,13 @@ export default function Form() {
     }, 650);
 
     return () => {
+      clearTimeout(anchorTimer);
       uncover.kill();
       st.kill();
       window.removeEventListener("resize", handleResize);
       imgs.forEach((img) => {
         img.removeEventListener("load", handleResize);
       });
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
