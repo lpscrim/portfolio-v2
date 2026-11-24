@@ -53,7 +53,7 @@ export default function Proj() {
         </div>
       )}
 
-      <div className="sm:pl-8 max-w-3xl xl:max-w-4xl mt-200 text-foreground flex flex-col gap-y-40 lg:gap-y-50">
+      <div className="sm:pl-8 max-w-3xl xl:max-w-4xl mt-200 text-foreground flex flex-col gap-y-30 lg:gap-y-40">
         {projects.map((project, index) => (
           <div key={index} className="rounded-sm" id={`project-${project.slug}`}>
             <Card content={project} />
