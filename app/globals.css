@@ -109,6 +109,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fade-in {
+  animation: fadeIn 3s linear forwards;
+}
+.fade-in-2 {
   animation: fadeIn 5s linear forwards;
 }
 

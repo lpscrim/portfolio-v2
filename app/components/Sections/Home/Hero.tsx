@@ -13,14 +13,15 @@ export default function Hero() {
         className="flex parallax-container relative overflow-x-hidden"
       >
         <div className="parallax-layer pointer-events-none fixed h-[150vh] bg-[url('/Layered/LayeredL1.webp')]">
+          
           <div className="w-full h-full bg-foreground/0"></div>
         </div>
 
         <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL8.webp')] mt-0.5 z-5"></div>
-        <div className="parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-svh flex items-center justify-center z-7">
+        <div className=" parallax-layer pointer-events-auto fixed top-0 left-0 w-full h-svh flex items-center justify-center z-7">
           {/* Title */}
           <h1
-            className="home-title -mt-22 lg:-mt-32 brightness-150 text-background text-4xl lg:text-6xl border-4 lg:border-6 border-background/90 hover:border-background/0 transition-all duration-800 rounded-md fade-in pt-1 pb-2 px-2 cursor-pointer "
+            className="home-title -mt-22 lg:-mt-32 brightness-200 text-background text-3xl sm:text-4xl lg:text-5xl pt-0 pb-1 px-2 sm:pt-1 sm:pb-2 lg:px-3 border-3 sm:border-4 lg:border-5 border-background/90 hover:border-background/0 transition-all rounded-md fade-in duration-700 cursor-pointer "
             tabIndex={0}
             onClick={() =>
               document
@@ -41,7 +42,11 @@ export default function Hero() {
 
         </div>
 
-        <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL3.webp')] flex items-center justify-center z-10"></div>
+        <div className="parallax-layer pointer-events-none h-svh fixed bg-[url('/Layered/LayeredL3.webp')] flex items-center justify-center z-10">
+                                    <h2 className="home-title brightness-180 ml-64 text-background text-lg sm:text-xl lg:text-2xl pt-1 pb-2  sm:pt-2 sm:pb-6 ">
+              web design
+            </h2>
+        </div>
         <div className="parallax-layer pointer-events-none fixed top-0 left-0 w-full h-svh flex items-center justify-center z-15">
         </div>
         <div className="parallax-layer pointer-events-none fixed z-15 w-full left-0 top-0 -mt-0.5">
