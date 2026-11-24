@@ -7,7 +7,7 @@ const projects = [
     description:
       "A straightforward holiday rental website designed to help guests browse properties, check availability, and book with confidence. The site makes it easy to explore rooms and listings, while the owner can update property details, pricing, and content through a simple admin area without needing technical help.",
     img: "/projects/Dch.webp",
-    vid: "/Vids/Dch.mp4",
+    vid: "/Vids/compressed/Dch.mp4",
     url: "https://www.duncaanholidays.com",
     date: "2026-10-03",
     tech: [
@@ -29,7 +29,7 @@ const projects = [
     description:
       "A welcoming online shop for a ceramic artist, built to make browsing and buying feel simple. Customers can explore the collection, customise a mug, and check out without confusion. The studio can manage stock, orders, and product updates in one place, while the site also stays in sync with Etsy so both shops reflect the same availability.",
     img: "/projects/jsp1.webp",
-    vid: "/Vids/Jsp1.mp4",
+    vid: "/Vids/compressed/Jsp1.mp4",
     url: "https://john-sloan-pottery.vercel.app/",
     date: "2026-06-21",
     tech: [
@@ -50,7 +50,7 @@ const projects = [
     description:
       "A beautifully simple shop for an artist who wants to sell paintings and prints with less friction. Visitors can browse by collection, add pieces to a cart, and complete their purchase smoothly. The site also gives the artist a straightforward way to manage products, inventory, and order updates without needing a complicated setup behind the scenes.",
     img: "/projects/ana1.webp",
-    vid: "/Vids/Ana3.mp4",
+    vid: "/Vids/compressed/Ana3.mp4",
     url: "https://annamaiaart.com",
     date: "2026-04-25",
     tech: [
@@ -70,7 +70,7 @@ const projects = [
     description:
       "A clean, immersive portfolio that lets a photographer showcase their work at its best. The layout keeps the focus on the images, and clear paths to explore projects and get in touch make it easy for new clients. It feels polished and works smoothly on both desktop and mobile.",
     img: "/projects/ddt1.webp",
-    vid: "/Vids/Ddt.mp4",
+    vid: "/Vids/compressed/Ddt.mp4",
     url: "https://daydreamteam.co.uk",
     date: "2026-03-15",
     tech: ["Next.js", "Cloudinary"],
@@ -83,7 +83,7 @@ const projects = [
     description:
       "A polished marketing and booking website for a self-catering property on the Isle of Skye. It gives visitors a clear overview of the accommodation, showcases the rooms with photography, and makes it easy to ask questions or begin the booking process. The result is a website that feels friendly, professional, and easy to trust.",
     img: "/projects/hls.webp",
-    vid: "/Vids/Hls.mp4",
+    vid: "/Vids/compressed/Hls.mp4",
     url: "https://hillsidehouseelgol.com",
     date: "2025-12-01",
     tech: ["Next.js", "Guesty API"],
@@ -97,7 +97,7 @@ const projects = [
     description:
       "A practical in-store solution designed to make shopping feel faster and more convenient. Customers can scan a QR code, view the product range on their phone, and complete their purchase without waiting at a till. It also helps the business track customer activity and keep the buying process organised across multiple store locations.",
     img: "/projects/kio1.webp",
-    vid: "/Vids/Kio.mp4",
+    vid: "/Vids/compressed/Kio.mp4",
     url: "https://merch.herts.ac.uk",
     date: "2025-10-05",
     tech: ["Shopify Liquid", "JS", "QR Code API"],
@@ -111,7 +111,7 @@ const projects = [
     description:
       "A full website refresh for a tiling company that needed a stronger online presence. The new design makes it easier for visitors to understand the services on offer, view finished work, and get in touch. The team can also update content and images in a simple way without needing technical support.",
     img: "/projects/gro1.webp",
-    vid: "/Vids/Gro.mp4",
+    vid: "/Vids/compressed/Gro.mp4",
     url: "https://nogroutaboutit.netlify.app",
     date: "2025-09-09",
     tech: ["Next.js", "Sanity CMS"],
@@ -125,7 +125,7 @@ const projects = [
     description:
       "A website refresh for an established Scottish outdoor clothing brand. The aim was to make the site easier to browse, improve how it appears in search results, and give the team a simple way to update product imagery and content. The result is a cleaner, more consistent brand presence across devices.",
     img: "/projects/cio1.webp",
-    vid: "/Vids/Cio.mp4",
+    vid: "/Vids/compressed/Cio.mp4",
     url: "https://cioch-direct.co.uk",
     date: "2025-05-13",
     tech: ["Next.js", "Sanity CMS"],
@@ -139,7 +139,7 @@ const projects = [
     description:
       "A simple, fast portfolio built using the fundamentals of the web. It keeps the experience clean and accessible while still feeling polished, and it performs extremely well because it avoids unnecessary complexity. The result is a site that feels quick, dependable, and easy to navigate.",
     img: "/projects/prof1.webp",
-    vid: "/Vids/Pro.mp4",
+    vid: "/Vids/compressed/Pro.mp4",
     url: "https://lpscrim.netlify.app",
     date: "2024-01-20",
     tech: ["HTML", "CSS", "JS"],
@@ -153,7 +153,7 @@ const projects = [
     description:
       "An online shop built to help an antiques business sell pieces more easily. The site makes it simple to browse stock, understand what is available, and complete purchases without a lot of friction. It also gives the business a cleaner way to keep products and stock levels up to date.",
     img: "/projects/lmp1.webp",
-    vid: "/Vids/Lmp.mp4",
+    vid: "/Vids/compressed/Lmp.mp4",
     url: "https://lampman.netlify.app",
     date: "2023-06-06",
     tech: ["Next.js", "Stripe API"],
