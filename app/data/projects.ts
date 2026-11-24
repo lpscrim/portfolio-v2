@@ -68,7 +68,7 @@ const projects = [
     brief:
       "A bright, modern portfolio for a photographer that puts the work front and centre and makes contact easy.",
     description:
-      "A clean and immersive portfolio site designed to help a photographer showcase their work beautifully. The layout keeps attention on the images, while the site also makes it easy for new clients to explore projects and get in touch. It feels polished and easy to use on both desktop and mobile.",
+      "A clean, immersive portfolio that lets a photographer showcase their work at its best. The layout keeps the focus on the images, and clear paths to explore projects and get in touch make it easy for new clients. It feels polished and works smoothly on both desktop and mobile.",
     img: "/projects/ddt1.webp",
     vid: "/Vids/Ddt.mp4",
     url: "https://daydreamteam.co.uk",

@@ -16,9 +16,9 @@
 }
 
 :root {
-  --background: #fdfdfc;
+  --background: #f2f2ec;
   --foreground: #141414;
-  --color-background: #fdfdfc;
+  --color-background: #f2f2ec;
   --color-foreground: #141414;
   --color-primary: #6C9A8B;
   --color-secondary: #32726d;
@@ -126,29 +126,25 @@ body {
   font-family: 'Ballmer';
   src: url('/fonts/Ballmer/Architype-Ballmer.woff2') format('woff2'),
        url('/fonts/Ballmer/Architype-Ballmer.woff') format('woff');
+       font-weight: 200, 300, 400, 600;
   font-display: swap;
 }
 
 .home-title {
   font-family: 'Ballmer', monospace, sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.7px;
+  font-weight: 200;
+  letter-spacing: 0.75px;
 }
 
 body {
-  font-family: 'Futura PT', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
-button {
-  font-family: 'Ballmer', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 400;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.5px;
 }
 
 /* Animations */

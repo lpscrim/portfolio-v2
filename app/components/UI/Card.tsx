@@ -95,13 +95,13 @@ export default function Card({
     <div
       ref={cardRef}
       className={
-        "group w-full h-full overflow-hidden rounded-sm hover:shadow-md cursor-pointer justify-center flex flex-col relative transition-all duration-500 ease-in-out " +
+        "group w-full h-full  overflow-hidden rounded-xs hover:shadow-md cursor-pointer justify-center flex flex-col relative transition-all duration-400 ease-in-out " +
         (main && isActive ? "brightness-100" : "brightness-90")
       }
     >
       <Link href={"/projects/" + content.slug} className="w-full h-full">
         <div
-          className={"absolute -inset-8 bg-cover bg-center blur-2xl opacity-60"}
+          className={"absolute -inset-8 bg-cover bg-center blur-3xl opacity-60"}
           style={{ backgroundImage: `url(${content.img})` }}
         />
         <div
@@ -109,15 +109,15 @@ export default function Card({
             `absolute inset-0 w-full h-full ` +
             (main
               ? "bg-background/60"
-              : " bg-foreground/60")
+              : " bg-foreground/70")
           }
         />
 
         {/* Content */}
-        <div className="px-2 py-2 md:px-4 md:py-4 lg:px-8 lg:py-6 xl:px-12 xl:py-8 relative items-center justify-center flex z-10 ">
+        <div className="px-2 py-2 md:px-4 md:py-4 lg:px-8 lg:py-6 xl:px-16 xl:py-12 relative items-center justify-center flex z-10 ">
           <video
             ref={videoRef}
-            className="w-full h-auto object-cover rounded-sm aspect-video"
+            className="w-full h-auto object-cover rounded-xs overflow-hidden aspect-video"
             src={content.vid}
             preload="metadata"
             muted
@@ -130,11 +130,11 @@ export default function Card({
           style={{ position: "relative", zIndex: 10 }}
         >
           <div className="text-base -mt-2 lg:-mt-6 w-full justify-center flex">
-            <div className={`md:text-xl inline-block rounded-xs ` + (main ? "group-hover:bg-background transition-all duration-700" : "")} >
+            <div className={`md:text-xl inline-block ` + (main ? "group-hover:bg-background/60 transition-all duration-600" : "")} >
               <h2
                 className={
-                  `group-hover:bg-foreground/5 px-4 py-0.5 transition-all duration-700 text-base sm:text-lg` +
-                  (main ? " text-foreground" : " text-background home-title lowercase")
+                  `group-hover:bg-foreground/5 px-3 transition-all duration-600 text-sm sm:text-base font-medium` +
+                  (main ? " text-foreground font-semibold" : " text-background/90 home-title lowercase")
                 }
               >
                 {content.title}
