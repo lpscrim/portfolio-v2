@@ -111,8 +111,15 @@ h1, h2, h3, h4, h5, h6 {
 .fade-in {
   animation: fadeIn 3s linear forwards;
 }
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 .fade-in-2 {
-  animation: fadeIn 5s linear 6s both;
+  animation: fadeInOut 10s linear 4s both;
 }
 
 @keyframes bounce-in-right {
@@ -168,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
   .pop-up-2,
   .pop-up-3,
   .fade-in,
+  .fade-in-2,
   .bounce-in-right {
     animation: none;
   }
