@@ -119,7 +119,7 @@ export default function Card({
             ref={videoRef}
             className="w-full h-auto object-cover rounded-xs overflow-hidden aspect-video"
             src={content.vid}
-            preload="metadata"
+            preload="none"
             muted
             playsInline
             poster={content.img}
