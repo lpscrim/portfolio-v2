@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// @ts-expect-error - Next.js provides CSS module typing at build time
 import "./globals.css";
 import LenisScroll from "./components/Functions/LenisScroll";
 import { siteUrl } from "./lib/site";
