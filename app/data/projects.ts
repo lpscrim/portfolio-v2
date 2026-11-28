@@ -69,8 +69,8 @@ const projects = [
       "A bright, modern portfolio for a photographer that puts the work front and centre and makes contact easy.",
     description:
       "A clean, immersive portfolio that lets a photographer showcase their work at its best. The layout keeps the focus on the images, and clear paths to explore projects and get in touch make it easy for new clients. It feels polished and works smoothly on both desktop and mobile.",
-    img: "/projects/ddt1.webp",
-    vid: "/Vids/compressed/Ddt.mp4",
+    img: "/projects/ddt2.webp",
+    vid: "/Vids/compressed/Ddt2.mp4",
     url: "https://daydreamteam.co.uk",
     date: "2026-03-15",
     tech: ["Next.js", "Cloudinary"],
