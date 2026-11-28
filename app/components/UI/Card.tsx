@@ -117,7 +117,7 @@ export default function Card({
         <div className="px-2 py-2 md:px-4 md:py-4 lg:px-8 lg:py-6 xl:px-16 xl:py-12 relative items-center justify-center flex z-10 ">
           <video
             ref={videoRef}
-            className="w-full h-auto object-cover rounded-xs overflow-hidden aspect-video"
+            className="w-full h-auto object-cover rounded-xs overflow-hidden"
             src={content.vid}
             preload="none"
             muted
