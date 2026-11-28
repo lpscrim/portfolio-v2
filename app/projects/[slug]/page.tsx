@@ -91,14 +91,14 @@ export default async function ProjectPage({
             />
           </div>
           <div className="w-full flex flex-col gap-y-4">
-            <h1 className="text-xl sm:text-2xl px-2 font-bold mb-4">
+            <h1 className="text-xl sm:text-xl px-2 font-bold mb-4">
               {project.title}
             </h1>
 
-            <p className="w-full px-4 sm:text-lg lg:text-xl whitespace-pre-line">
+            <p className="w-full px-4 sm:text-lg  whitespace-pre-line">
               {project.description}
             </p>
-            <div className="mt-6 flex flex-row justify-between w-full text-lg home-title">
+            <div className="mt-6 flex flex-row justify-between w-full text-lg ">
               <ul className="px-4">
                 <li className="hover:opacity-100 opacity-75 transition-all duration-500">
                   <Link
@@ -117,7 +117,7 @@ export default async function ProjectPage({
                   </li>
                 ))}
               </ul>
-              <div className="flex flex-col justify-end items-end gap-4 home-title px-4 text-lg tracking-wider">
+              <div className="flex flex-col justify-end items-end gap-4  px-4 text-lg tracking-wider">
                 <Link
                   href={`/projects/${nextProject.slug}`}
                   className="group flex flex-col items-end text-right opacity-40 transition-all duration-500 hover:opacity-100 "

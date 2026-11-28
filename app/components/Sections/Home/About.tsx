@@ -50,7 +50,7 @@ export default function About() {
                 <div className="mt-16 flex justify-center">
                   <Link
                     href="/projects"
-                    className="see-more-link relative inline-block text-foreground uppercase tracking-[0.2em] text-xs sm:text-base transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:opacity-70"
+                    className="see-more-link relative inline-block text-foreground uppercase tracking-[0.2em] text-xs sm:text-sm transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:opacity-70"
                   >
                     See more
                     <span className="sr-only"> web design projects</span>
